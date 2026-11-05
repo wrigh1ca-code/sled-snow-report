@@ -35,6 +35,6 @@ jobs:
           git config user.name "snow-bot"
           git config user.email "snow-bot@users.noreply.github.com"
           git add data/conditions.json
-          [ -f assets/hero.jpg ] && git add assets/hero.jpg
+          if [ -f assets/hero.jpg ]; then git add assets/hero.jpg; fi
           git diff --cached --quiet || git commit -m "Update snow data $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
