@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sled Snow Report</title>
+<meta name="description" content="Snow depth and 1, 7 and 10 day snowfall at the high-elevation riding spots in the top snowmobile zones of Montana, Wyoming, Idaho, Utah and Colorado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800;1,900&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: night-ride hero with a rider throwing a powder roost, then one scannable row per riding zone. */
+:root {
+  --bg: #EEF1F2;          /* cold morning snow */
+  --card: #FFFFFF;
+  --ink: #1F2429;         /* graphite */
+  --muted: #5A646D;
+  --line: #D5DBDF;
+  --marker: #A4D62B;      /* mountain-sled lime */
+  --marker-ink: #3F7A0C;  /* lime, darkened for text on light */
+  --on-marker: #15190F;   /* text on lime fills */
+  --ice: #1663C7;         /* snowfall blue */
+  --ice-soft: #DDEAF9;
+  --pow: #2EC4F5;        /* blower-powder cyan */
+  --pow-ink: #0077B6;    /* readable deep-pow numbers on light */
+  --pow-deep: #062B45;
+  --sign: #30363C;        /* Monument Grey panels */
+  --sign-ink: #F2F6FA;
+  /* hero is always a night scene, in both themes */
+  --sky-top: #101418; --sky-mid: #262E36; --sky-low: #485764;
+  --ridge-far: #36414B; --ridge-near: #1E252C; --powder: #F4F8FC; --powder-shade: #C9D8E8;
+  --hood: #A4D62B; --hood-dark: #5E8A12; --jacket: #F4F8FC; --gear: #171B20; --visor: #36C2FF;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121519; --card: #1C2126; --ink: #EEF1F3; --muted: #9AA4AD; --line: #2E353C;
+    --marker: #B5E63A; --marker-ink: #B5E63A; --on-marker: #15190F; --ice: #5CAAFF; --ice-soft: #14304F; --sign: #2B3137; --sign-ink: #EEF1F3;
+    --pow: #4FD8FF; --pow-ink: #6FE0FF; --pow-deep: #04263D;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121519; --card: #1C2126; --ink: #EEF1F3; --muted: #9AA4AD; --line: #2E353C;
+  --marker: #B5E63A; --marker-ink: #B5E63A; --on-marker: #15190F; --ice: #5CAAFF; --ice-soft: #14304F; --sign: #2B3137; --sign-ink: #EEF1F3;
+  --pow: #4FD8FF; --pow-ink: #6FE0FF; --pow-deep: #04263D;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 18px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 3px solid var(--marker); outline-offset: 2px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; color: #F2F6FA; background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 55%, var(--sky-low) 100%); isolation: isolate; }
+.hero-art { position: absolute; inset: 0; width: 100%; height: 100%; display: block; z-index: -2; }
+.hero-photo { position: absolute; top: 0; right: 0; bottom: 0; width: 62%; margin: 0; z-index: -2; clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; filter: saturate(1.1) contrast(1.05); }
+.hero-photo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16,20,24,.85) 0%, rgba(16,20,24,.15) 32%, rgba(16,20,24,0) 55%), linear-gradient(0deg, rgba(16,20,24,.55) 0%, rgba(16,20,24,0) 35%); z-index: 1; }
+.hero-photo::after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 18%; background: linear-gradient(100deg, transparent 0 42%, var(--marker) 42% 47%, transparent 47% 55%, rgba(164,214,43,.6) 55% 58%, transparent 58%); z-index: 2; }
+.hero-photo figcaption { position: absolute; right: 10px; bottom: 98px; z-index: 3; font-size: .72rem; color: rgba(242,246,250,.75); background: rgba(16,20,24,.5); padding: 2px 8px; border-radius: 4px; }
+.hero-photo figcaption a { color: inherit; }
+.hero.has-photo #rider, .hero.has-photo #roost { display: none; }
+#flakes { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+.hero .wrap { position: relative; padding-block: 34px 150px; min-height: 420px; display: flex; flex-direction: column; justify-content: flex-start; gap: 12px; }
+.badge { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; font-size: .95rem; color: #F2F6FA; }
+.diamond { width: 26px; height: 26px; background: var(--marker); transform: rotate(45deg); border-radius: 3px; flex: none; display: inline-grid; place-items: center; box-shadow: 0 0 0 3px rgba(255,255,255,.12); }
+.diamond::after { content: ""; width: 9px; height: 9px; background: #1F2429; border-radius: 50%; }
+h1 { font-family: var(--font-display); font-style: italic; font-weight: 900; text-transform: uppercase; font-size: clamp(3.2rem, 11vw, 7.2rem); line-height: .84; letter-spacing: -.005em; margin: 4px 0 0; max-width: 8.5ch; text-shadow: 0 4px 30px rgba(0,0,0,.45); }
+h1 .hot { color: var(--marker); display: block; }
+.stripes { display: flex; gap: 6px; margin-top: 6px; }
+.stripes i { display: block; height: 7px; width: 64px; background: var(--marker); transform: skewX(-30deg); }
+.stripes i:nth-child(2) { width: 40px; opacity: .75; } .stripes i:nth-child(3) { width: 22px; opacity: .5; }
+.tagline { font-size: 1.1rem; margin: 8px 0 0; max-width: 34ch; color: #D3E0EE; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+.updated { display: inline-flex; align-self: flex-start; gap: 8px; align-items: center; font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; background: rgba(16,20,24,.6); border: 1px solid rgba(255,255,255,.18); border-radius: 999px; padding: 6px 14px; margin: 6px 0 0; backdrop-filter: blur(4px); }
+.updated::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--marker); box-shadow: 0 0 10px var(--marker); }
+
+.notice { margin: 18px 0 0; padding: 12px 16px; border-radius: 10px; border: 2px dashed var(--marker); font-weight: 600; }
+
+/* ---------- Best bets ---------- */
+section { margin-top: 28px; }
+.eyebrow { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-style: italic; font-weight: 800; font-size: 1.5rem; letter-spacing: .02em; text-transform: uppercase; margin: 0 0 12px; }
+.eyebrow .diamond { width: 16px; height: 16px; box-shadow: none; }
+.eyebrow .diamond::after { width: 5px; height: 5px; }
+.best { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: -86px; position: relative; z-index: 2; }
+.bet { background: var(--sign); color: var(--sign-ink); border-radius: 14px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; position: relative; overflow: hidden; box-shadow: 0 12px 30px rgba(16,20,24,.28); }
+.bet::after { content: ""; position: absolute; right: -18px; top: 0; bottom: 0; width: 46px; background: repeating-linear-gradient(-60deg, var(--marker) 0 8px, transparent 8px 16px); opacity: .9; }
+.bet:hover { transform: translateY(-2px); }
+.bet .rank { font-family: var(--font-display); font-weight: 800; color: var(--marker); font-size: 1.05rem; letter-spacing: .1em; }
+.bet .nm { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1.02; padding-right: 30px; }
+.bet .amt { font-family: var(--font-display); font-weight: 900; font-style: italic; font-size: 3.4rem; line-height: .95; font-variant-numeric: tabular-nums; margin-top: 4px; }
+.bet .amt small { font-size: 1.15rem; font-weight: 700; font-style: normal; opacity: .7; margin-left: 4px; }
+.best-label { color: #F2F6FA; }
+
+/* ---------- Controls ---------- */
+.controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 30px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; letter-spacing: .06em; min-width: 58px; padding: 8px 14px; border-radius: 8px; border: 2px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--marker); color: var(--on-marker); border-color: var(--marker); }
+.sort { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--muted); }
+select { font: 600 1rem var(--font-body); padding: 8px 10px; border-radius: 8px; border: 2px solid var(--line); background: var(--card); color: var(--ink); }
+
+/* ---------- Zone rows ---------- */
+.zones { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+.zone { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr); gap: 14px 24px; scroll-margin-top: 16px; }
+.zhead { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.zname { font-family: var(--font-display); font-style: italic; font-weight: 900; font-size: 2.15rem; line-height: .95; margin: 0; text-transform: uppercase; text-wrap: balance; }
+.st { display: inline-block; font-family: var(--font-display); font-style: normal; font-weight: 800; font-size: .95rem; letter-spacing: .08em; padding: 1px 8px; border-radius: 5px; background: var(--ink); color: var(--bg); vertical-align: 6px; margin-left: 8px; }
+.zarea { color: var(--muted); font-size: 1rem; margin: 0; }
+.elev { font-family: var(--font-display); font-weight: 700; font-size: .95rem; letter-spacing: .08em; text-transform: uppercase; color: var(--marker-ink); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; min-width: 0; }
+.stat { display: flex; flex-direction: column; gap: 2px; padding-left: 12px; border-left: 3px solid var(--line); }
+.stat.base { border-left-color: var(--ink); }
+.lbl { font-family: var(--font-display); font-weight: 700; font-size: .95rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.num { font-family: var(--font-display); font-weight: 800; font-size: 2.8rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.num small { font-size: 1.1rem; font-weight: 600; color: var(--muted); margin-left: 2px; }
+.num.zero { color: var(--muted); }
+.num.good { color: var(--ice); }
+.num.deep { color: var(--pow-ink); text-shadow: 0 0 18px color-mix(in srgb, var(--pow) 45%, transparent); }
+.sub { font-size: .9rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.deep-tag { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-display); font-weight: 800; font-size: .85rem; letter-spacing: .12em; background: linear-gradient(135deg, #E9FBFF 0%, var(--pow) 55%, #149BDB 100%); color: var(--pow-deep); padding: 3px 9px 3px 6px; border-radius: 999px; align-self: flex-start; box-shadow: 0 0 0 1px rgba(255,255,255,.5) inset, 0 3px 12px color-mix(in srgb, var(--pow) 40%, transparent); white-space: nowrap; }
+.deep-tag svg { width: 13px; height: 13px; flex: none; }
+
+.strip { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; align-items: end; }
+.day { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.bar { width: 100%; max-width: 38px; background: var(--ice); border-radius: 4px 4px 1px 1px; min-height: 2px; }
+.bar.big { background: linear-gradient(180deg, #E9FBFF, var(--pow)); box-shadow: 0 0 10px color-mix(in srgb, var(--pow) 45%, transparent); }
+.bar.none { background: var(--line); }
+.dv { font-size: .8rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink); min-height: 1.1em; }
+.dl { font-family: var(--font-display); font-weight: 700; font-size: .85rem; letter-spacing: .06em; color: var(--muted); }
+
+.spots { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; }
+.spot { display: inline-flex; align-items: baseline; gap: 6px; background: var(--ice-soft); border-radius: 8px; padding: 5px 10px; font-size: .95rem; }
+.spot b { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; color: var(--ice); font-variant-numeric: tabular-nums; }
+.spot span { color: var(--muted); font-size: .85rem; }
+.spots-lbl { font-family: var(--font-display); font-weight: 700; font-size: .95rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); align-self: center; }
+.meta { grid-column: 1 / -1; font-size: .92rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.meta a { color: var(--ice); font-weight: 600; }
+
+/* ---------- Tomer + safety + footer ---------- */
+.tomer { background: var(--sign); color: var(--sign-ink); border-radius: 14px; padding: 20px 22px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; position: relative; overflow: hidden; }
+.tomer h3 { font-family: var(--font-display); font-style: italic; font-weight: 900; text-transform: uppercase; font-size: 1.9rem; margin: 0; line-height: 1; }
+.tomer p { margin: 6px 0 0; opacity: .8; max-width: 60ch; }
+.btn { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 12px 22px; border-radius: 10px; background: var(--marker); color: var(--on-marker); white-space: nowrap; }
+.safety { margin-top: 20px; border: 3px solid var(--marker); border-radius: 14px; padding: 14px 18px; font-weight: 600; display: flex; gap: 14px; align-items: center; }
+.safety a { color: var(--marker-ink); }
+.safety .diamond { width: 22px; height: 22px; box-shadow: none; }
+.safety .diamond::after { width: 7px; height: 7px; background: var(--card); }
+footer { margin: 30px 0 40px; color: var(--muted); font-size: .95rem; max-width: 72ch; }
+footer p { margin: 0 0 10px; }
+.empty { padding: 30px; text-align: center; color: var(--muted); }
+
+@media (max-width: 760px) {
+  .hero .wrap { min-height: 0; padding-block: 26px 270px; }
+  .hero-art { top: auto; bottom: 0; height: 330px; }
+  .hero-photo { top: auto; width: 100%; height: 330px; clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%); }
+  .hero-photo::before { background: linear-gradient(180deg, rgba(16,20,24,.6) 0%, rgba(16,20,24,0) 30%), linear-gradient(0deg, rgba(16,20,24,.55) 0%, rgba(16,20,24,0) 35%); }
+  .hero-photo::after { display: none; }
+  .hero-photo figcaption { bottom: 70px; }
+  .zone { grid-template-columns: minmax(0, 1fr); padding: 16px; }
+  .best { grid-template-columns: minmax(0, 1fr); margin-top: -60px; }
+  .bet { flex-direction: row; align-items: baseline; flex-wrap: wrap; gap: 2px 12px; }
+  .bet .nm { flex: 1 1 60%; }
+  .bet .amt { font-size: 2.6rem; padding-right: 30px; }
+}
+@media (max-width: 460px) {
+  body { font-size: 17px; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; }
+  .num { font-size: 2.5rem; }
+  .strip { gap: 3px; }
+  .dv { font-size: .72rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="hero-art" viewBox="0 0 1400 520" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+    <defs>
+      <radialGradient id="moon" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/><stop offset=".25" stop-color="#CFE6FF" stop-opacity=".35"/><stop offset="1" stop-color="#CFE6FF" stop-opacity="0"/></radialGradient>
+      <linearGradient id="slope" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--powder)"/><stop offset="1" stop-color="var(--powder-shade)"/></linearGradient>
+      <linearGradient id="hoodg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D4F57A"/><stop offset=".6" stop-color="var(--hood)"/><stop offset="1" stop-color="var(--hood-dark)"/></linearGradient>
+    </defs>
+    <circle cx="1180" cy="110" r="140" fill="url(#moon)"/>
+    <circle cx="1180" cy="110" r="34" fill="#F4F8FF" opacity=".95"/>
+    <path d="M0 330 L120 270 L210 300 L330 200 L420 260 L520 220 L640 290 L760 180 L860 250 L960 210 L1080 270 L1200 190 L1320 240 L1400 220 L1400 520 L0 520 Z" fill="var(--ridge-far)"/>
+    <path d="M330 200 L360 222 L345 226 L372 246 L330 232 L300 224 Z M760 180 L800 214 L780 214 L812 240 L766 222 L735 206 Z M1200 190 L1236 222 L1214 220 L1246 246 L1200 228 L1170 214 Z" fill="#3A5D85" opacity=".7"/>
+    <path d="M0 400 L160 340 L300 380 L460 320 L600 370 L760 330 L900 380 L1040 350 L1180 395 L1400 360 L1400 520 L0 520 Z" fill="var(--ridge-near)"/>
+    <!-- the slope the rider is climbing -->
+    <path d="M520 520 C 760 470, 960 420, 1400 300 L1400 520 Z" fill="url(#slope)"/>
+    <path d="M560 520 C 800 476, 1000 430, 1400 322" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".6"/>
+    <!-- track marks trailing back down the slope -->
+    <path d="M620 512 C 760 480, 860 455, 960 430" fill="none" stroke="var(--powder-shade)" stroke-width="10" stroke-dasharray="3 6" opacity=".9"/>
+    <g id="roost"></g>
+    <!-- rider + sled, drawn pointing right, tilted to climb -->
+    <g id="rider" transform="translate(1065 372) rotate(-17) scale(1.25)">
+      <!-- track & tunnel -->
+      <path d="M-140 4 L30 4 L36 18 L-150 18 Z" fill="var(--gear)"/>
+      <path d="M-150 18 L36 18 L30 30 L-140 30 Z" fill="#1E2C3D"/>
+      <g fill="#3B4E66"><rect x="-140" y="22" width="6" height="8"/><rect x="-118" y="22" width="6" height="8"/><rect x="-96" y="22" width="6" height="8"/><rect x="-74" y="22" width="6" height="8"/><rect x="-52" y="22" width="6" height="8"/><rect x="-30" y="22" width="6" height="8"/><rect x="-8" y="22" width="6" height="8"/><rect x="14" y="22" width="6" height="8"/></g>
+      <!-- running board -->
+      <rect x="-60" y="0" width="80" height="6" rx="2" fill="#2A3B52"/>
+      <!-- hood -->
+      <path d="M10 4 L44 -34 L104 -30 L132 -8 L126 12 L36 16 Z" fill="url(#hoodg)"/>
+      <path d="M52 -26 L112 -18 L118 -10 L56 -16 Z" fill="#FFFFFF" opacity=".55"/>
+      <path d="M40 10 L126 4" stroke="var(--gear)" stroke-width="4"/>
+      <!-- windshield -->
+      <path d="M44 -34 L34 -56 L58 -60 L70 -32 Z" fill="var(--visor)" opacity=".55"/>
+      <!-- seat -->
+      <path d="M-70 4 L-70 -8 Q-40 -14 10 -6 L10 4 Z" fill="var(--gear)"/>
+      <!-- ski + spindle -->
+      <path d="M96 12 L104 40" stroke="var(--gear)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M60 42 L170 42 Q190 42 194 26" fill="none" stroke="var(--gear)" stroke-width="7" stroke-linecap="round"/>
+      <!-- rider: back leg on board, front knee bent -->
+      <path d="M-34 0 L-40 -40 L-24 -74" fill="none" stroke="var(--gear)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 0 L18 -36 L-14 -70" fill="none" stroke="#18273A" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-42 -2 L-22 -2 M-4 -2 L16 -2" stroke="#0A1320" stroke-width="9" stroke-linecap="round"/>
+      <!-- torso leaning hard forward -->
+      <path d="M-22 -72 L14 -112" stroke="var(--jacket)" stroke-width="30" stroke-linecap="round"/>
+      <path d="M-26 -60 L-6 -84" stroke="var(--hood)" stroke-width="8" stroke-linecap="round" opacity=".95"/>
+      <!-- arms to bars -->
+      <path d="M12 -108 L46 -84 L58 -52" fill="none" stroke="#DCE6F1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M50 -56 L64 -50" stroke="var(--gear)" stroke-width="6" stroke-linecap="round"/>
+      <!-- helmet -->
+      <circle cx="28" cy="-130" r="17" fill="var(--gear)"/>
+      <path d="M30 -140 Q48 -136 46 -122 L30 -124 Z" fill="var(--visor)"/>
+      <path d="M12 -136 Q26 -152 42 -142" fill="none" stroke="var(--hood)" stroke-width="4"/>
+    </g>
+  </svg>
+  <figure class="hero-photo" id="hero-photo" hidden>
+    <img id="hero-img" src="assets/hero.jpg" alt="A snowmobiler riding fast through deep powder near Hells Canyon Scenic Byway" onload="var h=document.querySelector('.hero');h.classList.add('has-photo');document.getElementById('hero-photo').hidden=false;" onerror="this.closest('figure').remove();">
+    <figcaption>Photo: <a href="https://fhwaapps.fhwa.dot.gov/bywaysp/photos/73012" target="_blank" rel="noopener">America's Byways / FHWA</a>, public domain</figcaption>
+  </figure>
+  <canvas id="flakes" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="badge"><span class="diamond" aria-hidden="true"></span>MT · WY · ID · UT · CO</span>
+    <h1>Sled Snow <span class="hot">Report</span></h1>
+    <div class="stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="tagline">Snow on the ground and snow on the way, measured where you actually ride: the high bowls, ridges and passes.</p>
+    <p class="updated" id="updated">Loading conditions…</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-labelledby="best-h" style="margin-top:0">
+    <div class="best" id="best"></div>
+    <h2 class="eyebrow" id="best-h" style="margin-top:14px; font-size:1.05rem; color:var(--muted); font-style:normal; letter-spacing:.12em"><span class="diamond" aria-hidden="true"></span>Most snow coming · next 10 days</h2>
+  </section>
+
+  <p class="notice" id="notice" hidden></p>
+
+  <div class="controls">
+    <div class="chips" role="group" aria-label="Filter by state" id="chips"></div>
+    <label class="sort" for="sort">Sort
+      <select id="sort">
+        <option value="d10">10-day snow</option>
+        <option value="d7">7-day snow</option>
+        <option value="d1">Next 24 hours</option>
+        <option value="depth">Snow depth now</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="zones" id="zones"><div class="empty">Loading riding zones…</div></div>
+
+  <section>
+    <div class="tomer" id="tomer">
+      <div>
+        <h3>Chris Tomer's mountain forecast</h3>
+        <p id="tomer-title">His latest video breaks down how the storms behind these numbers will hit each range.</p>
+      </div>
+      <a class="btn" id="tomer-link" href="https://www.youtube.com/@thechristomer" target="_blank" rel="noopener">Watch</a>
+    </div>
+  </section>
+
+  <div class="safety"><span class="diamond" aria-hidden="true"></span><span>Fresh snow loads slopes. Check avalanche danger before every ride at <a href="https://avalanche.org" target="_blank" rel="noopener">avalanche.org</a>.</span></div>
+
+  <footer>
+    <p><strong>Snowfall forecast</strong> is built from the high-elevation riding spots in each zone, not the trailhead town. Each spot gets its own forecast at its riding elevation from three weather models (<span id="models">GFS, ECMWF and GEM</span>). The zone number is the average across spots and models. The range under a number shows how far apart the models are; a wide range means low confidence. Models assume fairly dense snow, so cold, dry storms often deliver more than shown.</p>
+    <p><strong>Snow depth</strong> is the latest daily reading from the SNOTEL station that best matches each zone's riding spots. Its elevation and distance are on each row.</p>
+    <p>Data: <a href="https://www.nrcs.usda.gov/resources/data-and-reports/snow-and-climate-monitoring" target="_blank" rel="noopener">USDA NRCS SNOTEL</a> · <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0). Updated every 3 hours.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  /* ---------- Hero: powder roost + falling snow ---------- */
+  (function roost() {
+    var g = document.getElementById("roost"); if (!g) return;
+    var s = 11, rnd = function () { s = (s * 9301 + 49297) % 233280; return s / 233280; };
+    var ns = "http://www.w3.org/2000/svg", html = "";
+    // Spray leaves the back of the track (~890,448) and arcs up and back to the left.
+    for (var i = 0; i < 240; i++) {
+      var t = Math.pow(rnd(), 0.8);
+      var spread = (rnd() - 0.5) * (40 + t * 220);
+      var x = 890 - t * 520 + spread * 0.4;
+      var y = 448 - Math.sin(t * Math.PI * 0.85) * 300 + spread * 0.5 + t * t * 60;
+      var r = 2 + rnd() * (6 + t * 26);
+      var o = (0.95 - t * 0.75) * (0.5 + rnd() * 0.5);
+      html += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r.toFixed(1) + '" fill="#F4F8FC" opacity="' + o.toFixed(2) + '"/>';
+    }
+    // a dense core close to the track
+    for (var j = 0; j < 40; j++) {
+      var cx = 895 - rnd() * 90, cy = 445 - rnd() * 70;
+      html += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (8 + rnd() * 20).toFixed(1) + '" fill="#FFFFFF" opacity="' + (0.6 + rnd() * 0.35).toFixed(2) + '"/>';
+    }
+    g.innerHTML = html;
+  })();
+
+  (function flakes() {
+    var c = document.getElementById("flakes"); if (!c || !c.getContext) return;
+    var ctx = c.getContext("2d"), W = 0, H = 0, dpr = Math.min(2, window.devicePixelRatio || 1), pts = [];
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function size() { W = c.clientWidth; H = c.clientHeight; c.width = W * dpr; c.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+    function seed() { pts = []; var n = Math.round(W * H / 5000); for (var i = 0; i < n; i++) pts.push({ x: Math.random() * W, y: Math.random() * H, r: 0.6 + Math.random() * 2.2, v: 0.3 + Math.random() * 1.1, w: Math.random() * 6.28 }); }
+    function draw() {
+      ctx.clearRect(0, 0, W, H); ctx.fillStyle = "rgba(244,248,252,.85)";
+      for (var i = 0; i < pts.length; i++) { var p = pts[i]; ctx.globalAlpha = 0.35 + p.r / 4; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.283); ctx.fill(); }
+      ctx.globalAlpha = 1;
+    }
+    function tick() {
+      for (var i = 0; i < pts.length; i++) { var p = pts[i]; p.y += p.v; p.w += 0.01; p.x += Math.sin(p.w) * 0.4 - 0.25; if (p.y > H + 4) { p.y = -4; p.x = Math.random() * W; } if (p.x < -4) p.x = W + 4; }
+      draw(); if (!document.hidden) raf = requestAnimationFrame(tick); else raf = 0;
+    }
+    var raf = 0;
+    size(); seed(); draw();
+    window.addEventListener("resize", function () { size(); seed(); draw(); });
+    if (!still) { raf = requestAnimationFrame(tick); document.addEventListener("visibilitychange", function () { if (!document.hidden && !raf) raf = requestAnimationFrame(tick); }); }
+  })();
+
+  /* ---------- Conditions ---------- */
+  var STATES = ["ALL", "MT", "WY", "ID", "UT", "CO"];
+  var STATE_NAMES = { MT: "Montana", WY: "Wyoming", ID: "Idaho", UT: "Utah", CO: "Colorado" };
+  var state = { filter: "ALL", sort: "d10", data: null };
+  try { var saved = JSON.parse(localStorage.getItem("sled-prefs") || "{}"); if (saved.filter) state.filter = saved.filter; if (saved.sort) state.sort = saved.sort; } catch (e) {}
+
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function fmt(n) { if (n == null) return "–"; return n >= 10 ? String(Math.round(n)) : String(Math.round(n * 10) / 10).replace(/\.0$/, ""); }
+  function cls(n) { if (n == null || n < 0.5) return "zero"; if (n >= 12) return "deep"; if (n >= 4) return "good"; return ""; }
+  function fval(z, k) { return z.forecast && z.forecast[k] ? z.forecast[k].in : null; }
+  function save() { try { localStorage.setItem("sled-prefs", JSON.stringify({ filter: state.filter, sort: state.sort })); } catch (e) {} }
+  function ft(n) { return Number(n).toLocaleString(); }
+
+  function timeAgo(iso) {
+    var mins = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+    if (mins < 2) return "just now"; if (mins < 60) return mins + " min ago";
+    var h = Math.round(mins / 60); if (h < 36) return h + (h === 1 ? " hour ago" : " hours ago");
+    return Math.round(h / 24) + " days ago";
+  }
+
+  function stat(label, n, extra, isBase) {
+    var c = isBase ? (n == null ? "zero" : "") : cls(n);
+    var tag = !isBase && n != null && n >= 12 ? '<span class="deep-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7M9 4l3 2 3-2M9 20l3-2 3 2M4 10.5l1-3.5-3.5-1M20 13.5l-1 3.5 3.5 1M4 13.5l1 3.5-3.5 1M20 10.5l-1-3.5 3.5-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>DEEP POW</span>' : "";
+    return '<div class="stat' + (isBase ? " base" : "") + '"><span class="lbl">' + label + '</span>' +
+      '<span class="num ' + c + '">' + fmt(n) + (n == null ? "" : "<small>in</small>") + '</span>' +
+      (extra ? '<span class="sub">' + extra + "</span>" : "") + tag + "</div>";
+  }
+  function range(z, k) {
+    var f = z.forecast && z.forecast[k];
+    if (!f || f.high - f.low < 1) return "";
+    return "models " + fmt(f.low) + "–" + fmt(f.high);
+  }
+  function dayLabels(startIso) {
+    var out = [], base = startIso ? new Date(startIso) : new Date();
+    for (var i = 0; i < 10; i++) {
+      var d = new Date(base.getTime() + i * 86400000);
+      out.push(i === 0 ? "NEXT" : d.toLocaleDateString(undefined, { weekday: "short" }).slice(0, 2).toUpperCase());
+    }
+    return out;
+  }
+  function strip(z) {
+    var daily = (z.forecast && z.forecast.daily) || [];
+    var max = Math.max(6, Math.max.apply(null, daily.map(function (v) { return v || 0; })));
+    var labels = dayLabels(z.forecast && z.forecast.startsAt);
+    var html = "";
+    for (var i = 0; i < 10; i++) {
+      var v = daily[i];
+      var h = v == null ? 2 : Math.max(2, Math.round((v / max) * 52));
+      var c = v == null || v < 0.5 ? " none" : v >= 6 ? " big" : "";
+      html += '<div class="day"><span class="dv">' + (v != null && v >= 0.5 ? fmt(v) : "") + '</span>' +
+        '<span class="bar' + c + '" style="height:' + h + 'px"></span><span class="dl">' + labels[i] + "</span></div>";
+    }
+    return '<div class="strip" aria-label="Daily snowfall, next 10 days">' + html + "</div>";
+  }
+  function spotsLine(z) {
+    var sp = (z.forecast && z.forecast.spots) || [];
+    if (!sp.length) return "";
+    return '<div class="spots"><span class="spots-lbl">10-day by spot</span>' + sp.map(function (p) {
+      return '<span class="spot">' + esc(p.name) + ' <b>' + fmt(p.d10) + '″</b><span>' + ft(p.elevFt) + " ft</span></span>";
+    }).join("") + "</div>";
+  }
+
+  function zoneRow(z) {
+    var s = z.snow, st = z.station;
+    var spots = z.spots || [];
+    var elevs = spots.map(function (p) { return p.elevFt; });
+    var elevTxt = elevs.length ? "Riding " + ft(Math.min.apply(null, elevs)) + "–" + ft(Math.max.apply(null, elevs)) + " ft" : "";
+    var change = s && s.change7dIn != null ? (s.change7dIn > 0 ? "+" + s.change7dIn : String(s.change7dIn)) + " in this week" : "";
+    var meta = [];
+    if (st) meta.push('Depth: SNOTEL <a href="' + esc(st.url) + '" target="_blank" rel="noopener">' + esc(st.name) + "</a> · " + ft(st.elevFt) + " ft");
+    if (s && s.asOf) meta.push("as of " + new Date(s.asOf + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }));
+    return '<article class="zone" id="z-' + esc(z.id) + '">' +
+      '<div class="zhead"><h2 class="zname">' + esc(z.name) + '<span class="st" title="' + STATE_NAMES[z.state] + '">' + z.state + "</span></h2>" +
+      '<span class="elev">' + elevTxt + "</span>" +
+      '<p class="zarea">' + esc(spots.map(function (p) { return p.name; }).join(" · ")) + "</p></div>" +
+      '<div class="stats">' +
+        stat("Base now", s ? s.depthIn : null, change, true) +
+        stat("Next 24 hr", fval(z, "d1"), range(z, "d1")) +
+        stat("7 days", fval(z, "d7"), range(z, "d7")) +
+        stat("10 days", fval(z, "d10"), range(z, "d10")) +
+      "</div>" + strip(z) + spotsLine(z) +
+      '<div class="meta">' + meta.map(function (m) { return "<span>" + m + "</span>"; }).join("") + "</div></article>";
+  }
+
+  function render() {
+    var d = state.data; if (!d) return;
+    $("chips").innerHTML = STATES.map(function (s) {
+      return '<button class="chip" type="button" data-s="' + s + '" aria-pressed="' + (state.filter === s) + '">' + (s === "ALL" ? "All" : s) + "</button>";
+    }).join("");
+    $("sort").value = state.sort;
+    var inState = d.zones.filter(function (z) { return state.filter === "ALL" || z.state === state.filter; });
+    var list = inState.slice().sort(function (a, b) {
+      if (state.sort === "name") return a.name.localeCompare(b.name);
+      var va = state.sort === "depth" ? (a.snow ? a.snow.depthIn : -1) : (fval(a, state.sort) == null ? -1 : fval(a, state.sort));
+      var vb = state.sort === "depth" ? (b.snow ? b.snow.depthIn : -1) : (fval(b, state.sort) == null ? -1 : fval(b, state.sort));
+      return vb - va;
+    });
+    $("zones").innerHTML = list.length ? list.map(zoneRow).join("") : '<div class="empty">No zones for this state.</div>';
+    var top = inState.filter(function (z) { return fval(z, "d10") != null; }).sort(function (a, b) { return fval(b, "d10") - fval(a, "d10"); }).slice(0, 3);
+    $("best").innerHTML = top.map(function (z, i) {
+      return '<a class="bet" href="#z-' + esc(z.id) + '"><span class="rank">#' + (i + 1) + " · " + z.state + '</span><span class="nm">' + esc(z.name) + '</span><span class="amt">' + fmt(fval(z, "d10")) + "<small>in</small></span></a>";
+    }).join("");
+  }
+
+  function load() {
+    fetch("data/conditions.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) {
+        state.data = d;
+        $("updated").textContent = "Updated " + timeAgo(d.updatedAt);
+        if (d.models && d.models.length) $("models").textContent = d.models.join(", ");
+        if (d.sample) { $("notice").hidden = false; $("notice").textContent = "Preview with example numbers. Real SNOTEL and forecast data appear once the updater runs."; }
+        if (d.tomer && d.tomer.url) { $("tomer-title").textContent = "Latest: " + d.tomer.title; $("tomer-link").href = d.tomer.url; }
+        render();
+      })
+      .catch(function () {
+        $("updated").textContent = "Conditions unavailable";
+        $("zones").innerHTML = '<div class="empty">Couldn\'t load snow data. Refresh in a minute, or check that data/conditions.json exists.</div>';
+      });
+  }
+  document.addEventListener("click", function (e) { var b = e.target.closest(".chip"); if (!b) return; state.filter = b.getAttribute("data-s"); save(); render(); });
+  $("sort").addEventListener("change", function (e) { state.sort = e.target.value; save(); render(); });
+  load();
+  setInterval(load, 30 * 60 * 1000);
+})();
+</script>
+</body>
+</html>

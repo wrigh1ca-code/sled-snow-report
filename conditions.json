@@ -1,0 +1,2554 @@
+{
+ "updatedAt": "2026-11-05T16:00:51.697Z",
+ "sample": true,
+ "models": [
+  "GFS (US)",
+  "ECMWF (Euro)",
+  "GEM (Canada)"
+ ],
+ "tomer": null,
+ "zones": [
+  {
+   "id": "west-yellowstone",
+   "name": "West Yellowstone",
+   "state": "MT",
+   "snotel": "Madison Plateau",
+   "spots": [
+    {
+     "name": "Two Top",
+     "lat": 44.6,
+     "lon": -111.27,
+     "elevFt": 8500
+    },
+    {
+     "name": "Lionhead",
+     "lat": 44.725,
+     "lon": -111.315,
+     "elevFt": 9000
+    },
+    {
+     "name": "Tepee Basin",
+     "lat": 44.98,
+     "lon": -111.18,
+     "elevFt": 8400
+    },
+    {
+     "name": "South Plateau",
+     "lat": 44.56,
+     "lon": -111.08,
+     "elevFt": 7900
+    }
+   ],
+   "rideElevFt": 8500,
+   "station": {
+    "name": "Madison Plateau",
+    "triplet": "900:MT:SNTL",
+    "elevFt": 8300,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=900"
+   },
+   "snow": {
+    "depthIn": 18,
+    "asOf": "2026-11-05",
+    "change24hIn": 0,
+    "change7dIn": 5,
+    "sweIn": 5
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 15.3,
+     "low": 13.6,
+     "high": 16.7,
+     "models": 3
+    },
+    "d10": {
+     "in": 18.1,
+     "low": 16,
+     "high": 20.1,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Two Top",
+      "elevFt": 8500,
+      "d1": 0,
+      "d7": 15.2,
+      "d10": 17.9
+     },
+     {
+      "name": "Lionhead",
+      "elevFt": 9000,
+      "d1": 0,
+      "d7": 13.8,
+      "d10": 16.7
+     },
+     {
+      "name": "Tepee Basin",
+      "elevFt": 8400,
+      "d1": 0,
+      "d7": 16,
+      "d10": 18.8
+     },
+     {
+      "name": "South Plateau",
+      "elevFt": 7900,
+      "d1": 0,
+      "d7": 16.4,
+      "d10": 18.9
+     }
+    ],
+    "daily": [
+     0,
+     4.3,
+     4.9,
+     0,
+     0,
+     0.1,
+     6,
+     2.7,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "cooke-city",
+   "name": "Cooke City",
+   "state": "MT",
+   "snotel": "Fisher Creek",
+   "spots": [
+    {
+     "name": "Daisy Pass",
+     "lat": 45.05,
+     "lon": -109.95,
+     "elevFt": 9700
+    },
+    {
+     "name": "Lulu Pass",
+     "lat": 45.06,
+     "lon": -109.905,
+     "elevFt": 9600
+    },
+    {
+     "name": "Henderson Mtn",
+     "lat": 45.045,
+     "lon": -109.925,
+     "elevFt": 9900
+    },
+    {
+     "name": "Round Lake",
+     "lat": 45.035,
+     "lon": -109.965,
+     "elevFt": 8800
+    }
+   ],
+   "rideElevFt": 9500,
+   "station": {
+    "name": "Fisher Creek",
+    "triplet": "901:MT:SNTL",
+    "elevFt": 9500,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=901"
+   },
+   "snow": {
+    "depthIn": 22,
+    "asOf": "2026-11-05",
+    "change24hIn": -1,
+    "change7dIn": 2,
+    "sweIn": 6.2
+   },
+   "forecast": {
+    "d1": {
+     "in": 1.4,
+     "low": 1.3,
+     "high": 1.5,
+     "models": 3
+    },
+    "d7": {
+     "in": 6.2,
+     "low": 5.7,
+     "high": 7.1,
+     "models": 3
+    },
+    "d10": {
+     "in": 10.8,
+     "low": 10.3,
+     "high": 11,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Daisy Pass",
+      "elevFt": 9700,
+      "d1": 1.4,
+      "d7": 6.6,
+      "d10": 11.2
+     },
+     {
+      "name": "Lulu Pass",
+      "elevFt": 9600,
+      "d1": 1.5,
+      "d7": 6.2,
+      "d10": 10.6
+     },
+     {
+      "name": "Henderson Mtn",
+      "elevFt": 9900,
+      "d1": 1.4,
+      "d7": 6,
+      "d10": 10.4
+     },
+     {
+      "name": "Round Lake",
+      "elevFt": 8800,
+      "d1": 1.4,
+      "d7": 5.9,
+      "d10": 10.9
+     }
+    ],
+    "daily": [
+     1.4,
+     0,
+     0,
+     0.7,
+     3.7,
+     0.4,
+     0,
+     0,
+     1.9,
+     3.1
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "seeley-lake",
+   "name": "Seeley Lake",
+   "state": "MT",
+   "snotel": "",
+   "spots": [
+    {
+     "name": "Morrell Mtn",
+     "lat": 47.235,
+     "lon": -113.395,
+     "elevFt": 7200
+    },
+    {
+     "name": "Rice Ridge",
+     "lat": 47.28,
+     "lon": -113.38,
+     "elevFt": 6800
+    },
+    {
+     "name": "Lake Elsina",
+     "lat": 47.29,
+     "lon": -113.33,
+     "elevFt": 6500
+    },
+    {
+     "name": "Double Arrow Lookout",
+     "lat": 47.11,
+     "lon": -113.45,
+     "elevFt": 6300
+    }
+   ],
+   "rideElevFt": 6700,
+   "station": {
+    "name": "Seeley Ridge",
+    "triplet": "902:MT:SNTL",
+    "elevFt": 7000,
+    "kmFromSpots": 3,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=902"
+   },
+   "snow": {
+    "depthIn": 29,
+    "asOf": "2026-11-05",
+    "change24hIn": 0,
+    "change7dIn": 5,
+    "sweIn": 8.1
+   },
+   "forecast": {
+    "d1": {
+     "in": 1.8,
+     "low": 1.6,
+     "high": 1.9,
+     "models": 3
+    },
+    "d7": {
+     "in": 12.3,
+     "low": 10.8,
+     "high": 13.4,
+     "models": 3
+    },
+    "d10": {
+     "in": 21.8,
+     "low": 19.7,
+     "high": 23.1,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Morrell Mtn",
+      "elevFt": 7200,
+      "d1": 1.9,
+      "d7": 12.6,
+      "d10": 22.4
+     },
+     {
+      "name": "Rice Ridge",
+      "elevFt": 6800,
+      "d1": 1.6,
+      "d7": 12,
+      "d10": 21.6
+     },
+     {
+      "name": "Lake Elsina",
+      "elevFt": 6500,
+      "d1": 1.9,
+      "d7": 12.3,
+      "d10": 21.7
+     },
+     {
+      "name": "Double Arrow Lookout",
+      "elevFt": 6300,
+      "d1": 1.6,
+      "d7": 12.2,
+      "d10": 21.4
+     }
+    ],
+    "daily": [
+     1.8,
+     0,
+     0,
+     2.9,
+     7.4,
+     0.2,
+     0,
+     0,
+     5.2,
+     4.5
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "lincoln",
+   "name": "Lincoln",
+   "state": "MT",
+   "snotel": "Copper Camp",
+   "spots": [
+    {
+     "name": "Stemple Pass",
+     "lat": 46.895,
+     "lon": -112.5,
+     "elevFt": 6800
+    },
+    {
+     "name": "Flesher Pass",
+     "lat": 47.045,
+     "lon": -112.36,
+     "elevFt": 6500
+    },
+    {
+     "name": "Copper Creek",
+     "lat": 47.08,
+     "lon": -112.62,
+     "elevFt": 6600
+    }
+   ],
+   "rideElevFt": 6600,
+   "station": {
+    "name": "Copper Camp",
+    "triplet": "903:MT:SNTL",
+    "elevFt": 6600,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=903"
+   },
+   "snow": {
+    "depthIn": 28,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 4,
+    "sweIn": 7.8
+   },
+   "forecast": {
+    "d1": {
+     "in": 2.4,
+     "low": 2.2,
+     "high": 2.8,
+     "models": 3
+    },
+    "d7": {
+     "in": 7.1,
+     "low": 6.5,
+     "high": 8.1,
+     "models": 3
+    },
+    "d10": {
+     "in": 7.9,
+     "low": 7.4,
+     "high": 8.1,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Stemple Pass",
+      "elevFt": 6800,
+      "d1": 2.4,
+      "d7": 7.1,
+      "d10": 7.8
+     },
+     {
+      "name": "Flesher Pass",
+      "elevFt": 6500,
+      "d1": 2.4,
+      "d7": 7.1,
+      "d10": 7.9
+     },
+     {
+      "name": "Copper Creek",
+      "elevFt": 6600,
+      "d1": 2.5,
+      "d7": 7.2,
+      "d10": 7.9
+     }
+    ],
+    "daily": [
+     2.4,
+     1.2,
+     0,
+     0,
+     0.3,
+     2.8,
+     0.4,
+     0,
+     0,
+     1.1
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "lolo-pass",
+   "name": "Lolo Pass",
+   "state": "MT",
+   "snotel": "Lolo Pass",
+   "spots": [
+    {
+     "name": "Elk Meadows",
+     "lat": 46.7,
+     "lon": -114.65,
+     "elevFt": 6000
+    },
+    {
+     "name": "Moose Ridge",
+     "lat": 46.66,
+     "lon": -114.54,
+     "elevFt": 6200
+    },
+    {
+     "name": "Lost Park",
+     "lat": 46.6,
+     "lon": -114.52,
+     "elevFt": 6000
+    }
+   ],
+   "rideElevFt": 6100,
+   "station": {
+    "name": "Lolo Pass",
+    "triplet": "904:ID:SNTL",
+    "elevFt": 5800,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=904"
+   },
+   "snow": {
+    "depthIn": 15,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 5,
+    "sweIn": 4.2
+   },
+   "forecast": {
+    "d1": {
+     "in": 1.3,
+     "low": 1,
+     "high": 1.7,
+     "models": 3
+    },
+    "d7": {
+     "in": 9,
+     "low": 7.9,
+     "high": 9.9,
+     "models": 3
+    },
+    "d10": {
+     "in": 9.1,
+     "low": 8,
+     "high": 9.9,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Elk Meadows",
+      "elevFt": 6000,
+      "d1": 1.2,
+      "d7": 8.7,
+      "d10": 8.8
+     },
+     {
+      "name": "Moose Ridge",
+      "elevFt": 6200,
+      "d1": 1.4,
+      "d7": 9,
+      "d10": 9.1
+     },
+     {
+      "name": "Lost Park",
+      "elevFt": 6000,
+      "d1": 1.4,
+      "d7": 9.3,
+      "d10": 9.4
+     }
+    ],
+    "daily": [
+     1.3,
+     3.2,
+     0,
+     0,
+     0,
+     2.5,
+     2,
+     0,
+     0,
+     0.1
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "togwotee",
+   "name": "Togwotee Pass",
+   "state": "WY",
+   "snotel": "Togwotee Pass",
+   "spots": [
+    {
+     "name": "Togwotee Summit",
+     "lat": 43.75,
+     "lon": -110.07,
+     "elevFt": 9600
+    },
+    {
+     "name": "Brooks Lake",
+     "lat": 43.745,
+     "lon": -109.995,
+     "elevFt": 9300
+    },
+    {
+     "name": "Squaw Basin",
+     "lat": 43.8,
+     "lon": -110.14,
+     "elevFt": 9000
+    },
+    {
+     "name": "Fourmile Meadows",
+     "lat": 43.8,
+     "lon": -110.25,
+     "elevFt": 8400
+    }
+   ],
+   "rideElevFt": 9100,
+   "station": {
+    "name": "Togwotee Pass",
+    "triplet": "905:WY:SNTL",
+    "elevFt": 9400,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=905"
+   },
+   "snow": {
+    "depthIn": 14,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 9,
+    "sweIn": 3.9
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 5.3,
+     "low": 4.8,
+     "high": 5.7,
+     "models": 3
+    },
+    "d10": {
+     "in": 10.4,
+     "low": 9.3,
+     "high": 11.3,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Togwotee Summit",
+      "elevFt": 9600,
+      "d1": 0,
+      "d7": 5.1,
+      "d10": 10.1
+     },
+     {
+      "name": "Brooks Lake",
+      "elevFt": 9300,
+      "d1": 0,
+      "d7": 5.1,
+      "d10": 10.4
+     },
+     {
+      "name": "Squaw Basin",
+      "elevFt": 9000,
+      "d1": 0,
+      "d7": 5.4,
+      "d10": 10.2
+     },
+     {
+      "name": "Fourmile Meadows",
+      "elevFt": 8400,
+      "d1": 0,
+      "d7": 5.7,
+      "d10": 11
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     1.8,
+     3.5,
+     0,
+     0,
+     0,
+     2.9,
+     2.2,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "greys-river",
+   "name": "Greys River / Star Valley",
+   "state": "WY",
+   "snotel": "Blind Bull Sum",
+   "spots": [
+    {
+     "name": "Blind Bull Summit",
+     "lat": 42.96,
+     "lon": -110.61,
+     "elevFt": 8700
+    },
+    {
+     "name": "McDougal Gap",
+     "lat": 42.85,
+     "lon": -110.56,
+     "elevFt": 8900
+    },
+    {
+     "name": "Box Y / Greys River",
+     "lat": 43.05,
+     "lon": -110.76,
+     "elevFt": 7500
+    },
+    {
+     "name": "Salt River Pass",
+     "lat": 42.62,
+     "lon": -110.88,
+     "elevFt": 7900
+    }
+   ],
+   "rideElevFt": 8300,
+   "station": {
+    "name": "Blind Bull Sum",
+    "triplet": "906:WY:SNTL",
+    "elevFt": 8500,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=906"
+   },
+   "snow": {
+    "depthIn": 22,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 10,
+    "sweIn": 6.2
+   },
+   "forecast": {
+    "d1": {
+     "in": 6.7,
+     "low": 6,
+     "high": 7.7,
+     "models": 3
+    },
+    "d7": {
+     "in": 15.9,
+     "low": 14.1,
+     "high": 18.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 20.4,
+     "low": 19.8,
+     "high": 21.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Blind Bull Summit",
+      "elevFt": 8700,
+      "d1": 6.7,
+      "d7": 15.8,
+      "d10": 20.4
+     },
+     {
+      "name": "McDougal Gap",
+      "elevFt": 8900,
+      "d1": 6.5,
+      "d7": 15.7,
+      "d10": 20.2
+     },
+     {
+      "name": "Box Y / Greys River",
+      "elevFt": 7500,
+      "d1": 6.4,
+      "d7": 15.2,
+      "d10": 19.7
+     },
+     {
+      "name": "Salt River Pass",
+      "elevFt": 7900,
+      "d1": 7.2,
+      "d7": 17.1,
+      "d10": 21.4
+     }
+    ],
+    "daily": [
+     6.7,
+     0.3,
+     0,
+     0,
+     4,
+     4.9,
+     0,
+     0,
+     0.1,
+     5.9
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "snowy-range",
+   "name": "Snowy Range",
+   "state": "WY",
+   "snotel": "Brooklyn Lake",
+   "spots": [
+    {
+     "name": "Libby Flats",
+     "lat": 41.34,
+     "lon": -106.3,
+     "elevFt": 10600
+    },
+    {
+     "name": "Brooklyn Lake",
+     "lat": 41.37,
+     "lon": -106.25,
+     "elevFt": 10200
+    },
+    {
+     "name": "Rob Roy",
+     "lat": 41.22,
+     "lon": -106.26,
+     "elevFt": 9500
+    }
+   ],
+   "rideElevFt": 10100,
+   "station": {
+    "name": "Brooklyn Lake",
+    "triplet": "907:WY:SNTL",
+    "elevFt": 10400,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=907"
+   },
+   "snow": {
+    "depthIn": 27,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 4,
+    "sweIn": 7.6
+   },
+   "forecast": {
+    "d1": {
+     "in": 0.5,
+     "low": 0.5,
+     "high": 0.6,
+     "models": 3
+    },
+    "d7": {
+     "in": 8.4,
+     "low": 7.4,
+     "high": 8.9,
+     "models": 3
+    },
+    "d10": {
+     "in": 15.4,
+     "low": 13.4,
+     "high": 16.6,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Libby Flats",
+      "elevFt": 10600,
+      "d1": 0.6,
+      "d7": 8.8,
+      "d10": 15.4
+     },
+     {
+      "name": "Brooklyn Lake",
+      "elevFt": 10200,
+      "d1": 0.4,
+      "d7": 7.6,
+      "d10": 14.5
+     },
+     {
+      "name": "Rob Roy",
+      "elevFt": 9500,
+      "d1": 0.6,
+      "d7": 8.8,
+      "d10": 16.2
+     }
+    ],
+    "daily": [
+     0.5,
+     0,
+     0,
+     3.1,
+     4.7,
+     0,
+     0,
+     0,
+     4.8,
+     2.3
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "bighorns",
+   "name": "Bighorn Mountains",
+   "state": "WY",
+   "snotel": "Burgess Junction",
+   "spots": [
+    {
+     "name": "Burgess Junction",
+     "lat": 44.78,
+     "lon": -107.53,
+     "elevFt": 8200
+    },
+    {
+     "name": "Granite Pass",
+     "lat": 44.64,
+     "lon": -107.49,
+     "elevFt": 9000
+    },
+    {
+     "name": "Powder River Pass",
+     "lat": 44.15,
+     "lon": -107.06,
+     "elevFt": 9600
+    }
+   ],
+   "rideElevFt": 8900,
+   "station": {
+    "name": "Burgess Junction",
+    "triplet": "908:WY:SNTL",
+    "elevFt": 8000,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=908"
+   },
+   "snow": {
+    "depthIn": 17,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 7,
+    "sweIn": 4.8
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 2,
+     "low": 1.8,
+     "high": 2.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.4,
+     "low": 2.2,
+     "high": 2.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Burgess Junction",
+      "elevFt": 8200,
+      "d1": 0,
+      "d7": 1.8,
+      "d10": 2.2
+     },
+     {
+      "name": "Granite Pass",
+      "elevFt": 9000,
+      "d1": 0,
+      "d7": 2.1,
+      "d10": 2.5
+     },
+     {
+      "name": "Powder River Pass",
+      "elevFt": 9600,
+      "d1": 0,
+      "d7": 2.2,
+      "d10": 2.5
+     }
+    ],
+    "daily": [
+     0,
+     0.6,
+     0.7,
+     0,
+     0,
+     0,
+     0.8,
+     0.4,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "union-pass",
+   "name": "Union Pass / Dubois",
+   "state": "WY",
+   "snotel": "",
+   "spots": [
+    {
+     "name": "Union Pass",
+     "lat": 43.47,
+     "lon": -109.86,
+     "elevFt": 9200
+    },
+    {
+     "name": "Sheridan Pass",
+     "lat": 43.59,
+     "lon": -109.95,
+     "elevFt": 9300
+    },
+    {
+     "name": "Fish Lake Mtn",
+     "lat": 43.42,
+     "lon": -109.78,
+     "elevFt": 9600
+    }
+   ],
+   "rideElevFt": 9400,
+   "station": {
+    "name": "Union Ridge",
+    "triplet": "909:WY:SNTL",
+    "elevFt": 9000,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=909"
+   },
+   "snow": {
+    "depthIn": 21,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 6,
+    "sweIn": 5.9
+   },
+   "forecast": {
+    "d1": {
+     "in": 2,
+     "low": 1.5,
+     "high": 2.6,
+     "models": 3
+    },
+    "d7": {
+     "in": 8.6,
+     "low": 7.3,
+     "high": 9.7,
+     "models": 3
+    },
+    "d10": {
+     "in": 8.9,
+     "low": 7.7,
+     "high": 9.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Union Pass",
+      "elevFt": 9200,
+      "d1": 2.1,
+      "d7": 8.7,
+      "d10": 9.1
+     },
+     {
+      "name": "Sheridan Pass",
+      "elevFt": 9300,
+      "d1": 1.9,
+      "d7": 8.3,
+      "d10": 8.6
+     },
+     {
+      "name": "Fish Lake Mtn",
+      "elevFt": 9600,
+      "d1": 2,
+      "d7": 8.7,
+      "d10": 9
+     }
+    ],
+    "daily": [
+     2,
+     2.3,
+     0,
+     0,
+     0.1,
+     3,
+     1.2,
+     0,
+     0,
+     0.5
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "island-park",
+   "name": "Island Park",
+   "state": "ID",
+   "snotel": "White Elephant",
+   "spots": [
+    {
+     "name": "Two Top",
+     "lat": 44.6,
+     "lon": -111.27,
+     "elevFt": 8500
+    },
+    {
+     "name": "Mt Jefferson",
+     "lat": 44.56,
+     "lon": -111.51,
+     "elevFt": 8800
+    },
+    {
+     "name": "Sawtell Peak",
+     "lat": 44.56,
+     "lon": -111.44,
+     "elevFt": 8600
+    },
+    {
+     "name": "Mesa Falls",
+     "lat": 44.19,
+     "lon": -111.33,
+     "elevFt": 6300
+    }
+   ],
+   "rideElevFt": 8100,
+   "station": {
+    "name": "White Elephant",
+    "triplet": "910:ID:SNTL",
+    "elevFt": 8300,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=910"
+   },
+   "snow": {
+    "depthIn": 13,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 5,
+    "sweIn": 3.6
+   },
+   "forecast": {
+    "d1": {
+     "in": 0.3,
+     "low": 0.2,
+     "high": 0.3,
+     "models": 3
+    },
+    "d7": {
+     "in": 5.9,
+     "low": 5.3,
+     "high": 6.5,
+     "models": 3
+    },
+    "d10": {
+     "in": 11.3,
+     "low": 10,
+     "high": 12.4,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Two Top",
+      "elevFt": 8500,
+      "d1": 0.3,
+      "d7": 5.8,
+      "d10": 10.8
+     },
+     {
+      "name": "Mt Jefferson",
+      "elevFt": 8800,
+      "d1": 0.3,
+      "d7": 6.4,
+      "d10": 11.9
+     },
+     {
+      "name": "Sawtell Peak",
+      "elevFt": 8600,
+      "d1": 0.2,
+      "d7": 5.8,
+      "d10": 11.3
+     },
+     {
+      "name": "Mesa Falls",
+      "elevFt": 6300,
+      "d1": 0.2,
+      "d7": 5.7,
+      "d10": 11.2
+     }
+    ],
+    "daily": [
+     0.3,
+     0,
+     0,
+     2.6,
+     3.1,
+     0,
+     0,
+     0,
+     3.7,
+     1.6
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "mccall",
+   "name": "McCall",
+   "state": "ID",
+   "snotel": "Brundage Reservoir",
+   "spots": [
+    {
+     "name": "Granite Mtn",
+     "lat": 45.1,
+     "lon": -116.11,
+     "elevFt": 7800
+    },
+    {
+     "name": "Burgdorf / Secesh",
+     "lat": 45.3,
+     "lon": -115.91,
+     "elevFt": 6800
+    },
+    {
+     "name": "Lick Creek Summit",
+     "lat": 45.04,
+     "lon": -115.9,
+     "elevFt": 6900
+    }
+   ],
+   "rideElevFt": 7200,
+   "station": {
+    "name": "Brundage Reservoir",
+    "triplet": "911:ID:SNTL",
+    "elevFt": 7600,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=911"
+   },
+   "snow": {
+    "depthIn": 5,
+    "asOf": "2026-11-05",
+    "change24hIn": -1,
+    "change7dIn": 1,
+    "sweIn": 1.4
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.7,
+     "low": 2.4,
+     "high": 2.9,
+     "models": 3
+    },
+    "d10": {
+     "in": 5.4,
+     "low": 4.7,
+     "high": 5.9,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Granite Mtn",
+      "elevFt": 7800,
+      "d1": 0,
+      "d7": 2.7,
+      "d10": 5.4
+     },
+     {
+      "name": "Burgdorf / Secesh",
+      "elevFt": 6800,
+      "d1": 0,
+      "d7": 2.7,
+      "d10": 5.5
+     },
+     {
+      "name": "Lick Creek Summit",
+      "elevFt": 6900,
+      "d1": 0,
+      "d7": 2.7,
+      "d10": 5.3
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     0,
+     1.9,
+     0.8,
+     0,
+     0,
+     0.4,
+     2.1,
+     0.2
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "stanley",
+   "name": "Stanley / Sawtooths",
+   "state": "ID",
+   "snotel": "Banner Summit",
+   "spots": [
+    {
+     "name": "Banner Summit",
+     "lat": 44.36,
+     "lon": -115.21,
+     "elevFt": 7200
+    },
+    {
+     "name": "Cape Horn",
+     "lat": 44.42,
+     "lon": -115.16,
+     "elevFt": 7400
+    },
+    {
+     "name": "Galena Summit",
+     "lat": 43.87,
+     "lon": -114.71,
+     "elevFt": 8600
+    }
+   ],
+   "rideElevFt": 7700,
+   "station": {
+    "name": "Banner Summit",
+    "triplet": "912:ID:SNTL",
+    "elevFt": 7000,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=912"
+   },
+   "snow": {
+    "depthIn": 20,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 6,
+    "sweIn": 5.6
+   },
+   "forecast": {
+    "d1": {
+     "in": 1.3,
+     "low": 1.2,
+     "high": 1.4,
+     "models": 3
+    },
+    "d7": {
+     "in": 4.6,
+     "low": 4.3,
+     "high": 4.9,
+     "models": 3
+    },
+    "d10": {
+     "in": 4.9,
+     "low": 4.8,
+     "high": 5,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Banner Summit",
+      "elevFt": 7200,
+      "d1": 1.3,
+      "d7": 4.6,
+      "d10": 5
+     },
+     {
+      "name": "Cape Horn",
+      "elevFt": 7400,
+      "d1": 1.2,
+      "d7": 4.4,
+      "d10": 4.8
+     },
+     {
+      "name": "Galena Summit",
+      "elevFt": 8600,
+      "d1": 1.4,
+      "d7": 4.6,
+      "d10": 5
+     }
+    ],
+    "daily": [
+     1.3,
+     0.9,
+     0,
+     0,
+     0.1,
+     1.7,
+     0.5,
+     0,
+     0,
+     0.5
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "silver-valley",
+   "name": "Silver Valley",
+   "state": "ID",
+   "snotel": "Lookout",
+   "spots": [
+    {
+     "name": "Lookout Pass",
+     "lat": 47.46,
+     "lon": -115.7,
+     "elevFt": 5500
+    },
+    {
+     "name": "Thompson Pass",
+     "lat": 47.58,
+     "lon": -115.8,
+     "elevFt": 5500
+    },
+    {
+     "name": "Stevens Peak ridges",
+     "lat": 47.43,
+     "lon": -115.76,
+     "elevFt": 6000
+    }
+   ],
+   "rideElevFt": 5700,
+   "station": {
+    "name": "Lookout",
+    "triplet": "913:ID:SNTL",
+    "elevFt": 5300,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=913"
+   },
+   "snow": {
+    "depthIn": 25,
+    "asOf": "2026-11-05",
+    "change24hIn": 0,
+    "change7dIn": 1,
+    "sweIn": 7
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 1.9,
+     "low": 1.8,
+     "high": 2,
+     "models": 3
+    },
+    "d10": {
+     "in": 3.2,
+     "low": 2.9,
+     "high": 3.6,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Lookout Pass",
+      "elevFt": 5500,
+      "d1": 0,
+      "d7": 1.7,
+      "d10": 3
+     },
+     {
+      "name": "Thompson Pass",
+      "elevFt": 5500,
+      "d1": 0,
+      "d7": 2,
+      "d10": 3.3
+     },
+     {
+      "name": "Stevens Peak ridges",
+      "elevFt": 6000,
+      "d1": 0,
+      "d7": 2,
+      "d10": 3.2
+     }
+    ],
+    "daily": [
+     0,
+     0.1,
+     1.2,
+     0.3,
+     0,
+     0,
+     0.4,
+     1.2,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "bear-lake-id",
+   "name": "Bear Lake Valley",
+   "state": "ID",
+   "snotel": "Emigrant Summit",
+   "spots": [
+    {
+     "name": "Emigrant Summit",
+     "lat": 42.36,
+     "lon": -111.55,
+     "elevFt": 7400
+    },
+    {
+     "name": "Sherman Peak",
+     "lat": 42.29,
+     "lon": -111.53,
+     "elevFt": 8500
+    },
+    {
+     "name": "Paris Canyon",
+     "lat": 42.21,
+     "lon": -111.52,
+     "elevFt": 7600
+    }
+   ],
+   "rideElevFt": 7800,
+   "station": {
+    "name": "Emigrant Summit",
+    "triplet": "914:ID:SNTL",
+    "elevFt": 7200,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=914"
+   },
+   "snow": {
+    "depthIn": 13,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 8,
+    "sweIn": 3.6
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 8.1,
+     "low": 7.4,
+     "high": 9,
+     "models": 3
+    },
+    "d10": {
+     "in": 15.5,
+     "low": 13.3,
+     "high": 18,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Emigrant Summit",
+      "elevFt": 7400,
+      "d1": 0,
+      "d7": 8,
+      "d10": 16.2
+     },
+     {
+      "name": "Sherman Peak",
+      "elevFt": 8500,
+      "d1": 0,
+      "d7": 8.1,
+      "d10": 15.3
+     },
+     {
+      "name": "Paris Canyon",
+      "elevFt": 7600,
+      "d1": 0,
+      "d7": 8.3,
+      "d10": 15.1
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     4.7,
+     2.9,
+     0,
+     0,
+     0.6,
+     6.2,
+     1.2,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "logan-canyon",
+   "name": "Logan Canyon",
+   "state": "UT",
+   "snotel": "Tony Grove Lake",
+   "spots": [
+    {
+     "name": "Tony Grove",
+     "lat": 41.89,
+     "lon": -111.64,
+     "elevFt": 8400
+    },
+    {
+     "name": "Franklin Basin",
+     "lat": 42,
+     "lon": -111.58,
+     "elevFt": 8000
+    },
+    {
+     "name": "Beaver Creek",
+     "lat": 41.96,
+     "lon": -111.53,
+     "elevFt": 7900
+    }
+   ],
+   "rideElevFt": 8100,
+   "station": {
+    "name": "Tony Grove Lake",
+    "triplet": "915:UT:SNTL",
+    "elevFt": 8200,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=915"
+   },
+   "snow": {
+    "depthIn": 28,
+    "asOf": "2026-11-05",
+    "change24hIn": 3,
+    "change7dIn": 12,
+    "sweIn": 7.8
+   },
+   "forecast": {
+    "d1": {
+     "in": 1,
+     "low": 1,
+     "high": 1,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.4,
+     "low": 3.2,
+     "high": 3.5,
+     "models": 3
+    },
+    "d10": {
+     "in": 5.2,
+     "low": 5,
+     "high": 5.4,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Tony Grove",
+      "elevFt": 8400,
+      "d1": 1,
+      "d7": 3.4,
+      "d10": 5.3
+     },
+     {
+      "name": "Franklin Basin",
+      "elevFt": 8000,
+      "d1": 1.1,
+      "d7": 3.5,
+      "d10": 5.2
+     },
+     {
+      "name": "Beaver Creek",
+      "elevFt": 7900,
+      "d1": 0.9,
+      "d7": 3.2,
+      "d10": 5.1
+     }
+    ],
+    "daily": [
+     1,
+     0,
+     0,
+     0.1,
+     1.8,
+     0.4,
+     0,
+     0,
+     0.5,
+     1.6
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "monte-cristo",
+   "name": "Monte Cristo",
+   "state": "UT",
+   "snotel": "Monte Cristo",
+   "spots": [
+    {
+     "name": "Monte Cristo Summit",
+     "lat": 41.46,
+     "lon": -111.5,
+     "elevFt": 8900
+    },
+    {
+     "name": "Curtis Creek",
+     "lat": 41.5,
+     "lon": -111.56,
+     "elevFt": 8200
+    },
+    {
+     "name": "Ant Flat",
+     "lat": 41.44,
+     "lon": -111.6,
+     "elevFt": 7800
+    }
+   ],
+   "rideElevFt": 8300,
+   "station": {
+    "name": "Monte Cristo",
+    "triplet": "916:UT:SNTL",
+    "elevFt": 8700,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=916"
+   },
+   "snow": {
+    "depthIn": 26,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 8,
+    "sweIn": 7.3
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.7,
+     "low": 3.2,
+     "high": 4.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 4.1,
+     "low": 3.7,
+     "high": 4.6,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Monte Cristo Summit",
+      "elevFt": 8900,
+      "d1": 0,
+      "d7": 3.5,
+      "d10": 3.8
+     },
+     {
+      "name": "Curtis Creek",
+      "elevFt": 8200,
+      "d1": 0,
+      "d7": 3.9,
+      "d10": 4.4
+     },
+     {
+      "name": "Ant Flat",
+      "elevFt": 7800,
+      "d1": 0,
+      "d7": 3.6,
+      "d10": 4.1
+     }
+    ],
+    "daily": [
+     0,
+     1.1,
+     1,
+     0,
+     0,
+     0.1,
+     1.5,
+     0.4,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "mirror-lake",
+   "name": "Mirror Lake / Uintas",
+   "state": "UT",
+   "snotel": "Trial Lake",
+   "spots": [
+    {
+     "name": "Bald Mtn Pass",
+     "lat": 40.69,
+     "lon": -110.89,
+     "elevFt": 10500
+    },
+    {
+     "name": "Trial Lake",
+     "lat": 40.68,
+     "lon": -110.95,
+     "elevFt": 9900
+    },
+    {
+     "name": "Soapstone",
+     "lat": 40.58,
+     "lon": -111.04,
+     "elevFt": 8800
+    },
+    {
+     "name": "Bear River",
+     "lat": 40.85,
+     "lon": -110.86,
+     "elevFt": 8800
+    }
+   ],
+   "rideElevFt": 9500,
+   "station": {
+    "name": "Trial Lake",
+    "triplet": "917:UT:SNTL",
+    "elevFt": 10300,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=917"
+   },
+   "snow": {
+    "depthIn": 27,
+    "asOf": "2026-11-05",
+    "change24hIn": -1,
+    "change7dIn": 6,
+    "sweIn": 7.6
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 15.8,
+     "low": 14.3,
+     "high": 17.8,
+     "models": 3
+    },
+    "d10": {
+     "in": 21.4,
+     "low": 19.2,
+     "high": 24,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Bald Mtn Pass",
+      "elevFt": 10500,
+      "d1": 0,
+      "d7": 15.6,
+      "d10": 21.6
+     },
+     {
+      "name": "Trial Lake",
+      "elevFt": 9900,
+      "d1": 0,
+      "d7": 16.5,
+      "d10": 21.3
+     },
+     {
+      "name": "Soapstone",
+      "elevFt": 8800,
+      "d1": 0,
+      "d7": 15.6,
+      "d10": 20.6
+     },
+     {
+      "name": "Bear River",
+      "elevFt": 8800,
+      "d1": 0,
+      "d7": 15.4,
+      "d10": 22.2
+     }
+    ],
+    "daily": [
+     0,
+     2.2,
+     8.4,
+     0.4,
+     0,
+     0,
+     4.8,
+     5.6,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "strawberry",
+   "name": "Strawberry",
+   "state": "UT",
+   "snotel": "Strawberry Divide",
+   "spots": [
+    {
+     "name": "Daniels Summit",
+     "lat": 40.3,
+     "lon": -111.25,
+     "elevFt": 8300
+    },
+    {
+     "name": "Strawberry Peak",
+     "lat": 40.06,
+     "lon": -111.12,
+     "elevFt": 9300
+    },
+    {
+     "name": "Co-op Creek",
+     "lat": 40.12,
+     "lon": -111.2,
+     "elevFt": 8200
+    },
+    {
+     "name": "Currant Creek",
+     "lat": 40.33,
+     "lon": -111.07,
+     "elevFt": 8500
+    }
+   ],
+   "rideElevFt": 8600,
+   "station": {
+    "name": "Strawberry Divide",
+    "triplet": "918:UT:SNTL",
+    "elevFt": 8100,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=918"
+   },
+   "snow": {
+    "depthIn": 19,
+    "asOf": "2026-11-05",
+    "change24hIn": -1,
+    "change7dIn": 3,
+    "sweIn": 5.3
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 1.3,
+     "low": 1.1,
+     "high": 1.5,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.6,
+     "low": 2.2,
+     "high": 3.1,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Daniels Summit",
+      "elevFt": 8300,
+      "d1": 0,
+      "d7": 1.3,
+      "d10": 2.5
+     },
+     {
+      "name": "Strawberry Peak",
+      "elevFt": 9300,
+      "d1": 0,
+      "d7": 1.3,
+      "d10": 2.6
+     },
+     {
+      "name": "Co-op Creek",
+      "elevFt": 8200,
+      "d1": 0,
+      "d7": 1.4,
+      "d10": 2.7
+     },
+     {
+      "name": "Currant Creek",
+      "elevFt": 8500,
+      "d1": 0,
+      "d7": 1.4,
+      "d10": 2.7
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     0.6,
+     0.7,
+     0,
+     0,
+     0,
+     0.9,
+     0.3,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "skyline",
+   "name": "Skyline / Fairview",
+   "state": "UT",
+   "snotel": "",
+   "spots": [
+    {
+     "name": "Fairview Canyon top",
+     "lat": 39.62,
+     "lon": -111.3,
+     "elevFt": 9700
+    },
+    {
+     "name": "Huntington Reservoir",
+     "lat": 39.59,
+     "lon": -111.27,
+     "elevFt": 9000
+    },
+    {
+     "name": "Skyline south",
+     "lat": 39.35,
+     "lon": -111.45,
+     "elevFt": 10300
+    }
+   ],
+   "rideElevFt": 9700,
+   "station": {
+    "name": "Skyline Ridge",
+    "triplet": "919:UT:SNTL",
+    "elevFt": 9500,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=919"
+   },
+   "snow": {
+    "depthIn": 24,
+    "asOf": "2026-11-05",
+    "change24hIn": 1,
+    "change7dIn": 7,
+    "sweIn": 6.7
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.7,
+     "low": 3.5,
+     "high": 4.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 7.5,
+     "low": 6.9,
+     "high": 8.3,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Fairview Canyon top",
+      "elevFt": 9700,
+      "d1": 0,
+      "d7": 3.9,
+      "d10": 7.5
+     },
+     {
+      "name": "Huntington Reservoir",
+      "elevFt": 9000,
+      "d1": 0,
+      "d7": 3.8,
+      "d10": 7.6
+     },
+     {
+      "name": "Skyline south",
+      "elevFt": 10300,
+      "d1": 0,
+      "d7": 3.5,
+      "d10": 7.3
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     1.4,
+     2.3,
+     0,
+     0,
+     0,
+     2.4,
+     1.3,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "rabbit-ears",
+   "name": "Rabbit Ears / Buffalo Pass",
+   "state": "CO",
+   "snotel": "Rabbit Ears",
+   "spots": [
+    {
+     "name": "Rabbit Ears Pass",
+     "lat": 40.39,
+     "lon": -106.61,
+     "elevFt": 9600
+    },
+    {
+     "name": "Buffalo Pass",
+     "lat": 40.54,
+     "lon": -106.68,
+     "elevFt": 10300
+    },
+    {
+     "name": "Dumont Lake",
+     "lat": 40.4,
+     "lon": -106.63,
+     "elevFt": 9500
+    }
+   ],
+   "rideElevFt": 9800,
+   "station": {
+    "name": "Rabbit Ears",
+    "triplet": "920:CO:SNTL",
+    "elevFt": 9400,
+    "kmFromSpots": 2,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=920"
+   },
+   "snow": {
+    "depthIn": 23,
+    "asOf": "2026-11-05",
+    "change24hIn": 0,
+    "change7dIn": 2,
+    "sweIn": 6.4
+   },
+   "forecast": {
+    "d1": {
+     "in": 0.2,
+     "low": 0.1,
+     "high": 0.2,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.9,
+     "low": 2.6,
+     "high": 3.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.9,
+     "low": 2.6,
+     "high": 3.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Rabbit Ears Pass",
+      "elevFt": 9600,
+      "d1": 0.1,
+      "d7": 2.7,
+      "d10": 2.7
+     },
+     {
+      "name": "Buffalo Pass",
+      "elevFt": 10300,
+      "d1": 0.2,
+      "d7": 3,
+      "d10": 3.1
+     },
+     {
+      "name": "Dumont Lake",
+      "elevFt": 9500,
+      "d1": 0.2,
+      "d7": 2.8,
+      "d10": 2.8
+     }
+    ],
+    "daily": [
+     0.2,
+     1.1,
+     0.2,
+     0,
+     0,
+     0.4,
+     1,
+     0,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "grand-lake",
+   "name": "Grand Lake",
+   "state": "CO",
+   "snotel": "",
+   "spots": [
+    {
+     "name": "Stillwater Pass",
+     "lat": 40.2,
+     "lon": -105.99,
+     "elevFt": 10200
+    },
+    {
+     "name": "Gravel Mtn",
+     "lat": 40.13,
+     "lon": -106.07,
+     "elevFt": 10500
+    },
+    {
+     "name": "Supply Basin",
+     "lat": 40.19,
+     "lon": -105.94,
+     "elevFt": 9400
+    }
+   ],
+   "rideElevFt": 10000,
+   "station": {
+    "name": "Grand Ridge",
+    "triplet": "921:CO:SNTL",
+    "elevFt": 10000,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=921"
+   },
+   "snow": {
+    "depthIn": 23,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 2,
+    "sweIn": 6.4
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 20,
+     "low": 18.5,
+     "high": 22,
+     "models": 3
+    },
+    "d10": {
+     "in": 28,
+     "low": 26.5,
+     "high": 30.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Stillwater Pass",
+      "elevFt": 10200,
+      "d1": 0,
+      "d7": 20.7,
+      "d10": 29
+     },
+     {
+      "name": "Gravel Mtn",
+      "elevFt": 10500,
+      "d1": 0,
+      "d7": 19.4,
+      "d10": 27.8
+     },
+     {
+      "name": "Supply Basin",
+      "elevFt": 9400,
+      "d1": 0,
+      "d7": 19.9,
+      "d10": 27.2
+     }
+    ],
+    "daily": [
+     0,
+     2.6,
+     10.5,
+     0.8,
+     0,
+     0,
+     6,
+     8,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "vail-pass",
+   "name": "Vail Pass",
+   "state": "CO",
+   "snotel": "Vail Mountain",
+   "spots": [
+    {
+     "name": "Vail Pass summit",
+     "lat": 39.53,
+     "lon": -106.22,
+     "elevFt": 10700
+    },
+    {
+     "name": "Shrine Pass",
+     "lat": 39.55,
+     "lon": -106.27,
+     "elevFt": 11100
+    },
+    {
+     "name": "Ptarmigan Hill",
+     "lat": 39.5,
+     "lon": -106.24,
+     "elevFt": 11800
+    },
+    {
+     "name": "Camp Hale",
+     "lat": 39.42,
+     "lon": -106.31,
+     "elevFt": 9300
+    }
+   ],
+   "rideElevFt": 10700,
+   "station": {
+    "name": "Vail Mountain",
+    "triplet": "922:CO:SNTL",
+    "elevFt": 10500,
+    "kmFromSpots": 3,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=922"
+   },
+   "snow": {
+    "depthIn": 26,
+    "asOf": "2026-11-05",
+    "change24hIn": 2,
+    "change7dIn": 6,
+    "sweIn": 7.3
+   },
+   "forecast": {
+    "d1": {
+     "in": 2.4,
+     "low": 2.1,
+     "high": 2.9,
+     "models": 3
+    },
+    "d7": {
+     "in": 16.2,
+     "low": 14.7,
+     "high": 18.1,
+     "models": 3
+    },
+    "d10": {
+     "in": 28.8,
+     "low": 27.1,
+     "high": 30.4,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Vail Pass summit",
+      "elevFt": 10700,
+      "d1": 2.2,
+      "d7": 15.7,
+      "d10": 28
+     },
+     {
+      "name": "Shrine Pass",
+      "elevFt": 11100,
+      "d1": 2.3,
+      "d7": 15.3,
+      "d10": 28.3
+     },
+     {
+      "name": "Ptarmigan Hill",
+      "elevFt": 11800,
+      "d1": 2.7,
+      "d7": 17.5,
+      "d10": 29.2
+     },
+     {
+      "name": "Camp Hale",
+      "elevFt": 9300,
+      "d1": 2.4,
+      "d7": 16.4,
+      "d10": 29.6
+     }
+    ],
+    "daily": [
+     2.4,
+     0,
+     0,
+     3.3,
+     10.1,
+     0.5,
+     0,
+     0,
+     6.3,
+     6.9
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "grand-mesa",
+   "name": "Grand Mesa",
+   "state": "CO",
+   "snotel": "Mesa Lakes",
+   "spots": [
+    {
+     "name": "Mesa Lakes",
+     "lat": 39.05,
+     "lon": -108.08,
+     "elevFt": 9900
+    },
+    {
+     "name": "Skyway",
+     "lat": 39.07,
+     "lon": -108.04,
+     "elevFt": 10600
+    },
+    {
+     "name": "County Line",
+     "lat": 39.03,
+     "lon": -107.99,
+     "elevFt": 10500
+    }
+   ],
+   "rideElevFt": 10300,
+   "station": {
+    "name": "Mesa Lakes",
+    "triplet": "923:CO:SNTL",
+    "elevFt": 9700,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=923"
+   },
+   "snow": {
+    "depthIn": 31,
+    "asOf": "2026-11-05",
+    "change24hIn": 3,
+    "change7dIn": 5,
+    "sweIn": 8.7
+   },
+   "forecast": {
+    "d1": {
+     "in": 0.3,
+     "low": 0.2,
+     "high": 0.3,
+     "models": 3
+    },
+    "d7": {
+     "in": 4.2,
+     "low": 3.5,
+     "high": 4.7,
+     "models": 3
+    },
+    "d10": {
+     "in": 8.1,
+     "low": 7.3,
+     "high": 8.6,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Mesa Lakes",
+      "elevFt": 9900,
+      "d1": 0.2,
+      "d7": 4.1,
+      "d10": 7.8
+     },
+     {
+      "name": "Skyway",
+      "elevFt": 10600,
+      "d1": 0.3,
+      "d7": 4.2,
+      "d10": 8.3
+     },
+     {
+      "name": "County Line",
+      "elevFt": 10500,
+      "d1": 0.4,
+      "d7": 4.2,
+      "d10": 8.3
+     }
+    ],
+    "daily": [
+     0.3,
+     0,
+     0,
+     1.6,
+     2.3,
+     0,
+     0,
+     0,
+     2.5,
+     1.5
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  },
+  {
+   "id": "wolf-creek",
+   "name": "Wolf Creek Pass",
+   "state": "CO",
+   "snotel": "Wolf Creek Summit",
+   "spots": [
+    {
+     "name": "Wolf Creek summit",
+     "lat": 37.48,
+     "lon": -106.8,
+     "elevFt": 10800
+    },
+    {
+     "name": "Lobo Overlook",
+     "lat": 37.47,
+     "lon": -106.83,
+     "elevFt": 11400
+    },
+    {
+     "name": "Fun Valley / Lake Fork",
+     "lat": 37.52,
+     "lon": -106.76,
+     "elevFt": 9800
+    }
+   ],
+   "rideElevFt": 10700,
+   "station": {
+    "name": "Wolf Creek Summit",
+    "triplet": "924:CO:SNTL",
+    "elevFt": 10600,
+    "kmFromSpots": 4,
+    "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=924"
+   },
+   "snow": {
+    "depthIn": 16,
+    "asOf": "2026-11-05",
+    "change24hIn": 0,
+    "change7dIn": 8,
+    "sweIn": 4.5
+   },
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 4,
+     "low": 3.7,
+     "high": 4.3,
+     "models": 3
+    },
+    "d10": {
+     "in": 4.4,
+     "low": 4.1,
+     "high": 4.9,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Wolf Creek summit",
+      "elevFt": 10800,
+      "d1": 0,
+      "d7": 4.1,
+      "d10": 4.6
+     },
+     {
+      "name": "Lobo Overlook",
+      "elevFt": 11400,
+      "d1": 0,
+      "d7": 3.8,
+      "d10": 4.3
+     },
+     {
+      "name": "Fun Valley / Lake Fork",
+      "elevFt": 9800,
+      "d1": 0,
+      "d7": 3.9,
+      "d10": 4.4
+     }
+    ],
+    "daily": [
+     0,
+     1.2,
+     1,
+     0,
+     0,
+     0.1,
+     1.7,
+     0.5,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-05T16:00Z"
+   }
+  }
+ ]
+}

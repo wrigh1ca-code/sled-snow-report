@@ -1,0 +1,118 @@
+{
+  "_about": "Key snowmobile riding zones. Each zone lists the high-elevation riding spots where people actually ride (not the trailhead town). The forecast is pulled for every spot at its own riding elevation, then averaged into the zone's number. elevFt = typical riding elevation at that spot, not the summit. snotel = preferred SNOTEL station name; if it can't be found, the updater picks the active station that best matches the riding spots' location and elevation.",
+  "zones": [
+    { "id": "west-yellowstone", "name": "West Yellowstone", "state": "MT", "snotel": "Madison Plateau", "spots": [
+      { "name": "Two Top", "lat": 44.600, "lon": -111.270, "elevFt": 8500 },
+      { "name": "Lionhead", "lat": 44.725, "lon": -111.315, "elevFt": 9000 },
+      { "name": "Tepee Basin", "lat": 44.980, "lon": -111.180, "elevFt": 8400 },
+      { "name": "South Plateau", "lat": 44.560, "lon": -111.080, "elevFt": 7900 } ] },
+    { "id": "cooke-city", "name": "Cooke City", "state": "MT", "snotel": "Fisher Creek", "spots": [
+      { "name": "Daisy Pass", "lat": 45.050, "lon": -109.950, "elevFt": 9700 },
+      { "name": "Lulu Pass", "lat": 45.060, "lon": -109.905, "elevFt": 9600 },
+      { "name": "Henderson Mtn", "lat": 45.045, "lon": -109.925, "elevFt": 9900 },
+      { "name": "Round Lake", "lat": 45.035, "lon": -109.965, "elevFt": 8800 } ] },
+    { "id": "seeley-lake", "name": "Seeley Lake", "state": "MT", "snotel": "", "spots": [
+      { "name": "Morrell Mtn", "lat": 47.235, "lon": -113.395, "elevFt": 7200 },
+      { "name": "Rice Ridge", "lat": 47.280, "lon": -113.380, "elevFt": 6800 },
+      { "name": "Lake Elsina", "lat": 47.290, "lon": -113.330, "elevFt": 6500 },
+      { "name": "Double Arrow Lookout", "lat": 47.110, "lon": -113.450, "elevFt": 6300 } ] },
+    { "id": "lincoln", "name": "Lincoln", "state": "MT", "snotel": "Copper Camp", "spots": [
+      { "name": "Stemple Pass", "lat": 46.895, "lon": -112.500, "elevFt": 6800 },
+      { "name": "Flesher Pass", "lat": 47.045, "lon": -112.360, "elevFt": 6500 },
+      { "name": "Copper Creek", "lat": 47.080, "lon": -112.620, "elevFt": 6600 } ] },
+    { "id": "lolo-pass", "name": "Lolo Pass", "state": "MT", "snotel": "Lolo Pass", "spots": [
+      { "name": "Elk Meadows", "lat": 46.700, "lon": -114.650, "elevFt": 6000 },
+      { "name": "Moose Ridge", "lat": 46.660, "lon": -114.540, "elevFt": 6200 },
+      { "name": "Lost Park", "lat": 46.600, "lon": -114.520, "elevFt": 6000 } ] },
+
+    { "id": "togwotee", "name": "Togwotee Pass", "state": "WY", "snotel": "Togwotee Pass", "spots": [
+      { "name": "Togwotee Summit", "lat": 43.750, "lon": -110.070, "elevFt": 9600 },
+      { "name": "Brooks Lake", "lat": 43.745, "lon": -109.995, "elevFt": 9300 },
+      { "name": "Squaw Basin", "lat": 43.800, "lon": -110.140, "elevFt": 9000 },
+      { "name": "Fourmile Meadows", "lat": 43.800, "lon": -110.250, "elevFt": 8400 } ] },
+    { "id": "greys-river", "name": "Greys River / Star Valley", "state": "WY", "snotel": "Blind Bull Sum", "spots": [
+      { "name": "Blind Bull Summit", "lat": 42.960, "lon": -110.610, "elevFt": 8700 },
+      { "name": "McDougal Gap", "lat": 42.850, "lon": -110.560, "elevFt": 8900 },
+      { "name": "Box Y / Greys River", "lat": 43.050, "lon": -110.760, "elevFt": 7500 },
+      { "name": "Salt River Pass", "lat": 42.620, "lon": -110.880, "elevFt": 7900 } ] },
+    { "id": "snowy-range", "name": "Snowy Range", "state": "WY", "snotel": "Brooklyn Lake", "spots": [
+      { "name": "Libby Flats", "lat": 41.340, "lon": -106.300, "elevFt": 10600 },
+      { "name": "Brooklyn Lake", "lat": 41.370, "lon": -106.250, "elevFt": 10200 },
+      { "name": "Rob Roy", "lat": 41.220, "lon": -106.260, "elevFt": 9500 } ] },
+    { "id": "bighorns", "name": "Bighorn Mountains", "state": "WY", "snotel": "Burgess Junction", "spots": [
+      { "name": "Burgess Junction", "lat": 44.780, "lon": -107.530, "elevFt": 8200 },
+      { "name": "Granite Pass", "lat": 44.640, "lon": -107.490, "elevFt": 9000 },
+      { "name": "Powder River Pass", "lat": 44.150, "lon": -107.060, "elevFt": 9600 } ] },
+    { "id": "union-pass", "name": "Union Pass / Dubois", "state": "WY", "snotel": "", "spots": [
+      { "name": "Union Pass", "lat": 43.470, "lon": -109.860, "elevFt": 9200 },
+      { "name": "Sheridan Pass", "lat": 43.590, "lon": -109.950, "elevFt": 9300 },
+      { "name": "Fish Lake Mtn", "lat": 43.420, "lon": -109.780, "elevFt": 9600 } ] },
+
+    { "id": "island-park", "name": "Island Park", "state": "ID", "snotel": "White Elephant", "spots": [
+      { "name": "Two Top", "lat": 44.600, "lon": -111.270, "elevFt": 8500 },
+      { "name": "Mt Jefferson", "lat": 44.560, "lon": -111.510, "elevFt": 8800 },
+      { "name": "Sawtell Peak", "lat": 44.560, "lon": -111.440, "elevFt": 8600 },
+      { "name": "Mesa Falls", "lat": 44.190, "lon": -111.330, "elevFt": 6300 } ] },
+    { "id": "mccall", "name": "McCall", "state": "ID", "snotel": "Brundage Reservoir", "spots": [
+      { "name": "Granite Mtn", "lat": 45.100, "lon": -116.110, "elevFt": 7800 },
+      { "name": "Burgdorf / Secesh", "lat": 45.300, "lon": -115.910, "elevFt": 6800 },
+      { "name": "Lick Creek Summit", "lat": 45.040, "lon": -115.900, "elevFt": 6900 } ] },
+    { "id": "stanley", "name": "Stanley / Sawtooths", "state": "ID", "snotel": "Banner Summit", "spots": [
+      { "name": "Banner Summit", "lat": 44.360, "lon": -115.210, "elevFt": 7200 },
+      { "name": "Cape Horn", "lat": 44.420, "lon": -115.160, "elevFt": 7400 },
+      { "name": "Galena Summit", "lat": 43.870, "lon": -114.710, "elevFt": 8600 } ] },
+    { "id": "silver-valley", "name": "Silver Valley", "state": "ID", "snotel": "Lookout", "spots": [
+      { "name": "Lookout Pass", "lat": 47.460, "lon": -115.700, "elevFt": 5500 },
+      { "name": "Thompson Pass", "lat": 47.580, "lon": -115.800, "elevFt": 5500 },
+      { "name": "Stevens Peak ridges", "lat": 47.430, "lon": -115.760, "elevFt": 6000 } ] },
+    { "id": "bear-lake-id", "name": "Bear Lake Valley", "state": "ID", "snotel": "Emigrant Summit", "spots": [
+      { "name": "Emigrant Summit", "lat": 42.360, "lon": -111.550, "elevFt": 7400 },
+      { "name": "Sherman Peak", "lat": 42.290, "lon": -111.530, "elevFt": 8500 },
+      { "name": "Paris Canyon", "lat": 42.210, "lon": -111.520, "elevFt": 7600 } ] },
+
+    { "id": "logan-canyon", "name": "Logan Canyon", "state": "UT", "snotel": "Tony Grove Lake", "spots": [
+      { "name": "Tony Grove", "lat": 41.890, "lon": -111.640, "elevFt": 8400 },
+      { "name": "Franklin Basin", "lat": 42.000, "lon": -111.580, "elevFt": 8000 },
+      { "name": "Beaver Creek", "lat": 41.960, "lon": -111.530, "elevFt": 7900 } ] },
+    { "id": "monte-cristo", "name": "Monte Cristo", "state": "UT", "snotel": "Monte Cristo", "spots": [
+      { "name": "Monte Cristo Summit", "lat": 41.460, "lon": -111.500, "elevFt": 8900 },
+      { "name": "Curtis Creek", "lat": 41.500, "lon": -111.560, "elevFt": 8200 },
+      { "name": "Ant Flat", "lat": 41.440, "lon": -111.600, "elevFt": 7800 } ] },
+    { "id": "mirror-lake", "name": "Mirror Lake / Uintas", "state": "UT", "snotel": "Trial Lake", "spots": [
+      { "name": "Bald Mtn Pass", "lat": 40.690, "lon": -110.890, "elevFt": 10500 },
+      { "name": "Trial Lake", "lat": 40.680, "lon": -110.950, "elevFt": 9900 },
+      { "name": "Soapstone", "lat": 40.580, "lon": -111.040, "elevFt": 8800 },
+      { "name": "Bear River", "lat": 40.850, "lon": -110.860, "elevFt": 8800 } ] },
+    { "id": "strawberry", "name": "Strawberry", "state": "UT", "snotel": "Strawberry Divide", "spots": [
+      { "name": "Daniels Summit", "lat": 40.300, "lon": -111.250, "elevFt": 8300 },
+      { "name": "Strawberry Peak", "lat": 40.060, "lon": -111.120, "elevFt": 9300 },
+      { "name": "Co-op Creek", "lat": 40.120, "lon": -111.200, "elevFt": 8200 },
+      { "name": "Currant Creek", "lat": 40.330, "lon": -111.070, "elevFt": 8500 } ] },
+    { "id": "skyline", "name": "Skyline / Fairview", "state": "UT", "snotel": "", "spots": [
+      { "name": "Fairview Canyon top", "lat": 39.620, "lon": -111.300, "elevFt": 9700 },
+      { "name": "Huntington Reservoir", "lat": 39.590, "lon": -111.270, "elevFt": 9000 },
+      { "name": "Skyline south", "lat": 39.350, "lon": -111.450, "elevFt": 10300 } ] },
+
+    { "id": "rabbit-ears", "name": "Rabbit Ears / Buffalo Pass", "state": "CO", "snotel": "Rabbit Ears", "spots": [
+      { "name": "Rabbit Ears Pass", "lat": 40.390, "lon": -106.610, "elevFt": 9600 },
+      { "name": "Buffalo Pass", "lat": 40.540, "lon": -106.680, "elevFt": 10300 },
+      { "name": "Dumont Lake", "lat": 40.400, "lon": -106.630, "elevFt": 9500 } ] },
+    { "id": "grand-lake", "name": "Grand Lake", "state": "CO", "snotel": "", "spots": [
+      { "name": "Stillwater Pass", "lat": 40.200, "lon": -105.990, "elevFt": 10200 },
+      { "name": "Gravel Mtn", "lat": 40.130, "lon": -106.070, "elevFt": 10500 },
+      { "name": "Supply Basin", "lat": 40.190, "lon": -105.940, "elevFt": 9400 } ] },
+    { "id": "vail-pass", "name": "Vail Pass", "state": "CO", "snotel": "Vail Mountain", "spots": [
+      { "name": "Vail Pass summit", "lat": 39.530, "lon": -106.220, "elevFt": 10700 },
+      { "name": "Shrine Pass", "lat": 39.550, "lon": -106.270, "elevFt": 11100 },
+      { "name": "Ptarmigan Hill", "lat": 39.500, "lon": -106.240, "elevFt": 11800 },
+      { "name": "Camp Hale", "lat": 39.420, "lon": -106.310, "elevFt": 9300 } ] },
+    { "id": "grand-mesa", "name": "Grand Mesa", "state": "CO", "snotel": "Mesa Lakes", "spots": [
+      { "name": "Mesa Lakes", "lat": 39.050, "lon": -108.080, "elevFt": 9900 },
+      { "name": "Skyway", "lat": 39.070, "lon": -108.040, "elevFt": 10600 },
+      { "name": "County Line", "lat": 39.030, "lon": -107.990, "elevFt": 10500 } ] },
+    { "id": "wolf-creek", "name": "Wolf Creek Pass", "state": "CO", "snotel": "Wolf Creek Summit", "spots": [
+      { "name": "Wolf Creek summit", "lat": 37.480, "lon": -106.800, "elevFt": 10800 },
+      { "name": "Lobo Overlook", "lat": 37.470, "lon": -106.830, "elevFt": 11400 },
+      { "name": "Fun Valley / Lake Fork", "lat": 37.520, "lon": -106.760, "elevFt": 9800 } ] }
+  ]
+}
