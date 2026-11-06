@@ -2,7 +2,8 @@ name: Update snow data
 
 on:
   schedule:
-    - cron: "17 */3 * * *"   # every 3 hours
+    - cron: "0 */3 * * *"    # 12, 3, 6, 9 (a.m. and p.m.)
+      timezone: "America/Denver"
   workflow_dispatch: {}       # "Run workflow" button for a manual refresh
 
 permissions:
@@ -15,21 +16,21 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Fetch header photo (first run only)
-        # Public-domain photo "Open-throttle Riding in Oregon", America's Byways / FHWA:
-        # https://fhwaapps.fhwa.dot.gov/bywaysp/photos/73012
         run: |
           if [ ! -f assets/hero.jpg ]; then
             mkdir -p assets
             curl -fsSL -o assets/hero.jpg "https://fhwaapps.fhwa.dot.gov/bywaysp/uploads/asset_files/2145/73012_67a.jpg" || echo "Photo download failed; the illustrated header will show instead."
           fi
       - name: Pull SNOTEL + forecast data
-        run: node scripts/update.mjs
+        # If a data source hiccups, wait 2 minutes and try once more.
+        run: node scripts/update.mjs || (sleep 120 && node scripts/update.mjs)
       - name: Commit if changed
         run: |
           git config user.name "snow-bot"
