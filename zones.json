@@ -82,7 +82,8 @@
       { "name": "Bald Mtn Pass", "lat": 40.690, "lon": -110.890, "elevFt": 10500 },
       { "name": "Trial Lake", "lat": 40.680, "lon": -110.950, "elevFt": 9900 },
       { "name": "Soapstone", "lat": 40.580, "lon": -111.040, "elevFt": 8800 },
-      { "name": "Bear River", "lat": 40.850, "lon": -110.860, "elevFt": 8800 } ] },
+      { "name": "Bear River", "lat": 40.850, "lon": -110.860, "elevFt": 8800 },
+         { "name": "Mill Hollow", "lat": 40.490, "lon": -111.100, "elevFt": 8900 } ] },
     { "id": "strawberry", "name": "Strawberry", "state": "UT", "snotel": "Strawberry Divide", "spots": [
       { "name": "Daniels Summit", "lat": 40.300, "lon": -111.250, "elevFt": 8300 },
       { "name": "Strawberry Peak", "lat": 40.060, "lon": -111.120, "elevFt": 9300 },
