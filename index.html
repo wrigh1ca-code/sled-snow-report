@@ -107,7 +107,44 @@ select { font: 600 1rem var(--font-body); padding: 8px 10px; border-radius: 8px;
 /* ---------- Zone rows ---------- */
 .zones { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
 .zone { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr); gap: 14px 24px; scroll-margin-top: 16px; }
-.zhead { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.zhead { min-width: 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.ztext { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.zmini { flex: none; width: 64px; height: 64px; }
+
+/* ---------- Zone locator maps ---------- */
+.zrow { display: block; }
+.zmap { display: none; }
+.zmap-st { fill: color-mix(in srgb, var(--sign-ink) 12%, transparent); stroke: color-mix(in srgb, var(--sign-ink) 75%, transparent); stroke-width: 2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.zmap-grid { stroke: color-mix(in srgb, var(--sign-ink) 14%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; fill: none; }
+.zmap-cross { stroke: var(--marker); stroke-width: 1; stroke-dasharray: 3 4; opacity: .55; vector-effect: non-scaling-stroke; }
+.zmap-pulse { fill: none; stroke: var(--marker); stroke-width: 2; vector-effect: non-scaling-stroke; transform-box: fill-box; transform-origin: center; opacity: .8; }
+.zmap-pin { fill: var(--marker); stroke: var(--sign); stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.zmap-dot { fill: var(--sign); }
+.zmap-glow { fill: var(--marker); opacity: .35; }
+.zmap-other { fill: none; stroke: color-mix(in srgb, var(--sign-ink) 55%, transparent); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.zmap-legend { display: flex; align-items: center; gap: 6px; }
+.zmap-legend i { width: 8px; height: 8px; border: 1.5px solid currentColor; transform: rotate(45deg); opacity: .6; flex: none; }
+.zmini .zmap-st { fill: color-mix(in srgb, var(--ink) 14%, transparent); stroke: color-mix(in srgb, var(--ink) 60%, transparent); }
+.zmini .zmap-pin { stroke: var(--card); }
+.zmini .zmap-dot { fill: var(--card); }
+@media (prefers-reduced-motion: no-preference) {
+  .zmap-pulse { animation: zpulse 2.4s ease-out infinite; }
+  @keyframes zpulse { 0% { transform: scale(.6); opacity: .9; } 100% { transform: scale(2.4); opacity: 0; } }
+}
+@media (min-width: 1240px) {
+  .wrap { max-width: 1400px; }
+  .zrow { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 14px; align-items: stretch; }
+  .zmini { display: none; }
+  .zmap { display: flex; flex-direction: column; gap: 10px; background: var(--sign); color: var(--sign-ink); border-radius: 14px; padding: 16px 16px 14px; position: relative; overflow: hidden; }
+  .zmap-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .zmap-state { font-family: var(--font-display); font-style: italic; font-weight: 900; font-size: 1.5rem; line-height: 1; text-transform: uppercase; }
+  .zmap-code { font-family: var(--font-display); font-weight: 800; font-size: .9rem; letter-spacing: .12em; color: var(--marker); }
+  .zmap-art { position: relative; flex: 1 1 auto; min-height: 150px; }
+  .zmap-art svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+  .zmap-foot { display: flex; flex-direction: column; gap: 1px; font-variant-numeric: tabular-nums; }
+  .zmap-coord { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: .06em; }
+  .zmap-note { font-size: .82rem; opacity: .7; }
+}
 .zname { font-family: var(--font-display); font-style: italic; font-weight: 900; font-size: 2.15rem; line-height: .95; margin: 0; text-transform: uppercase; text-wrap: balance; }
 .st { display: inline-block; font-family: var(--font-display); font-style: normal; font-weight: 800; font-size: .95rem; letter-spacing: .08em; padding: 1px 8px; border-radius: 5px; background: var(--ink); color: var(--bg); vertical-align: 6px; margin-left: 8px; }
 .zarea { color: var(--muted); font-size: 1rem; margin: 0; }
@@ -160,7 +197,7 @@ footer p { margin: 0 0 10px; }
   .hero-photo { top: auto; width: 100%; height: 330px; clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%); }
   .hero-photo::before { background: linear-gradient(180deg, rgba(16,20,24,.6) 0%, rgba(16,20,24,0) 30%), linear-gradient(0deg, rgba(16,20,24,.55) 0%, rgba(16,20,24,0) 35%); }
   .hero-photo::after { display: none; }
-  .hero-photo n { bottom: 70px; }
+  .hero-photo figcaption { bottom: 70px; }
   .zone { grid-template-columns: minmax(0, 1fr); padding: 16px; }
   .best { grid-template-columns: minmax(0, 1fr); margin-top: -60px; }
   .bet { flex-direction: row; align-items: baseline; flex-wrap: wrap; gap: 2px 12px; }
@@ -334,6 +371,52 @@ footer p { margin: 0 0 10px; }
   })();
 
   /* ---------- Conditions ---------- */
+  /* ---------- State locator maps ----------
+     Outlines: US Census boundaries via us-atlas (public domain), simplified.
+     Each shape is pre-projected; lon0/lat1/cos/k convert lon/lat into its units. */
+  var STATE_SHAPES = {"CO":{"d":"M0.3 0.1L199.7 0.0L200.0 147.0L0.4 146.8L0.5 104.1L0.0 100.0L0.3 0.1Z","w":200,"h":147,"lon0":-109.0592,"lat1":41.002,"cos":0.77717,"k":36.6738},"WY":{"d":"M199.8 0.3L200.0 156.3L0.3 156.5L0.1 0.2L199.8 0.3Z","w":200,"h":156.6,"lon0":-111.0584,"lat1":45.0061,"cos":0.73135,"k":39.0317},"MT":{"d":"M0.1 0.0L199.9 0.0L200.0 97.1L83.2 97.1L83.3 109.9L82.1 109.4L81.7 108.4L80.3 107.2L80.4 106.3L78.7 103.8L77.7 103.1L77.2 104.2L76.0 104.2L76.3 104.9L75.4 106.9L76.3 108.3L72.4 107.8L70.4 109.0L69.6 107.7L65.7 108.8L62.7 107.6L61.6 108.3L61.0 110.5L59.6 109.7L59.1 110.2L55.5 109.2L54.5 109.6L53.6 111.1L53.9 112.2L53.4 112.7L50.7 110.5L50.7 108.6L49.4 106.9L50.0 105.9L48.6 102.6L46.7 101.4L45.1 102.3L44.9 101.5L43.2 100.4L42.6 98.4L43.4 98.1L43.3 95.7L42.1 94.9L42.3 94.3L41.2 94.0L40.8 92.5L38.5 89.1L38.6 87.7L37.8 86.1L38.1 84.5L36.9 84.5L37.4 82.5L35.7 82.0L35.3 80.6L34.4 80.0L31.9 83.6L30.8 84.1L30.0 83.9L29.8 85.1L28.4 86.0L26.5 83.5L25.0 83.5L25.2 82.4L24.7 81.7L25.8 80.9L25.9 79.9L24.7 78.3L25.8 76.5L27.3 76.5L27.7 75.5L27.0 74.4L27.3 73.4L26.2 72.8L25.9 71.7L26.5 70.5L25.5 69.8L25.6 68.8L26.7 68.6L26.3 66.4L27.1 65.9L27.1 63.5L27.9 62.1L27.5 60.7L28.2 60.6L28.6 56.8L26.4 57.5L23.9 57.3L23.4 56.5L23.8 55.7L22.5 54.9L21.4 55.9L21.0 55.6L21.4 54.4L18.4 52.0L18.6 50.5L17.5 49.3L16.7 49.3L15.2 46.3L12.5 44.0L12.1 42.4L8.7 41.2L8.3 40.1L4.8 38.3L7.1 36.9L6.1 36.8L5.8 35.6L5.1 35.5L6.0 34.1L5.3 33.0L5.4 31.7L4.2 30.2L3.8 30.3L3.3 28.5L2.4 28.0L0.1 24.9L0.1 0.0Z","w":200,"h":112.7,"lon0":-116.0511,"lat1":49.0015,"cos":0.68607,"k":24.2731},"UT":{"d":"M0.3 0.3L92.7 0.0L92.7 40.1L154.3 40.0L154.0 148.9L154.5 153.4L154.4 200.0L0.0 199.9L0.3 0.3Z","w":154.5,"h":200,"lon0":-114.0519,"lat1":42.0019,"cos":0.77163,"k":39.9678},"ID":{"d":"M6.5 85.7L5.2 83.2L6.5 80.9L5.6 79.9L5.0 77.0L3.6 75.2L4.1 74.0L4.2 0.0L23.9 0.0L23.9 29.2L26.7 32.9L27.8 33.4L28.3 35.6L28.9 35.5L30.4 37.2L30.2 38.7L31.1 40.1L30.0 41.7L30.8 41.8L31.1 43.2L32.3 43.4L29.6 45.0L30.4 45.0L33.8 47.1L34.3 48.4L38.3 49.8L39.0 50.8L38.8 51.7L39.6 51.9L40.0 52.8L42.1 54.4L43.8 57.9L44.8 57.9L46.2 59.3L45.9 61.1L47.1 62.5L49.5 63.9L49.1 65.3L49.5 65.7L50.9 64.5L51.9 64.7L52.4 65.4L52.0 66.4L52.5 67.3L55.5 67.6L55.8 67.1L58.2 66.7L58.4 68.2L57.7 71.2L56.8 71.2L57.3 72.9L56.4 74.5L56.3 77.4L55.4 78.0L55.9 80.6L54.5 80.8L54.4 82.0L55.6 82.8L55.0 84.2L55.3 85.6L56.6 86.2L56.2 87.4L57.1 88.7L56.6 89.8L54.8 89.8L53.5 92.0L54.9 93.8L54.8 95.0L53.5 95.9L54.1 96.8L53.8 98.1L55.6 98.1L57.9 101.0L59.6 100.0L59.8 98.5L60.8 98.8L62.1 98.2L65.1 94.0L66.2 94.6L66.7 96.4L68.7 96.9L68.2 99.3L69.5 99.3L69.2 101.1L70.2 103.0L70.0 104.7L71.1 106.9L72.8 108.7L73.3 110.4L74.6 110.8L74.4 111.5L75.8 112.4L75.9 115.3L74.9 115.6L75.7 117.9L77.7 119.2L78.0 120.2L79.9 119.1L82.2 120.6L83.8 124.5L83.2 125.6L84.7 127.6L84.3 128.5L84.7 129.8L87.9 132.4L88.5 131.9L88.1 130.6L89.2 128.8L90.4 128.2L94.0 128.8L94.8 129.4L95.4 128.9L97.1 129.9L97.8 127.3L98.5 127.3L99.1 126.4L102.7 127.8L107.4 126.5L108.4 128.1L110.7 126.6L112.4 127.0L113.1 126.6L115.4 127.2L114.3 125.6L115.5 123.2L115.1 122.4L116.5 122.4L117.1 121.1L118.3 122.0L120.3 124.8L120.2 125.9L121.9 127.3L122.3 128.5L123.9 129.1L123.9 199.6L68.4 200.0L4.3 199.7L4.3 148.1L4.4 146.6L5.2 146.4L6.1 143.1L5.3 140.2L6.2 139.8L6.9 138.3L6.8 137.5L5.5 137.1L5.4 135.8L3.9 136.1L2.8 134.6L1.4 135.2L0.5 134.4L1.1 133.0L0.0 131.3L0.6 130.4L0.4 128.8L1.7 127.6L3.9 121.4L6.2 120.2L7.5 117.8L8.2 116.1L7.9 113.5L10.3 110.1L11.3 105.1L15.6 96.9L14.1 94.4L14.1 93.1L13.0 91.9L11.6 91.9L10.9 90.7L9.6 90.8L7.7 88.3L6.5 85.7Z","w":123.9,"h":200,"lon0":-117.2428,"lat1":49.0007,"cos":0.70098,"k":28.5205}};
+  function zoneCenter(z) {
+    var sp = z.spots || [];
+    if (!sp.length) return null;
+    var la = 0, lo = 0;
+    sp.forEach(function (p) { la += p.lat; lo += p.lon; });
+    return { lat: la / sp.length, lon: lo / sp.length };
+  }
+  function stateMap(code, c, big, selfId) {
+    var S = STATE_SHAPES[code]; if (!S) return "";
+    var x = (c.lon - S.lon0) * S.cos * S.k, y = (S.lat1 - c.lat) * S.k;
+    var pad = big ? 14 : 10, vb = (-pad) + " " + (-pad) + " " + (S.w + pad * 2) + " " + (S.h + pad * 2);
+    var id = "clip-" + code + "-" + (big ? "b" : "s");
+    var r = big ? 8 : 18; // pin half-size in map units
+    function px(p) { return [((p.lon - S.lon0) * S.cos * S.k).toFixed(1), ((S.lat1 - p.lat) * S.k).toFixed(1)]; }
+    var h = '<svg viewBox="' + vb + '" preserveAspectRatio="xMidYMid meet" aria-hidden="true">';
+    if (big) {
+      h += '<defs><clipPath id="' + id + '"><path d="' + S.d + '"/></clipPath>' +
+        '<radialGradient id="' + id + '-g"><stop offset="0" stop-color="var(--marker)" stop-opacity=".55"/><stop offset="1" stop-color="var(--marker)" stop-opacity="0"/></radialGradient></defs>';
+      // 1° graticule, clipped to the state
+      var g = "", lonMax = S.lon0 + S.w / (S.cos * S.k), latMin = S.lat1 - S.h / S.k;
+      for (var lo = Math.ceil(S.lon0); lo < lonMax; lo++) { var gx = ((lo - S.lon0) * S.cos * S.k).toFixed(1); g += "M" + gx + " 0V" + S.h; }
+      for (var la = Math.ceil(latMin); la < S.lat1; la++) { var gy = ((S.lat1 - la) * S.k).toFixed(1); g += "M0 " + gy + "H" + S.w; }
+      h += '<path class="zmap-st" d="' + S.d + '"/>';
+      h += '<g clip-path="url(#' + id + ')"><path class="zmap-grid" d="' + g + '"/>' +
+        '<path class="zmap-cross" d="M0 ' + y.toFixed(1) + "H" + S.w + "M" + x.toFixed(1) + " 0V" + S.h + '"/>' +
+        '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (r * 5) + '" fill="url(#' + id + '-g)"/></g>';
+      // the state's other riding zones, as small hollow markers
+      ((state.data && state.data.zones) || []).forEach(function (o) {
+        if (o.state !== code || o.id === selfId) return;
+        var oc = zoneCenter(o); if (!oc) return; var q = px(oc), s2 = 3.6;
+        h += '<rect class="zmap-other" x="' + (q[0] - s2) + '" y="' + (q[1] - s2) + '" width="' + (s2 * 2) + '" height="' + (s2 * 2) + '" transform="rotate(45 ' + q[0] + " " + q[1] + ')"/>';
+      });
+      h += '<circle class="zmap-pulse" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (r * 1.6) + '"/>';
+    } else {
+      h += '<path class="zmap-st" d="' + S.d + '"/>';
+    }
+    // trail-marker diamond pin
+    h += '<rect class="zmap-pin" x="' + (x - r).toFixed(1) + '" y="' + (y - r).toFixed(1) + '" width="' + (r * 2) + '" height="' + (r * 2) + '" rx="' + (r * .25) + '" transform="rotate(45 ' + x.toFixed(1) + " " + y.toFixed(1) + ')"/>' +
+      '<circle class="zmap-dot" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (r * .38) + '"/>';
+    return h + "</svg>";
+  }
+
   var STATES = ["ALL", "MT", "WY", "ID", "UT", "CO"];
   var STATE_NAMES = { MT: "Montana", WY: "Wyoming", ID: "Idaho", UT: "Utah", CO: "Colorado" };
   var state = { filter: "ALL", sort: "d10", data: null };
@@ -405,17 +488,24 @@ footer p { margin: 0 0 10px; }
     var meta = [];
     if (st) meta.push('Depth: SNOTEL <a href="' + esc(st.url) + '" target="_blank" rel="noopener">' + esc(st.name) + "</a> · " + ft(st.elevFt) + " ft");
     if (s && s.asOf) meta.push("as of " + new Date(s.asOf + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }));
-    return '<article class="zone" id="z-' + esc(z.id) + '">' +
-      '<div class="zhead"><h2 class="zname">' + esc(z.name) + '<span class="st" title="' + STATE_NAMES[z.state] + '">' + z.state + "</span></h2>" +
+    var c = zoneCenter(z);
+    return '<div class="zrow"><article class="zone" id="z-' + esc(z.id) + '">' +
+      '<div class="zhead"><div class="ztext"><h2 class="zname">' + esc(z.name) + '<span class="st" title="' + STATE_NAMES[z.state] + '">' + z.state + "</span></h2>" +
       '<span class="elev">' + elevTxt + "</span>" +
       '<p class="zarea">' + esc(spots.map(function (p) { return p.name; }).join(" · ")) + "</p></div>" +
+      (c ? '<span class="zmini" aria-hidden="true">' + stateMap(z.state, c, false, z.id) + "</span>" : "") + "</div>" +
       '<div class="stats">' +
         stat("Base now", s ? s.depthIn : null, change, true) +
         stat("Next 24 hr", fval(z, "d1"), range(z, "d1")) +
         stat("7 days", fval(z, "d7"), range(z, "d7")) +
         stat("10 days", fval(z, "d10"), range(z, "d10")) +
       "</div>" + strip(z) + spotsLine(z) +
-      '<div class="meta">' + meta.map(function (m) { return "<span>" + m + "</span>"; }).join("") + "</div></article>";
+      '<div class="meta">' + meta.map(function (m) { return "<span>" + m + "</span>"; }).join("") + "</div></article>" +
+      (c ? '<aside class="zmap" aria-label="Where ' + esc(z.name) + ' is in ' + STATE_NAMES[z.state] + '">' +
+        '<div class="zmap-top"><span class="zmap-state">' + STATE_NAMES[z.state] + '</span><span class="zmap-code">' + z.state + "</span></div>" +
+        '<div class="zmap-art">' + stateMap(z.state, c, true, z.id) + "</div>" +
+        '<div class="zmap-foot"><span class="zmap-coord">' + Math.abs(c.lat).toFixed(2) + "°N · " + Math.abs(c.lon).toFixed(2) + "°W</span>" +
+        '<span class="zmap-note zmap-legend"><i></i>Other ' + z.state + ' riding zones</span></div></aside>' : "") + "</div>";
   }
 
   function render() {
