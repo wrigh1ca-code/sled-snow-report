@@ -95,6 +95,9 @@ section { margin-top: 28px; }
 .bet .amt { font-family: var(--font-display); font-weight: 900; font-style: italic; font-size: 3.4rem; line-height: .95; font-variant-numeric: tabular-nums; margin-top: 4px; }
 .bet .amt small { font-size: 1.15rem; font-weight: 700; font-style: normal; opacity: .7; margin-left: 4px; }
 .best-label { color: #F2F6FA; }
+.best:empty { display: none; }
+.best-wrap.no-best { margin-top: 24px; }
+.best-wrap.no-best #best-h { display: none; }
 
 /* ---------- Controls ---------- */
 .controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 30px; }
@@ -305,7 +308,7 @@ footer p { margin: 0 0 10px; }
 </header>
 
 <main class="wrap">
-  <section aria-labelledby="best-h" style="margin-top:0">
+  <section id="best-wrap" class="best-wrap" aria-labelledby="best-h" style="margin-top:0">
     <div class="best" id="best"></div>
     <h2 class="eyebrow" id="best-h" style="margin-top:14px; font-size:1.05rem; color:var(--muted); font-style:normal; letter-spacing:.12em"><span class="diamond" aria-hidden="true"></span>Most snow coming · next 10 days</h2>
   </section>
@@ -532,6 +535,7 @@ footer p { margin: 0 0 10px; }
     var change = s && s.change7dIn != null ? (s.change7dIn > 0 ? "+" + s.change7dIn : String(s.change7dIn)) + " in this week" : "";
     var meta = [];
     if (st) meta.push('Depth: SNOTEL <a href="' + esc(st.url) + '" target="_blank" rel="noopener">' + esc(st.name) + "</a> · " + ft(st.elevFt) + " ft");
+    if (z.forecast && z.forecast.stale && z.forecast.fetchedAt) meta.push("Forecast from " + new Date(z.forecast.fetchedAt).toLocaleString(undefined, { weekday: "short", hour: "numeric", minute: "2-digit" }) + " (latest pull failed)");
     if (s && s.asOfTime) meta.push("as of " + new Date(s.asOfTime).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }));
     else if (s && s.asOf) meta.push("as of " + new Date(s.asOf + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }));
     var c = zoneCenter(z);
@@ -572,6 +576,7 @@ footer p { margin: 0 0 10px; }
     });
     $("zones").innerHTML = list.length ? list.map(zoneRow).join("") : '<div class="empty">No zones for this state.</div>';
     var top = inState.filter(function (z) { return fval(z, "d10") != null; }).sort(function (a, b) { return fval(b, "d10") - fval(a, "d10"); }).slice(0, 3);
+    $("best-wrap").classList.toggle("no-best", !top.length);
     $("best").innerHTML = top.map(function (z, i) {
       return '<a class="bet" href="#z-' + esc(z.id) + '"><span class="rank">#' + (i + 1) + " · " + z.state + '</span><span class="nm">' + esc(z.name) + '</span><span class="amt">' + fmt(fval(z, "d10")) + "<small>in</small></span></a>";
     }).join("");
