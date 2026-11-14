@@ -175,6 +175,28 @@ select { font: 600 1rem var(--font-body); padding: 8px 10px; border-radius: 8px;
 .spot b { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; color: var(--ice); font-variant-numeric: tabular-nums; }
 .spot span { color: var(--muted); font-size: .85rem; }
 .spots-lbl { font-family: var(--font-display); font-weight: 700; font-size: .95rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); align-self: center; }
+/* Trailheads + grooming row */
+.access { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; border-radius: 12px; background: color-mix(in srgb, var(--marker) 9%, var(--card)); border: 1px solid color-mix(in srgb, var(--marker) 30%, var(--line)); }
+.access-lbl { font-family: var(--font-display); font-weight: 700; font-size: .95rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.go { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: var(--marker); color: var(--on-marker); border-radius: 10px; padding: 8px 14px 8px 10px; min-height: 44px; box-shadow: 0 2px 0 color-mix(in srgb, var(--marker) 55%, #000); }
+.go:hover { filter: brightness(1.05); }
+.go svg { width: 22px; height: 22px; flex: none; }
+.go-txt { display: flex; flex-direction: column; line-height: 1.05; }
+.go-k { font-family: var(--font-display); font-weight: 800; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; opacity: .75; }
+.go-n { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
+.go-e { font-size: .82rem; font-weight: 600; opacity: .8; }
+.also { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: .95rem; color: var(--muted); }
+.also a { display: inline-flex; align-items: center; gap: 5px; color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 2px solid color-mix(in srgb, var(--marker) 70%, transparent); padding-bottom: 1px; }
+.also a:hover { border-bottom-color: var(--marker); }
+.pbadge { display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 4px; background: var(--ink); color: var(--card); font: 800 .7rem/1 var(--font-display); flex: none; }
+.groom { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); border: 2px solid var(--ink); border-radius: 10px; padding: 8px 12px; min-height: 44px; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; letter-spacing: .04em; text-transform: uppercase; }
+.groom:hover { background: var(--ink); color: var(--card); }
+.groom svg { width: 20px; height: 20px; flex: none; }
+@media (max-width: 760px) {
+  .access { padding: 12px; }
+  .go { flex: 1 1 100%; }
+  .groom { margin-left: 0; flex: 1 1 100%; justify-content: center; }
+}
 .meta { grid-column: 1 / -1; font-size: .92rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .meta a { color: var(--ice); font-weight: 600; }
 
@@ -471,6 +493,32 @@ footer p { margin: 0 0 10px; }
     }
     return '<div class="strip" aria-label="Daily snowfall, next 10 days">' + html + "</div>";
   }
+  var ICON_GO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 12l10 10 10-10Z" fill="currentColor" opacity=".18"/><path d="M8.5 15v-3.5a1.5 1.5 0 0 1 1.5-1.5h5m-2.5-2.5L15 10l-2.5 2.5M12 2 2 12l10 10 10-10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var ICON_GROOM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 14h14M7 10h10M4 18l3-8m13 8-3-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  // Directions: exact coordinates when we have them, otherwise the trailhead's name for Google to look up.
+  function dirUrl(t) {
+    var dest = (t.lat != null && t.lon != null) ? t.lat + "," + t.lon : encodeURIComponent(t.q || t.name);
+    return "https://www.google.com/maps/dir/?api=1&destination=" + dest + "&travelmode=driving";
+  }
+  function accessRow(z) {
+    var th = z.trailheads || [], g = z.grooming;
+    if (!th.length && !(g && g.url)) return "";
+    var h = '<div class="access"><span class="access-lbl">Trailhead</span>';
+    if (th.length) {
+      var m = th[0];
+      h += '<a class="go" href="' + esc(dirUrl(m)) + '" target="_blank" rel="noopener" aria-label="Directions to ' + esc(m.name) + '">' + ICON_GO +
+        '<span class="go-txt"><span class="go-k">Directions</span><span class="go-n">' + esc(m.name) + "</span>" +
+        ((m.elevFt || m.note) ? '<span class="go-e">' + [m.elevFt ? ft(m.elevFt) + " ft" : "", m.note ? esc(m.note) : ""].filter(Boolean).join(" · ") + "</span>" : "") + "</span></a>";
+      if (th.length > 1) {
+        h += '<span class="also">Also:' + th.slice(1).map(function (t) {
+          return '<a href="' + esc(dirUrl(t)) + '" target="_blank" rel="noopener" aria-label="Directions to ' + esc(t.name) + '"><span class="pbadge" aria-hidden="true">P</span>' + esc(t.name) + "</a>";
+        }).join("") + "</span>";
+      }
+    }
+    if (g && g.url) h += '<a class="groom" href="' + esc(g.url) + '" target="_blank" rel="noopener">' + ICON_GROOM + esc(g.label || "Grooming report") + "</a>";
+    return h + "</div>";
+  }
+
   function spotsLine(z) {
     var sp = (z.forecast && z.forecast.spots) || [];
     if (!sp.length) return "";
@@ -500,6 +548,7 @@ footer p { margin: 0 0 10px; }
         stat("7 days", fval(z, "d7"), range(z, "d7")) +
         stat("10 days", fval(z, "d10"), range(z, "d10")) +
       "</div>" + strip(z) + spotsLine(z) +
+      accessRow(z) +
       '<div class="meta">' + meta.map(function (m) { return "<span>" + m + "</span>"; }).join("") + "</div></article>" +
       (c ? '<aside class="zmap" aria-label="Where ' + esc(z.name) + ' is in ' + STATE_NAMES[z.state] + '">' +
         '<div class="zmap-top"><span class="zmap-state">' + STATE_NAMES[z.state] + '</span><span class="zmap-code">' + z.state + "</span></div>" +
@@ -508,8 +557,10 @@ footer p { margin: 0 0 10px; }
         '<span class="zmap-note zmap-legend"><i></i>Other ' + z.state + ' riding zones</span></div></aside>' : "") + "</div>";
   }
 
+  var zoneById = {};
   function render() {
     var d = state.data; if (!d) return;
+    zoneById = {}; d.zones.forEach(function (z) { zoneById[z.id] = z; });
     $("chips").innerHTML = STATES.map(function (s) {
       return '<button class="chip" type="button" data-s="' + s + '" aria-pressed="' + (state.filter === s) + '">' + (s === "ALL" ? "All" : s) + "</button>";
     }).join("");
