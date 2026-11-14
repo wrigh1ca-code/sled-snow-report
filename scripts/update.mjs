@@ -110,21 +110,84 @@ async function loadSnowDepth(triplets) {
   return out;
 }
 
-function summarizeDepth(series) {
+// Hourly snow depth. SNOTEL hourly readings are stamped in Pacific Standard
+// Time (UTC-8) all year. They aren't quality-checked in real time, so a single
+// reading can spike; we smooth with the median of the latest few.
+const SNOTEL_UTC_OFFSET = "-08:00";
+const HOURLY_MAX_AGE_H = 12; // older than this, fall back to the daily value
+
+async function loadHourlyDepth(triplets) {
+  const now = new Date();
+  const begin = new Date(now.getTime() - 2 * 86400000);
+  const end = new Date(now.getTime() + 86400000);
+  const out = {};
+  for (let i = 0; i < triplets.length; i += 10) {
+    const chunk = triplets.slice(i, i + 10);
+    const url = `${AWDB}/data?stationTriplets=${encodeURIComponent(chunk.join(","))}&elements=SNWD&duration=HOURLY&beginDate=${isoDate(begin)}&endDate=${isoDate(end)}&ordinal=1`;
+    const data = await getJSON(url);
+    for (const station of Array.isArray(data) ? data : []) {
+      const d = (station.data || []).find((x) => x.stationElement?.elementCode === "SNWD");
+      out[station.stationTriplet] = (d?.values || [])
+        .filter((v) => v.value !== null && v.value !== undefined && Number.isFinite(Number(v.value)) && Number(v.value) >= 0)
+        .map((v) => {
+          const s = String(v.date).trim().replace(" ", "T");
+          const t = Date.parse((s.length === 13 ? s + ":00" : s.slice(0, 16)) + ":00" + SNOTEL_UTC_OFFSET);
+          return { t, value: Number(v.value) };
+        })
+        .filter((v) => Number.isFinite(v.t))
+        .sort((a, b) => a.t - b.t);
+    }
+  }
+  return out;
+}
+
+const median = (a) => { const s = [...a].sort((x, y) => x - y); const m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+
+// Smoothed depth from the readings in the few hours up to time `at`.
+function hourlyAt(hourly, at, windowH = 6) {
+  const near = hourly.filter((v) => v.t <= at + 30 * 60000 && v.t >= at - windowH * 3600000);
+  if (!near.length) return null;
+  return median(near.slice(-3).map((v) => v.value));
+}
+
+function summarizeDepth(series, hourly = []) {
   const snwd = series?.SNWD || [];
   const wteq = series?.WTEQ || [];
+  const sweIn = wteq.length ? Number(wteq[wteq.length - 1].value.toFixed(1)) : null;
+  const dailyOn = (date) => snwd.find((v) => v.date === date)?.value;
+
+  // Prefer the latest hourly reading when it's recent.
+  const latest = hourly[hourly.length - 1];
+  if (latest && Date.now() - latest.t < HOURLY_MAX_AGE_H * 3600000) {
+    const now = hourlyAt(hourly, latest.t);
+    const dayAgo = hourlyAt(hourly, latest.t - 24 * 3600000, 3);
+    // 7-day change: compare with the daily reading from a week earlier (station's local date).
+    const weekAgoDate = isoDate(new Date(latest.t - 8 * 3600000 - 7 * 86400000));
+    const d7 = dailyOn(weekAgoDate);
+    return {
+      depthIn: Math.max(0, Math.round(now)),
+      asOf: isoDate(new Date(latest.t - 8 * 3600000)),
+      asOfTime: new Date(latest.t).toISOString(),
+      source: "hourly",
+      change24hIn: dayAgo === null ? null : Math.round(now - dayAgo),
+      change7dIn: d7 === undefined ? null : Math.round(now - d7),
+      sweIn,
+    };
+  }
+
+  // Fallback: last daily value.
   if (!snwd.length) return null;
   const last = snwd[snwd.length - 1];
-  const valueOn = (date) => snwd.find((v) => v.date === date)?.value;
   const daysBack = (n) => isoDate(new Date(new Date(last.date + "T12:00:00Z").getTime() - n * 86400000));
-  const d1 = valueOn(daysBack(1));
-  const d7 = valueOn(daysBack(7));
+  const d1 = dailyOn(daysBack(1));
+  const d7 = dailyOn(daysBack(7));
   return {
     depthIn: Math.max(0, Math.round(last.value)),
     asOf: last.date,
+    source: "daily",
     change24hIn: d1 === undefined ? null : Math.round(last.value - d1),
     change7dIn: d7 === undefined ? null : Math.round(last.value - d7),
-    sweIn: wteq.length ? Number(wteq[wteq.length - 1].value.toFixed(1)) : null,
+    sweIn,
   };
 }
 
@@ -232,12 +295,14 @@ async function main() {
   const triplets = [...new Set(picks.map((p) => p.station?.triplet).filter(Boolean))];
   let depth = {};
   try { depth = await loadSnowDepth(triplets); } catch (e) { console.error("SNOTEL data failed:", e.message); }
+  let hourly = {};
+  try { hourly = await loadHourlyDepth(triplets); } catch (e) { console.error("SNOTEL hourly data failed, using daily:", e.message); }
 
   const out = [];
   for (const { zone, station } of picks) {
     let forecast = null;
     try { forecast = await loadForecast(zone); } catch (e) { console.error(`Forecast failed for ${zone.name}:`, e.message); }
-    const snow = station ? summarizeDepth(depth[station.triplet]) : null;
+    const snow = station ? summarizeDepth(depth[station.triplet], hourly[station.triplet]) : null;
     console.log(`${zone.state} ${zone.name.padEnd(28)} -> ${station ? `${station.name} (${station.triplet}, ${station.how}, ${station.km.toFixed(0)} km)` : "no station"} | depth ${snow?.depthIn ?? "–"} in | 7d ${forecast?.d7?.in ?? "–"} in`);
     out.push({
       ...zone,
