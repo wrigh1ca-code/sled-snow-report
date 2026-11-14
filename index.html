@@ -195,6 +195,7 @@ select { font: 600 1rem var(--font-body); padding: 8px 10px; border-radius: 8px;
 .access-side { margin-left: auto; display: flex; flex-wrap: wrap; gap: 10px; }
 .groom { white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); border: 2px solid var(--ink); border-radius: 10px; padding: 8px 12px; min-height: 44px; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; letter-spacing: .04em; text-transform: uppercase; }
 .groom:hover { background: var(--ink); color: var(--card); }
+.groom.cam { border-width: 1.5px; font-size: .98rem; padding: 8px 11px; }
 .groom svg { width: 20px; height: 20px; flex: none; }
 @media (max-width: 760px) {
   .access { padding: 12px; }
@@ -510,8 +511,9 @@ footer p { margin: 0 0 10px; }
     return "https://www.google.com/maps/dir/?api=1&destination=" + dest + "&travelmode=driving";
   }
   function accessRow(z) {
-    var th = (z.trailheads || []).filter(hasDest), g = z.grooming, cam = z.webcams;
-    if (!th.length && !(g && g.url) && !(cam && cam.url)) return "";
+    var th = (z.trailheads || []).filter(hasDest), g = z.grooming;
+    var cams = [].concat(z.webcams || []).filter(function (c) { return c && c.url; });
+    if (!th.length && !(g && g.url) && !cams.length) return "";
     var h = '<div class="access"><span class="access-lbl">' + (th.length ? "Trailhead" : "Trails") + "</span>";
     if (th.length) {
       var m = th[0];
@@ -525,7 +527,9 @@ footer p { margin: 0 0 10px; }
       }
     }
     var side = "";
-    if (cam && cam.url) side += '<a class="groom cam" href="' + esc(cam.url) + '" target="_blank" rel="noopener">' + ICON_CAM + esc(cam.label || "Webcams") + "</a>";
+    cams.forEach(function (c) {
+      side += '<a class="groom cam" href="' + esc(c.url) + '" target="_blank" rel="noopener" aria-label="Webcams: ' + esc(c.label || "Webcams") + '">' + ICON_CAM + esc(c.label || "Webcams") + "</a>";
+    });
     if (g && g.url) side += '<a class="groom" href="' + esc(g.url) + '" target="_blank" rel="noopener">' + ICON_GROOM + esc(g.label || "Grooming report") + "</a>";
     if (side) h += '<div class="access-side">' + side + "</div>";
     return h + "</div>";
