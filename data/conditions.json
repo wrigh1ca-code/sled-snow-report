@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T17:52:29.721Z",
+ "updatedAt": "2026-11-14T18:11:47.558Z",
  "sample": false,
  "models": [
   "GFS (US)",
@@ -73,69 +73,7 @@
     "change7dIn": 0,
     "sweIn": 0.2
    },
-   "forecast": {
-    "d1": {
-     "in": 0.3,
-     "low": 0.1,
-     "high": 0.6,
-     "models": 3
-    },
-    "d7": {
-     "in": 5.9,
-     "low": 3.8,
-     "high": 9.8,
-     "models": 3
-    },
-    "d10": {
-     "in": 6.9,
-     "low": 4,
-     "high": 12.5,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Two Top",
-      "elevFt": 8500,
-      "d1": 0.5,
-      "d7": 7.3,
-      "d10": 8.6
-     },
-     {
-      "name": "Lionhead",
-      "elevFt": 9000,
-      "d1": 0.2,
-      "d7": 5.2,
-      "d10": 6.4
-     },
-     {
-      "name": "Tepee Basin",
-      "elevFt": 8400,
-      "d1": 0,
-      "d7": 5,
-      "d10": 5.5
-     },
-     {
-      "name": "South Plateau",
-      "elevFt": 7900,
-      "d1": 0.3,
-      "d7": 6.1,
-      "d10": 6.9
-     }
-    ],
-    "daily": [
-     0.3,
-     0,
-     0.4,
-     1.9,
-     0.4,
-     1.7,
-     1.3,
-     0.3,
-     0.6,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "cooke-city",
@@ -198,69 +136,7 @@
     "change7dIn": 0,
     "sweIn": 1.3
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0,
-     "models": 3
-    },
-    "d7": {
-     "in": 4.4,
-     "low": 1.8,
-     "high": 7.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 5.7,
-     "low": 1.8,
-     "high": 10.8,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Daisy Pass",
-      "elevFt": 9700,
-      "d1": 0,
-      "d7": 4.5,
-      "d10": 5.8
-     },
-     {
-      "name": "Lulu Pass",
-      "elevFt": 9600,
-      "d1": 0,
-      "d7": 4.5,
-      "d10": 5.8
-     },
-     {
-      "name": "Henderson Mtn",
-      "elevFt": 9900,
-      "d1": 0,
-      "d7": 4.5,
-      "d10": 5.8
-     },
-     {
-      "name": "Round Lake",
-      "elevFt": 8800,
-      "d1": 0,
-      "d7": 4.1,
-      "d10": 5.4
-     }
-    ],
-    "daily": [
-     0,
-     0,
-     0.1,
-     2.4,
-     0.1,
-     0.6,
-     1.2,
-     0.2,
-     0.9,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "seeley-lake",
@@ -295,9 +171,10 @@
    ],
    "trailheads": [
     {
-     "name": "Seeley Creek Trailhead",
-     "q": "Seeley Creek Trailhead, Seeley Lake, MT",
-     "note": "West Morrell Rd 4353"
+     "name": "Seeley Creek trailhead",
+     "lat": 47.187,
+     "lon": -113.467,
+     "note": "Cottonwood Lakes Rd, 1 mi from town; sleds use West Morrell Rd 4353"
     }
    ],
    "grooming": {
@@ -321,69 +198,7 @@
     "change7dIn": -2,
     "sweIn": 0.8
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0,
-     "models": 3
-    },
-    "d7": {
-     "in": 2.7,
-     "low": 2,
-     "high": 3.7,
-     "models": 3
-    },
-    "d10": {
-     "in": 3,
-     "low": 2,
-     "high": 3.7,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Morrell Mtn",
-      "elevFt": 7200,
-      "d1": 0,
-      "d7": 2.9,
-      "d10": 3.1
-     },
-     {
-      "name": "Rice Ridge",
-      "elevFt": 6800,
-      "d1": 0,
-      "d7": 3,
-      "d10": 3.2
-     },
-     {
-      "name": "Lake Elsina",
-      "elevFt": 6500,
-      "d1": 0,
-      "d7": 3.3,
-      "d10": 3.5
-     },
-     {
-      "name": "Double Arrow Lookout",
-      "elevFt": 6300,
-      "d1": 0,
-      "d7": 1.9,
-      "d10": 2
-     }
-    ],
-    "daily": [
-     0,
-     0.2,
-     0.9,
-     1.1,
-     0.1,
-     0.4,
-     0.1,
-     0.1,
-     0.1,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "lincoln",
@@ -413,7 +228,8 @@
    "trailheads": [
     {
      "name": "Copper Creek",
-     "q": "Copper Creek Road, Lincoln, MT",
+     "lat": 47.01427,
+     "lon": -112.54901,
      "note": "MT-200 east 6 mi, then FR 330 north 2 mi"
     }
    ],
@@ -438,62 +254,7 @@
     "change7dIn": -2,
     "sweIn": 0
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0,
-     "models": 3
-    },
-    "d7": {
-     "in": 3.9,
-     "low": 3.2,
-     "high": 4.3,
-     "models": 3
-    },
-    "d10": {
-     "in": 3.9,
-     "low": 3.2,
-     "high": 4.5,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Stemple Pass",
-      "elevFt": 6800,
-      "d1": 0,
-      "d7": 3.7,
-      "d10": 3.8
-     },
-     {
-      "name": "Flesher Pass",
-      "elevFt": 6500,
-      "d1": 0,
-      "d7": 4.2,
-      "d10": 4.2
-     },
-     {
-      "name": "Copper Creek",
-      "elevFt": 6600,
-      "d1": 0,
-      "d7": 3.7,
-      "d10": 3.8
-     }
-    ],
-    "daily": [
-     0,
-     0,
-     1.3,
-     1.8,
-     0,
-     0.3,
-     0.4,
-     0.1,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "lolo-pass",
@@ -523,13 +284,15 @@
    "trailheads": [
     {
      "name": "Lolo Pass Visitor Center",
-     "q": "Lolo Pass Visitor Center, US-12",
-     "elevFt": 5233,
+     "lat": 46.63659,
+     "lon": -114.58011,
+     "elevFt": 5285,
      "note": "US-12 at the Idaho line"
     },
     {
      "name": "Lolo Hot Springs",
-     "q": "Lolo Hot Springs, MT"
+     "lat": 46.728,
+     "lon": -114.531
     }
    ],
    "grooming": {
@@ -553,62 +316,7 @@
     "change7dIn": 0,
     "sweIn": 0.1
    },
-   "forecast": {
-    "d1": {
-     "in": 0.1,
-     "low": 0,
-     "high": 0.2,
-     "models": 3
-    },
-    "d7": {
-     "in": 3.5,
-     "low": 3.2,
-     "high": 4.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 3.7,
-     "low": 3.2,
-     "high": 4.2,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Elk Meadows",
-      "elevFt": 6000,
-      "d1": 0.1,
-      "d7": 3.5,
-      "d10": 3.7
-     },
-     {
-      "name": "Moose Ridge",
-      "elevFt": 6200,
-      "d1": 0,
-      "d7": 2.9,
-      "d10": 3.1
-     },
-     {
-      "name": "Lost Park",
-      "elevFt": 6000,
-      "d1": 0.1,
-      "d7": 4.1,
-      "d10": 4.3
-     }
-    ],
-    "daily": [
-     0.1,
-     0.3,
-     1.6,
-     0.9,
-     0.1,
-     0.3,
-     0.2,
-     0.1,
-     0.1,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "togwotee",
@@ -643,9 +351,11 @@
    ],
    "trailheads": [
     {
-     "name": "Togwotee Mountain Lodge",
-     "q": "Togwotee Mountain Lodge, Moran, WY",
-     "note": "US-26/287, west side of the pass"
+     "name": "Togwotee Pass",
+     "lat": 43.74995,
+     "lon": -110.07991,
+     "elevFt": 9655,
+     "note": "US-26/287 summit; Brooks Lake Rd is 5 mi east"
     }
    ],
    "grooming": {
@@ -669,69 +379,7 @@
     "change7dIn": -1,
     "sweIn": 1.5
    },
-   "forecast": {
-    "d1": {
-     "in": 0.1,
-     "low": 0,
-     "high": 0.1,
-     "models": 3
-    },
-    "d7": {
-     "in": 3.4,
-     "low": 1.9,
-     "high": 5.5,
-     "models": 3
-    },
-    "d10": {
-     "in": 3.6,
-     "low": 1.9,
-     "high": 6.2,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Togwotee Summit",
-      "elevFt": 9600,
-      "d1": 0.1,
-      "d7": 3.3,
-      "d10": 3.6
-     },
-     {
-      "name": "Brooks Lake",
-      "elevFt": 9300,
-      "d1": 0.1,
-      "d7": 3.2,
-      "d10": 3.5
-     },
-     {
-      "name": "Squaw Basin",
-      "elevFt": 9000,
-      "d1": 0.1,
-      "d7": 3.8,
-      "d10": 4.1
-     },
-     {
-      "name": "Fourmile Meadows",
-      "elevFt": 8400,
-      "d1": 0,
-      "d7": 3.4,
-      "d10": 3.5
-     }
-    ],
-    "daily": [
-     0.1,
-     0,
-     0,
-     1.3,
-     0.1,
-     0.7,
-     1.4,
-     0.1,
-     0.1,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "greys-river",
@@ -766,13 +414,15 @@
    ],
    "trailheads": [
     {
-     "name": "Greys River Road",
-     "q": "Greys River Road, Alpine, WY",
-     "note": "End of the plowed road east of Alpine"
+     "name": "Greys River trailhead",
+     "lat": 43.15564,
+     "lon": -111.00337,
+     "note": "East edge of Alpine"
     },
     {
      "name": "Salt River Pass",
-     "q": "Salt River Pass, US-89, WY"
+     "lat": 42.50604,
+     "lon": -110.90852
     }
    ],
    "grooming": {
@@ -796,69 +446,7 @@
     "change7dIn": 1,
     "sweIn": 0.1
    },
-   "forecast": {
-    "d1": {
-     "in": 0.1,
-     "low": 0,
-     "high": 0.2,
-     "models": 3
-    },
-    "d7": {
-     "in": 6,
-     "low": 5.5,
-     "high": 6.8,
-     "models": 3
-    },
-    "d10": {
-     "in": 6.3,
-     "low": 5.6,
-     "high": 7.5,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Blind Bull Summit",
-      "elevFt": 8700,
-      "d1": 0,
-      "d7": 6.7,
-      "d10": 7.1
-     },
-     {
-      "name": "McDougal Gap",
-      "elevFt": 8900,
-      "d1": 0,
-      "d7": 5.5,
-      "d10": 5.8
-     },
-     {
-      "name": "Box Y / Greys River",
-      "elevFt": 7500,
-      "d1": 0.1,
-      "d7": 5.4,
-      "d10": 5.7
-     },
-     {
-      "name": "Salt River Pass",
-      "elevFt": 7900,
-      "d1": 0.3,
-      "d7": 6.3,
-      "d10": 6.5
-     }
-    ],
-    "daily": [
-     0.1,
-     0,
-     0,
-     1.9,
-     0.1,
-     1.9,
-     2,
-     0.3,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "snowy-range",
@@ -885,17 +473,7 @@
      "elevFt": 9500
     }
    ],
-   "trailheads": [
-    {
-     "name": "Green Rock Trailhead",
-     "q": "Green Rock Trailhead, WY-130, Centennial, WY",
-     "note": "$5 day-use; no trailers in the lot, park along WY-130"
-    },
-    {
-     "name": "Chimney Park",
-     "q": "Chimney Park Trailhead, WY-230, WY"
-    }
-   ],
+   "trailheads": [],
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -917,62 +495,7 @@
     "change7dIn": 0,
     "sweIn": 0.2
    },
-   "forecast": {
-    "d1": {
-     "in": 0.1,
-     "low": 0,
-     "high": 0.3,
-     "models": 3
-    },
-    "d7": {
-     "in": 3.3,
-     "low": 2.2,
-     "high": 5.1,
-     "models": 3
-    },
-    "d10": {
-     "in": 3.6,
-     "low": 2.2,
-     "high": 5.9,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Libby Flats",
-      "elevFt": 10600,
-      "d1": 0.2,
-      "d7": 4.6,
-      "d10": 4.9
-     },
-     {
-      "name": "Brooklyn Lake",
-      "elevFt": 10200,
-      "d1": 0.1,
-      "d7": 3.2,
-      "d10": 3.5
-     },
-     {
-      "name": "Rob Roy",
-      "elevFt": 9500,
-      "d1": 0,
-      "d7": 2.2,
-      "d10": 2.5
-     }
-    ],
-    "daily": [
-     0.1,
-     0,
-     0,
-     0.3,
-     0.2,
-     0.1,
-     2.7,
-     0.3,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "bighorns",
@@ -1002,11 +525,10 @@
    "trailheads": [
     {
      "name": "Burgess Junction",
-     "q": "Burgess Junction, US-14, WY"
-    },
-    {
-     "name": "Powder River Pass",
-     "q": "Powder River Pass, US-16, WY"
+     "lat": 44.78793,
+     "lon": -107.4966,
+     "elevFt": 7950,
+     "note": "US-14"
     }
    ],
    "grooming": {
@@ -1030,62 +552,7 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0,
-     "models": 3
-    },
-    "d7": {
-     "in": 2.9,
-     "low": 0.4,
-     "high": 6.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 2.9,
-     "low": 0.4,
-     "high": 6.2,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Burgess Junction",
-      "elevFt": 8200,
-      "d1": 0,
-      "d7": 2.6,
-      "d10": 2.6
-     },
-     {
-      "name": "Granite Pass",
-      "elevFt": 9000,
-      "d1": 0,
-      "d7": 2.9,
-      "d10": 2.9
-     },
-     {
-      "name": "Powder River Pass",
-      "elevFt": 9600,
-      "d1": 0,
-      "d7": 3.3,
-      "d10": 3.3
-     }
-    ],
-    "daily": [
-     0,
-     0,
-     0,
-     0.9,
-     0.1,
-     0.5,
-     1.4,
-     0,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "union-pass",
@@ -1112,13 +579,7 @@
      "elevFt": 9600
     }
    ],
-   "trailheads": [
-    {
-     "name": "Union Pass Road",
-     "q": "Union Pass Road, Dubois, WY",
-     "note": "Union Pass lodges are trailside"
-    }
-   ],
+   "trailheads": [],
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -1140,62 +601,7 @@
     "change7dIn": 0,
     "sweIn": 1.1
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0.1,
-     "models": 3
-    },
-    "d7": {
-     "in": 3,
-     "low": 1.7,
-     "high": 4.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 3.1,
-     "low": 1.7,
-     "high": 4.3,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Union Pass",
-      "elevFt": 9200,
-      "d1": 0,
-      "d7": 2.3,
-      "d10": 2.4
-     },
-     {
-      "name": "Sheridan Pass",
-      "elevFt": 9300,
-      "d1": 0,
-      "d7": 2.8,
-      "d10": 2.8
-     },
-     {
-      "name": "Fish Lake Mtn",
-      "elevFt": 9600,
-      "d1": 0.1,
-      "d7": 4,
-      "d10": 4.1
-     }
-    ],
-    "daily": [
-     0,
-     0,
-     0,
-     1.1,
-     0,
-     0.7,
-     1.2,
-     0.1,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "island-park",
@@ -1230,8 +636,11 @@
    ],
    "trailheads": [
     {
-     "name": "Big Springs (Mack's Inn)",
-     "q": "Big Springs Warming Hut, Island Park, ID"
+     "name": "Big Springs",
+     "lat": 44.485,
+     "lon": -111.29972,
+     "elevFt": 6300,
+     "note": "Mack's Inn, then 2 mi east on Big Springs Loop Rd"
     }
    ],
    "grooming": {
@@ -1255,69 +664,7 @@
     "change7dIn": 1,
     "sweIn": 0.3
    },
-   "forecast": {
-    "d1": {
-     "in": 0.7,
-     "low": 0.1,
-     "high": 1.1,
-     "models": 3
-    },
-    "d7": {
-     "in": 8.2,
-     "low": 5.1,
-     "high": 13.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 9.7,
-     "low": 5.1,
-     "high": 17.7,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Two Top",
-      "elevFt": 8500,
-      "d1": 0.5,
-      "d7": 7.3,
-      "d10": 8.6
-     },
-     {
-      "name": "Mt Jefferson",
-      "elevFt": 8800,
-      "d1": 1.3,
-      "d7": 8.7,
-      "d10": 10.1
-     },
-     {
-      "name": "Sawtell Peak",
-      "elevFt": 8600,
-      "d1": 1,
-      "d7": 8.5,
-      "d10": 10
-     },
-     {
-      "name": "Mesa Falls",
-      "elevFt": 6300,
-      "d1": 0,
-      "d7": 8.1,
-      "d10": 10.3
-     }
-    ],
-    "daily": [
-     0.7,
-     0,
-     0.6,
-     2.6,
-     0.5,
-     1.9,
-     1.9,
-     0.5,
-     1,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "mccall",
@@ -1344,21 +691,7 @@
      "elevFt": 6900
     }
    ],
-   "trailheads": [
-    {
-     "name": "Francis Wallace lot",
-     "q": "Francis Wallace Snowmobile Parking, Warren Wagon Road, McCall, ID",
-     "note": "Warren Wagon Rd, north of McCall"
-    },
-    {
-     "name": "Brush Creek",
-     "q": "Brush Creek Snowmobile Parking, Warren Wagon Road, McCall, ID"
-    },
-    {
-     "name": "Brundage Mountain",
-     "q": "Brundage Mountain Resort, Goose Lake Road, McCall, ID"
-    }
-   ],
+   "trailheads": [],
    "grooming": {
     "label": "Grooming map",
     "url": "https://experience.arcgis.com/experience/a92a825e3af44c4a94da9cf6460455e0/"
@@ -1380,62 +713,7 @@
     "change7dIn": 4,
     "sweIn": 0.2
    },
-   "forecast": {
-    "d1": {
-     "in": 0.2,
-     "low": 0,
-     "high": 0.4,
-     "models": 3
-    },
-    "d7": {
-     "in": 7.7,
-     "low": 5,
-     "high": 9.6,
-     "models": 3
-    },
-    "d10": {
-     "in": 8.8,
-     "low": 5,
-     "high": 12.4,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Granite Mtn",
-      "elevFt": 7800,
-      "d1": 0.3,
-      "d7": 8.8,
-      "d10": 9.8
-     },
-     {
-      "name": "Burgdorf / Secesh",
-      "elevFt": 6800,
-      "d1": 0.1,
-      "d7": 5.2,
-      "d10": 5.5
-     },
-     {
-      "name": "Lick Creek Summit",
-      "elevFt": 6900,
-      "d1": 0.2,
-      "d7": 9.2,
-      "d10": 11.2
-     }
-    ],
-    "daily": [
-     0.2,
-     2.5,
-     2.7,
-     0.6,
-     0.6,
-     0.7,
-     0.5,
-     0.4,
-     0.6,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "stanley",
@@ -1465,13 +743,10 @@
    "trailheads": [
     {
      "name": "Banner Summit",
-     "q": "Banner Summit, ID-21, Idaho",
-     "elevFt": 7056,
+     "lat": 44.30629,
+     "lon": -115.23177,
+     "elevFt": 7034,
      "note": "ID-21"
-    },
-    {
-     "name": "Galena Summit",
-     "q": "Galena Summit, ID-75, Idaho"
     }
    ],
    "grooming": {
@@ -1495,62 +770,7 @@
     "change7dIn": 1,
     "sweIn": 0.2
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0,
-     "models": 3
-    },
-    "d7": {
-     "in": 8.3,
-     "low": 6.1,
-     "high": 11.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 9.3,
-     "low": 6.1,
-     "high": 14.2,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Banner Summit",
-      "elevFt": 7200,
-      "d1": 0,
-      "d7": 7.9,
-      "d10": 8.8
-     },
-     {
-      "name": "Cape Horn",
-      "elevFt": 7400,
-      "d1": 0,
-      "d7": 8.4,
-      "d10": 9.3
-     },
-     {
-      "name": "Galena Summit",
-      "elevFt": 8600,
-      "d1": 0,
-      "d7": 8.6,
-      "d10": 9.7
-     }
-    ],
-    "daily": [
-     0,
-     0.6,
-     4.5,
-     0.7,
-     0.8,
-     1.5,
-     0.3,
-     0.5,
-     0.5,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "silver-valley",
@@ -1580,7 +800,8 @@
    "trailheads": [
     {
      "name": "Lookout Pass",
-     "q": "Lookout Pass Ski Area, I-90 Exit 0",
+     "lat": 47.455,
+     "lon": -115.695,
      "elevFt": 4710,
      "note": "I-90 exit 0"
     }
@@ -1606,62 +827,7 @@
     "change7dIn": 0,
     "sweIn": 0.1
    },
-   "forecast": {
-    "d1": {
-     "in": 0.1,
-     "low": 0,
-     "high": 0.2,
-     "models": 3
-    },
-    "d7": {
-     "in": 3.4,
-     "low": 1,
-     "high": 6.3,
-     "models": 3
-    },
-    "d10": {
-     "in": 3.9,
-     "low": 1,
-     "high": 6.4,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Lookout Pass",
-      "elevFt": 5500,
-      "d1": 0.1,
-      "d7": 3.4,
-      "d10": 3.8
-     },
-     {
-      "name": "Thompson Pass",
-      "elevFt": 5500,
-      "d1": 0.1,
-      "d7": 2.9,
-      "d10": 3.4
-     },
-     {
-      "name": "Stevens Peak ridges",
-      "elevFt": 6000,
-      "d1": 0.1,
-      "d7": 3.9,
-      "d10": 4.4
-     }
-    ],
-    "daily": [
-     0.1,
-     1,
-     0.5,
-     0.5,
-     0.4,
-     0.2,
-     0.8,
-     0.4,
-     0.1,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "bear-lake-id",
@@ -1690,16 +856,10 @@
    ],
    "trailheads": [
     {
-     "name": "Bloomington Canyon Trailhead",
-     "q": "Bloomington Canyon Trailhead, Bloomington, ID"
-    },
-    {
      "name": "Fish Haven Canyon",
-     "q": "Fish Haven Canyon Trailhead, Fish Haven, ID"
-    },
-    {
-     "name": "Diamond Creek",
-     "q": "Diamond Creek Trailhead, Caribou National Forest, ID"
+     "lat": 42.03804,
+     "lon": -111.41983,
+     "note": "Fish Haven Canyon Rd"
     }
    ],
    "grooming": {
@@ -1723,62 +883,7 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": {
-    "d1": {
-     "in": 0.2,
-     "low": 0.1,
-     "high": 0.4,
-     "models": 3
-    },
-    "d7": {
-     "in": 6.4,
-     "low": 4.8,
-     "high": 7.5,
-     "models": 3
-    },
-    "d10": {
-     "in": 6.4,
-     "low": 4.8,
-     "high": 7.7,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Emigrant Summit",
-      "elevFt": 7400,
-      "d1": 0.2,
-      "d7": 6.3,
-      "d10": 6.3
-     },
-     {
-      "name": "Sherman Peak",
-      "elevFt": 8500,
-      "d1": 0.4,
-      "d7": 7,
-      "d10": 7.1
-     },
-     {
-      "name": "Paris Canyon",
-      "elevFt": 7600,
-      "d1": 0.1,
-      "d7": 5.8,
-      "d10": 5.9
-     }
-    ],
-    "daily": [
-     0.2,
-     0,
-     0.1,
-     1.3,
-     0.3,
-     3.1,
-     1.4,
-     0,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "logan-canyon",
@@ -1807,13 +912,10 @@
    ],
    "trailheads": [
     {
-     "name": "Franklin Basin Trailhead",
-     "q": "Franklin Basin Trailhead, US-89, Logan Canyon, UT",
-     "note": "US-89, upper Logan Canyon"
-    },
-    {
-     "name": "Beaver Creek Lodge",
-     "q": "Beaver Creek Lodge, Logan Canyon, UT"
+     "name": "Sinks Winter Trailhead",
+     "lat": 41.9345,
+     "lon": -111.4826,
+     "note": "US-89, upper Logan Canyon; fee area"
     }
    ],
    "grooming": {
@@ -1837,62 +939,7 @@
     "change7dIn": 2,
     "sweIn": 0
    },
-   "forecast": {
-    "d1": {
-     "in": 0,
-     "low": 0,
-     "high": 0.1,
-     "models": 3
-    },
-    "d7": {
-     "in": 7.2,
-     "low": 5.3,
-     "high": 9.5,
-     "models": 3
-    },
-    "d10": {
-     "in": 7.4,
-     "low": 5.6,
-     "high": 9.6,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Tony Grove",
-      "elevFt": 8400,
-      "d1": 0.1,
-      "d7": 5.8,
-      "d10": 5.8
-     },
-     {
-      "name": "Franklin Basin",
-      "elevFt": 8000,
-      "d1": 0,
-      "d7": 7.7,
-      "d10": 8
-     },
-     {
-      "name": "Beaver Creek",
-      "elevFt": 7900,
-      "d1": 0,
-      "d7": 8.1,
-      "d10": 8.3
-     }
-    ],
-    "daily": [
-     0,
-     0,
-     0.3,
-     2,
-     0.4,
-     2.8,
-     1.6,
-     0.1,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "monte-cristo",
@@ -1921,13 +968,11 @@
    ],
    "trailheads": [
     {
-     "name": "Monte Cristo Trailhead",
-     "q": "Monte Cristo Trailhead, UT-39, Utah",
-     "note": "UT-39"
-    },
-    {
-     "name": "Hardware Ranch",
-     "q": "Hardware Ranch, Hyrum, UT"
+     "name": "Monte Cristo",
+     "lat": 41.46368,
+     "lon": -111.49748,
+     "elevFt": 9000,
+     "note": "UT-39 summit; parking pass required"
     }
    ],
    "grooming": {
@@ -1951,62 +996,7 @@
     "change7dIn": 2,
     "sweIn": 1.1
    },
-   "forecast": {
-    "d1": {
-     "in": 0.4,
-     "low": 0.1,
-     "high": 1.1,
-     "models": 3
-    },
-    "d7": {
-     "in": 5.4,
-     "low": 4.2,
-     "high": 7.4,
-     "models": 3
-    },
-    "d10": {
-     "in": 5.4,
-     "low": 4.2,
-     "high": 7.5,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Monte Cristo Summit",
-      "elevFt": 8900,
-      "d1": 0.7,
-      "d7": 5.2,
-      "d10": 5.3
-     },
-     {
-      "name": "Curtis Creek",
-      "elevFt": 8200,
-      "d1": 0.2,
-      "d7": 4.4,
-      "d10": 4.4
-     },
-     {
-      "name": "Ant Flat",
-      "elevFt": 7800,
-      "d1": 0.4,
-      "d7": 6.6,
-      "d10": 6.6
-     }
-    ],
-    "daily": [
-     0.4,
-     0,
-     0,
-     1.3,
-     0.3,
-     2.3,
-     1.1,
-     0,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "mirror-lake",
@@ -2047,21 +1037,10 @@
    ],
    "trailheads": [
     {
-     "name": "Soapstone gate",
-     "q": "Soapstone Snowmobile Trailhead, Mirror Lake Highway, Kamas, UT",
+     "name": "Soapstone winter trailhead",
+     "lat": 40.58131,
+     "lon": -111.04833,
      "note": "SR-150, MP 14.5"
-    },
-    {
-     "name": "Nobletts",
-     "q": "Nobletts Trailhead, SR-35, Woodland, UT"
-    },
-    {
-     "name": "Hanna",
-     "q": "Hanna Snowmobile Trailhead, SR-35, Hanna, UT"
-    },
-    {
-     "name": "Bear River",
-     "q": "Bear River Ranger Station, Mirror Lake Highway, UT"
     }
    ],
    "grooming": {
@@ -2085,76 +1064,7 @@
     "change7dIn": -2,
     "sweIn": 0.3
    },
-   "forecast": {
-    "d1": {
-     "in": 0.6,
-     "low": 0.4,
-     "high": 0.9,
-     "models": 3
-    },
-    "d7": {
-     "in": 6.7,
-     "low": 4,
-     "high": 9.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 6.7,
-     "low": 4,
-     "high": 9.4,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Bald Mtn Pass",
-      "elevFt": 10500,
-      "d1": 0.7,
-      "d7": 7.4,
-      "d10": 7.4
-     },
-     {
-      "name": "Trial Lake",
-      "elevFt": 9900,
-      "d1": 0.8,
-      "d7": 7.7,
-      "d10": 7.8
-     },
-     {
-      "name": "Soapstone",
-      "elevFt": 8800,
-      "d1": 0.9,
-      "d7": 8,
-      "d10": 8.1
-     },
-     {
-      "name": "Bear River",
-      "elevFt": 8800,
-      "d1": 0.1,
-      "d7": 3.2,
-      "d10": 3.3
-     },
-     {
-      "name": "Mill Hollow",
-      "elevFt": 8900,
-      "d1": 0.6,
-      "d7": 7.1,
-      "d10": 7.1
-     }
-    ],
-    "daily": [
-     0.6,
-     0,
-     0,
-     1.9,
-     0.2,
-     2.7,
-     1.3,
-     0,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "strawberry",
@@ -2189,14 +1099,11 @@
    ],
    "trailheads": [
     {
-     "name": "Daniels Summit Lodge",
-     "q": "Daniels Summit Lodge, US-40, Heber City, UT",
-     "elevFt": 8000,
+     "name": "Daniels Summit",
+     "lat": 40.29722,
+     "lon": -111.25222,
+     "elevFt": 8020,
      "note": "US-40"
-    },
-    {
-     "name": "Co-op Creek",
-     "q": "Co-op Creek Snowmobile Parking, US-40, Utah"
     }
    ],
    "grooming": {
@@ -2220,69 +1127,7 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": {
-    "d1": {
-     "in": 0.4,
-     "low": 0.2,
-     "high": 0.6,
-     "models": 3
-    },
-    "d7": {
-     "in": 6.4,
-     "low": 4.8,
-     "high": 8.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 6.4,
-     "low": 4.8,
-     "high": 8.2,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Daniels Summit",
-      "elevFt": 8300,
-      "d1": 0.5,
-      "d7": 8.5,
-      "d10": 8.5
-     },
-     {
-      "name": "Strawberry Peak",
-      "elevFt": 9300,
-      "d1": 0.5,
-      "d7": 5.7,
-      "d10": 5.7
-     },
-     {
-      "name": "Co-op Creek",
-      "elevFt": 8200,
-      "d1": 0.5,
-      "d7": 4.6,
-      "d10": 4.6
-     },
-     {
-      "name": "Currant Creek",
-      "elevFt": 8500,
-      "d1": 0,
-      "d7": 6.6,
-      "d10": 6.6
-     }
-    ],
-    "daily": [
-     0.4,
-     0,
-     0,
-     1.9,
-     0.1,
-     3,
-     1,
-     0,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "skyline",
@@ -2338,62 +1183,7 @@
     "change7dIn": 3,
     "sweIn": 0.2
    },
-   "forecast": {
-    "d1": {
-     "in": 1.1,
-     "low": 0.7,
-     "high": 1.6,
-     "models": 3
-    },
-    "d7": {
-     "in": 8.8,
-     "low": 6.9,
-     "high": 10.5,
-     "models": 3
-    },
-    "d10": {
-     "in": 8.9,
-     "low": 6.9,
-     "high": 10.5,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Fairview Canyon top",
-      "elevFt": 9700,
-      "d1": 1,
-      "d7": 9,
-      "d10": 9
-     },
-     {
-      "name": "Huntington Reservoir",
-      "elevFt": 9000,
-      "d1": 0.6,
-      "d7": 7.4,
-      "d10": 7.4
-     },
-     {
-      "name": "Skyline south",
-      "elevFt": 10300,
-      "d1": 1.8,
-      "d7": 10,
-      "d10": 10.1
-     }
-    ],
-    "daily": [
-     1.1,
-     0,
-     0,
-     3,
-     0,
-     3.7,
-     1,
-     0,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "rabbit-ears",
@@ -2454,62 +1244,7 @@
     "change7dIn": -2,
     "sweIn": 0.6
    },
-   "forecast": {
-    "d1": {
-     "in": 0.3,
-     "low": 0.1,
-     "high": 0.5,
-     "models": 3
-    },
-    "d7": {
-     "in": 6,
-     "low": 4,
-     "high": 7.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 6.3,
-     "low": 4,
-     "high": 7.7,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Rabbit Ears Pass",
-      "elevFt": 9600,
-      "d1": 0.1,
-      "d7": 4.6,
-      "d10": 4.8
-     },
-     {
-      "name": "Buffalo Pass",
-      "elevFt": 10300,
-      "d1": 0.3,
-      "d7": 7.4,
-      "d10": 7.7
-     },
-     {
-      "name": "Dumont Lake",
-      "elevFt": 9500,
-      "d1": 0.4,
-      "d7": 6,
-      "d10": 6.3
-     }
-    ],
-    "daily": [
-     0.3,
-     0,
-     0,
-     1.6,
-     0.3,
-     0.1,
-     3.7,
-     0.3,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "grand-lake",
@@ -2566,62 +1301,7 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": {
-    "d1": {
-     "in": 0.2,
-     "low": 0.1,
-     "high": 0.3,
-     "models": 3
-    },
-    "d7": {
-     "in": 2.6,
-     "low": 0.8,
-     "high": 4.5,
-     "models": 3
-    },
-    "d10": {
-     "in": 2.8,
-     "low": 0.8,
-     "high": 5.2,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Stillwater Pass",
-      "elevFt": 10200,
-      "d1": 0.1,
-      "d7": 2.5,
-      "d10": 2.7
-     },
-     {
-      "name": "Gravel Mtn",
-      "elevFt": 10500,
-      "d1": 0.2,
-      "d7": 2.6,
-      "d10": 2.8
-     },
-     {
-      "name": "Supply Basin",
-      "elevFt": 9400,
-      "d1": 0.1,
-      "d7": 2.7,
-      "d10": 2.9
-     }
-    ],
-    "daily": [
-     0.2,
-     0,
-     0,
-     0.2,
-     0.2,
-     0.1,
-     2,
-     0.2,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "vail-pass",
@@ -2684,69 +1364,7 @@
     "change7dIn": -1,
     "sweIn": 0.4
    },
-   "forecast": {
-    "d1": {
-     "in": 0.5,
-     "low": 0,
-     "high": 0.9,
-     "models": 3
-    },
-    "d7": {
-     "in": 1.9,
-     "low": 1.4,
-     "high": 2.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 2,
-     "low": 1.4,
-     "high": 2.6,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Vail Pass summit",
-      "elevFt": 10700,
-      "d1": 0.6,
-      "d7": 2.2,
-      "d10": 2.4
-     },
-     {
-      "name": "Shrine Pass",
-      "elevFt": 11100,
-      "d1": 0.5,
-      "d7": 2.3,
-      "d10": 2.4
-     },
-     {
-      "name": "Ptarmigan Hill",
-      "elevFt": 11800,
-      "d1": 0.6,
-      "d7": 2.2,
-      "d10": 2.4
-     },
-     {
-      "name": "Camp Hale",
-      "elevFt": 9300,
-      "d1": 0.1,
-      "d7": 0.9,
-      "d10": 1
-     }
-    ],
-    "daily": [
-     0.5,
-     0,
-     0,
-     0.2,
-     0.1,
-     0,
-     1.1,
-     0.1,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "grand-mesa",
@@ -2773,13 +1391,7 @@
      "elevFt": 10500
     }
    ],
-   "trailheads": [
-    {
-     "name": "Mesa Lakes",
-     "q": "Mesa Lakes Lodge, CO-65, Mesa, CO",
-     "note": "CO-65"
-    }
-   ],
+   "trailheads": [],
    "grooming": {
     "label": "Grooming updates",
     "url": "https://www.snowmobilecolo.com"
@@ -2801,62 +1413,7 @@
     "change7dIn": 0,
     "sweIn": 1.8
    },
-   "forecast": {
-    "d1": {
-     "in": 1.9,
-     "low": 1,
-     "high": 2.4,
-     "models": 3
-    },
-    "d7": {
-     "in": 12.1,
-     "low": 6,
-     "high": 15.8,
-     "models": 3
-    },
-    "d10": {
-     "in": 12.2,
-     "low": 6,
-     "high": 16,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Mesa Lakes",
-      "elevFt": 9900,
-      "d1": 2.1,
-      "d7": 11.5,
-      "d10": 11.6
-     },
-     {
-      "name": "Skyway",
-      "elevFt": 10600,
-      "d1": 1.7,
-      "d7": 12.3,
-      "d10": 12.4
-     },
-     {
-      "name": "County Line",
-      "elevFt": 10500,
-      "d1": 1.9,
-      "d7": 12.5,
-      "d10": 12.5
-     }
-    ],
-    "daily": [
-     1.9,
-     0,
-     0,
-     3.8,
-     0.5,
-     2.3,
-     3.6,
-     0.1,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   },
   {
    "id": "wolf-creek",
@@ -2885,17 +1442,16 @@
    ],
    "trailheads": [
     {
-     "name": "Big Meadows",
-     "q": "Big Meadows Reservoir, US-160, South Fork, CO",
-     "note": "US-160, just off the highway"
-    },
-    {
-     "name": "Tucker Ponds",
-     "q": "Tucker Ponds Campground, US-160, South Fork, CO"
+     "name": "Big Meadows Trailhead",
+     "lat": 37.55362,
+     "lon": -106.77913,
+     "elevFt": 8900,
+     "note": "US-160, plowed lot"
     },
     {
      "name": "Park Creek",
-     "q": "Park Creek Campground, US-160, South Fork, CO"
+     "lat": 37.59228,
+     "lon": -106.72887
     }
    ],
    "grooming": {
@@ -2919,62 +1475,7 @@
     "change7dIn": 5,
     "sweIn": 7.1
    },
-   "forecast": {
-    "d1": {
-     "in": 0.3,
-     "low": 0.1,
-     "high": 0.5,
-     "models": 3
-    },
-    "d7": {
-     "in": 9.5,
-     "low": 5,
-     "high": 14.2,
-     "models": 3
-    },
-    "d10": {
-     "in": 9.6,
-     "low": 5,
-     "high": 14.5,
-     "models": 3
-    },
-    "spots": [
-     {
-      "name": "Big Meadows",
-      "elevFt": 10000,
-      "d1": 0.3,
-      "d7": 10,
-      "d10": 10
-     },
-     {
-      "name": "Tucker Ponds / Pass Creek",
-      "elevFt": 10300,
-      "d1": 0.4,
-      "d7": 10.3,
-      "d10": 10.4
-     },
-     {
-      "name": "Fox Mountain / Park Creek",
-      "elevFt": 10500,
-      "d1": 0.2,
-      "d7": 8.2,
-      "d10": 8.3
-     }
-    ],
-    "daily": [
-     0.3,
-     0,
-     0,
-     4.4,
-     0.1,
-     1.7,
-     3,
-     0.1,
-     0,
-     0
-    ],
-    "startsAt": "2026-11-14T17:00Z"
-   }
+   "forecast": null
   }
  ]
 }
