@@ -192,13 +192,15 @@ select { font: 600 1rem var(--font-body); padding: 8px 10px; border-radius: 8px;
 .also a { display: inline-flex; align-items: center; gap: 5px; color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 2px solid color-mix(in srgb, var(--marker) 70%, transparent); padding-bottom: 1px; }
 .also a:hover { border-bottom-color: var(--marker); }
 .pbadge { display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 4px; background: var(--ink); color: var(--card); font: 800 .7rem/1 var(--font-display); flex: none; }
-.groom { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); border: 2px solid var(--ink); border-radius: 10px; padding: 8px 12px; min-height: 44px; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; letter-spacing: .04em; text-transform: uppercase; }
+.access-side { margin-left: auto; display: flex; flex-wrap: wrap; gap: 10px; }
+.groom { white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); border: 2px solid var(--ink); border-radius: 10px; padding: 8px 12px; min-height: 44px; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; letter-spacing: .04em; text-transform: uppercase; }
 .groom:hover { background: var(--ink); color: var(--card); }
 .groom svg { width: 20px; height: 20px; flex: none; }
 @media (max-width: 760px) {
   .access { padding: 12px; }
   .go { flex: 1 1 100%; }
-  .groom { margin-left: 0; flex: 1 1 100%; justify-content: center; }
+  .access-side { margin-left: 0; flex: 1 1 100%; }
+  .groom { flex: 1 1 auto; justify-content: center; }
 }
 .meta { grid-column: 1 / -1; font-size: .92rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .meta a { color: var(--ice); font-weight: 600; }
@@ -497,6 +499,7 @@ footer p { margin: 0 0 10px; }
     return '<div class="strip" aria-label="Daily snowfall, next 10 days">' + html + "</div>";
   }
   var ICON_GO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 12l10 10 10-10Z" fill="currentColor" opacity=".18"/><path d="M8.5 15v-3.5a1.5 1.5 0 0 1 1.5-1.5h5m-2.5-2.5L15 10l-2.5 2.5M12 2 2 12l10 10 10-10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var ICON_CAM = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="13" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 11 5-3v8l-5-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9.5" cy="12" r="2" fill="currentColor"/></svg>';
   var ICON_GROOM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 14h14M7 10h10M4 18l3-8m13 8-3-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   // Directions always use exact coordinates, never a name lookup.
   // Exact coordinates whenever we have them. A few lots without published coordinates use a
@@ -507,8 +510,8 @@ footer p { margin: 0 0 10px; }
     return "https://www.google.com/maps/dir/?api=1&destination=" + dest + "&travelmode=driving";
   }
   function accessRow(z) {
-    var th = (z.trailheads || []).filter(hasDest), g = z.grooming;
-    if (!th.length && !(g && g.url)) return "";
+    var th = (z.trailheads || []).filter(hasDest), g = z.grooming, cam = z.webcams;
+    if (!th.length && !(g && g.url) && !(cam && cam.url)) return "";
     var h = '<div class="access"><span class="access-lbl">' + (th.length ? "Trailhead" : "Trails") + "</span>";
     if (th.length) {
       var m = th[0];
@@ -521,7 +524,10 @@ footer p { margin: 0 0 10px; }
         }).join("") + "</span>";
       }
     }
-    if (g && g.url) h += '<a class="groom" href="' + esc(g.url) + '" target="_blank" rel="noopener">' + ICON_GROOM + esc(g.label || "Grooming report") + "</a>";
+    var side = "";
+    if (cam && cam.url) side += '<a class="groom cam" href="' + esc(cam.url) + '" target="_blank" rel="noopener">' + ICON_CAM + esc(cam.label || "Webcams") + "</a>";
+    if (g && g.url) side += '<a class="groom" href="' + esc(g.url) + '" target="_blank" rel="noopener">' + ICON_GROOM + esc(g.label || "Grooming report") + "</a>";
+    if (side) h += '<div class="access-side">' + side + "</div>";
     return h + "</div>";
   }
 
