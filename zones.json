@@ -23,22 +23,22 @@
       { "name": "Lake Elsina", "lat": 47.29, "lon": -113.33, "elevFt": 6500 },
       { "name": "Double Arrow Lookout", "lat": 47.11, "lon": -113.45, "elevFt": 6300 } ],
       "trailheads": [
-        {"name": "Seeley Creek Trailhead", "q": "Seeley Creek Trailhead, Seeley Lake, MT", "note": "West Morrell Rd 4353"} ],
+        {"name": "Seeley Creek trailhead", "lat": 47.187, "lon": -113.467, "note": "Cottonwood Lakes Rd, 1 mi from town; sleds use West Morrell Rd 4353"} ],
       "grooming": {"label": "Trail info", "url": "https://visitmt.com/listing/west-morrell-rice-ridge-loop-snowmobile-trail-14118"} },
     { "id": "lincoln", "name": "Lincoln", "state": "MT", "snotel": "Copper Camp", "spots": [
       { "name": "Stemple Pass", "lat": 46.895, "lon": -112.5, "elevFt": 6800 },
       { "name": "Flesher Pass", "lat": 47.045, "lon": -112.36, "elevFt": 6500 },
       { "name": "Copper Creek", "lat": 47.08, "lon": -112.62, "elevFt": 6600 } ],
       "trailheads": [
-        {"name": "Copper Creek", "q": "Copper Creek Road, Lincoln, MT", "note": "MT-200 east 6 mi, then FR 330 north 2 mi"} ],
+        {"name": "Copper Creek", "lat": 47.01427, "lon": -112.54901, "note": "MT-200 east 6 mi, then FR 330 north 2 mi"} ],
       "grooming": {"label": "Trail info", "url": "https://visitmt.com/listing/copper-creek-snowmobile-trail-5989"} },
     { "id": "lolo-pass", "name": "Lolo Pass", "state": "MT", "snotel": "Lolo Pass", "spots": [
       { "name": "Elk Meadows", "lat": 46.7, "lon": -114.65, "elevFt": 6000 },
       { "name": "Moose Ridge", "lat": 46.66, "lon": -114.54, "elevFt": 6200 },
       { "name": "Lost Park", "lat": 46.6, "lon": -114.52, "elevFt": 6000 } ],
       "trailheads": [
-        {"name": "Lolo Pass Visitor Center", "q": "Lolo Pass Visitor Center, US-12", "elevFt": 5233, "note": "US-12 at the Idaho line"},
-        {"name": "Lolo Hot Springs", "q": "Lolo Hot Springs, MT"} ],
+        {"name": "Lolo Pass Visitor Center", "lat": 46.63659, "lon": -114.58011, "elevFt": 5285, "note": "US-12 at the Idaho line"},
+        {"name": "Lolo Hot Springs", "lat": 46.728, "lon": -114.531} ],
       "grooming": {"label": "Trail info", "url": "https://visitmt.com/listing/lolo-pass-snowmobile-trail-system-14183"} },
     { "id": "togwotee", "name": "Togwotee Pass", "state": "WY", "snotel": "Togwotee Pass", "spots": [
       { "name": "Togwotee Summit", "lat": 43.75, "lon": -110.07, "elevFt": 9600 },
@@ -46,7 +46,7 @@
       { "name": "Squaw Basin", "lat": 43.8, "lon": -110.14, "elevFt": 9000 },
       { "name": "Fourmile Meadows", "lat": 43.8, "lon": -110.25, "elevFt": 8400 } ],
       "trailheads": [
-        {"name": "Togwotee Mountain Lodge", "q": "Togwotee Mountain Lodge, Moran, WY", "note": "US-26/287, west side of the pass"} ],
+        {"name": "Togwotee Pass", "lat": 43.74995, "lon": -110.07991, "elevFt": 9655, "note": "US-26/287 summit; Brooks Lake Rd is 5 mi east"} ],
       "grooming": {"label": "Trail maps", "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"} },
     { "id": "greys-river", "name": "Greys River / Star Valley", "state": "WY", "snotel": "Blind Bull Sum", "spots": [
       { "name": "Blind Bull Summit", "lat": 42.96, "lon": -110.61, "elevFt": 8700 },
@@ -54,31 +54,27 @@
       { "name": "Box Y / Greys River", "lat": 43.05, "lon": -110.76, "elevFt": 7500 },
       { "name": "Salt River Pass", "lat": 42.62, "lon": -110.88, "elevFt": 7900 } ],
       "trailheads": [
-        {"name": "Greys River Road", "q": "Greys River Road, Alpine, WY", "note": "End of the plowed road east of Alpine"},
-        {"name": "Salt River Pass", "q": "Salt River Pass, US-89, WY"} ],
+        {"name": "Greys River trailhead", "lat": 43.15564, "lon": -111.00337, "note": "East edge of Alpine"},
+        {"name": "Salt River Pass", "lat": 42.50604, "lon": -110.90852} ],
       "grooming": {"label": "Trail maps", "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"} },
     { "id": "snowy-range", "name": "Snowy Range", "state": "WY", "snotel": "Brooklyn Lake", "spots": [
       { "name": "Libby Flats", "lat": 41.34, "lon": -106.3, "elevFt": 10600 },
       { "name": "Brooklyn Lake", "lat": 41.37, "lon": -106.25, "elevFt": 10200 },
       { "name": "Rob Roy", "lat": 41.22, "lon": -106.26, "elevFt": 9500 } ],
-      "trailheads": [
-        {"name": "Green Rock Trailhead", "q": "Green Rock Trailhead, WY-130, Centennial, WY", "note": "$5 day-use; no trailers in the lot, park along WY-130"},
-        {"name": "Chimney Park", "q": "Chimney Park Trailhead, WY-230, WY"} ],
+      "trailheads": [],
       "grooming": {"label": "Trail maps", "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"} },
     { "id": "bighorns", "name": "Bighorn Mountains", "state": "WY", "snotel": "Burgess Junction", "spots": [
       { "name": "Burgess Junction", "lat": 44.78, "lon": -107.53, "elevFt": 8200 },
       { "name": "Granite Pass", "lat": 44.64, "lon": -107.49, "elevFt": 9000 },
       { "name": "Powder River Pass", "lat": 44.15, "lon": -107.06, "elevFt": 9600 } ],
       "trailheads": [
-        {"name": "Burgess Junction", "q": "Burgess Junction, US-14, WY"},
-        {"name": "Powder River Pass", "q": "Powder River Pass, US-16, WY"} ],
+        {"name": "Burgess Junction", "lat": 44.78793, "lon": -107.4966, "elevFt": 7950, "note": "US-14"} ],
       "grooming": {"label": "Trail maps", "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"} },
     { "id": "union-pass", "name": "Union Pass / Dubois", "state": "WY", "snotel": "", "spots": [
       { "name": "Union Pass", "lat": 43.47, "lon": -109.86, "elevFt": 9200 },
       { "name": "Sheridan Pass", "lat": 43.59, "lon": -109.95, "elevFt": 9300 },
       { "name": "Fish Lake Mtn", "lat": 43.42, "lon": -109.78, "elevFt": 9600 } ],
-      "trailheads": [
-        {"name": "Union Pass Road", "q": "Union Pass Road, Dubois, WY", "note": "Union Pass lodges are trailside"} ],
+      "trailheads": [],
       "grooming": {"label": "Trail maps", "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"} },
     { "id": "island-park", "name": "Island Park", "state": "ID", "snotel": "White Elephant", "spots": [
       { "name": "Two Top", "lat": 44.6, "lon": -111.27, "elevFt": 8500 },
@@ -86,56 +82,48 @@
       { "name": "Sawtell Peak", "lat": 44.56, "lon": -111.44, "elevFt": 8600 },
       { "name": "Mesa Falls", "lat": 44.19, "lon": -111.33, "elevFt": 6300 } ],
       "trailheads": [
-        {"name": "Big Springs (Mack's Inn)", "q": "Big Springs Warming Hut, Island Park, ID"} ],
+        {"name": "Big Springs", "lat": 44.485, "lon": -111.29972, "elevFt": 6300, "note": "Mack's Inn, then 2 mi east on Big Springs Loop Rd"} ],
       "grooming": {"label": "Grooming report", "url": "https://destinationyellowstone.com/play/trail-reports"} },
     { "id": "mccall", "name": "McCall", "state": "ID", "snotel": "Brundage Reservoir", "spots": [
       { "name": "Granite Mtn", "lat": 45.1, "lon": -116.11, "elevFt": 7800 },
       { "name": "Burgdorf / Secesh", "lat": 45.3, "lon": -115.91, "elevFt": 6800 },
       { "name": "Lick Creek Summit", "lat": 45.04, "lon": -115.9, "elevFt": 6900 } ],
-      "trailheads": [
-        {"name": "Francis Wallace lot", "q": "Francis Wallace Snowmobile Parking, Warren Wagon Road, McCall, ID", "note": "Warren Wagon Rd, north of McCall"},
-        {"name": "Brush Creek", "q": "Brush Creek Snowmobile Parking, Warren Wagon Road, McCall, ID"},
-        {"name": "Brundage Mountain", "q": "Brundage Mountain Resort, Goose Lake Road, McCall, ID"} ],
+      "trailheads": [],
       "grooming": {"label": "Grooming map", "url": "https://experience.arcgis.com/experience/a92a825e3af44c4a94da9cf6460455e0/"} },
     { "id": "stanley", "name": "Stanley / Sawtooths", "state": "ID", "snotel": "Banner Summit", "spots": [
       { "name": "Banner Summit", "lat": 44.36, "lon": -115.21, "elevFt": 7200 },
       { "name": "Cape Horn", "lat": 44.42, "lon": -115.16, "elevFt": 7400 },
       { "name": "Galena Summit", "lat": 43.87, "lon": -114.71, "elevFt": 8600 } ],
       "trailheads": [
-        {"name": "Banner Summit", "q": "Banner Summit, ID-21, Idaho", "elevFt": 7056, "note": "ID-21"},
-        {"name": "Galena Summit", "q": "Galena Summit, ID-75, Idaho"} ],
+        {"name": "Banner Summit", "lat": 44.30629, "lon": -115.23177, "elevFt": 7034, "note": "ID-21"} ],
       "grooming": {"label": "Grooming report", "url": "https://idaho.evtrails.com"} },
     { "id": "silver-valley", "name": "Silver Valley", "state": "ID", "snotel": "Lookout", "spots": [
       { "name": "Lookout Pass", "lat": 47.46, "lon": -115.7, "elevFt": 5500 },
       { "name": "Thompson Pass", "lat": 47.58, "lon": -115.8, "elevFt": 5500 },
       { "name": "Stevens Peak ridges", "lat": 47.43, "lon": -115.76, "elevFt": 6000 } ],
       "trailheads": [
-        {"name": "Lookout Pass", "q": "Lookout Pass Ski Area, I-90 Exit 0", "elevFt": 4710, "note": "I-90 exit 0"} ],
+        {"name": "Lookout Pass", "lat": 47.455, "lon": -115.695, "elevFt": 4710, "note": "I-90 exit 0"} ],
       "grooming": {"label": "Grooming report", "url": "https://idaho.evtrails.com"} },
     { "id": "bear-lake-id", "name": "Bear Lake Valley", "state": "ID", "snotel": "Emigrant Summit", "spots": [
       { "name": "Emigrant Summit", "lat": 42.36, "lon": -111.55, "elevFt": 7400 },
       { "name": "Sherman Peak", "lat": 42.29, "lon": -111.53, "elevFt": 8500 },
       { "name": "Paris Canyon", "lat": 42.21, "lon": -111.52, "elevFt": 7600 } ],
       "trailheads": [
-        {"name": "Bloomington Canyon Trailhead", "q": "Bloomington Canyon Trailhead, Bloomington, ID"},
-        {"name": "Fish Haven Canyon", "q": "Fish Haven Canyon Trailhead, Fish Haven, ID"},
-        {"name": "Diamond Creek", "q": "Diamond Creek Trailhead, Caribou National Forest, ID"} ],
+        {"name": "Fish Haven Canyon", "lat": 42.03804, "lon": -111.41983, "note": "Fish Haven Canyon Rd"} ],
       "grooming": {"label": "Grooming report", "url": "https://idaho.evtrails.com"} },
     { "id": "logan-canyon", "name": "Logan Canyon", "state": "UT", "snotel": "Tony Grove Lake", "spots": [
       { "name": "Tony Grove", "lat": 41.89, "lon": -111.64, "elevFt": 8400 },
       { "name": "Franklin Basin", "lat": 42.0, "lon": -111.58, "elevFt": 8000 },
       { "name": "Beaver Creek", "lat": 41.96, "lon": -111.53, "elevFt": 7900 } ],
       "trailheads": [
-        {"name": "Franklin Basin Trailhead", "q": "Franklin Basin Trailhead, US-89, Logan Canyon, UT", "note": "US-89, upper Logan Canyon"},
-        {"name": "Beaver Creek Lodge", "q": "Beaver Creek Lodge, Logan Canyon, UT"} ],
+        {"name": "Sinks Winter Trailhead", "lat": 41.9345, "lon": -111.4826, "note": "US-89, upper Logan Canyon; fee area"} ],
       "grooming": {"label": "Trail map", "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"} },
     { "id": "monte-cristo", "name": "Monte Cristo", "state": "UT", "snotel": "Monte Cristo", "spots": [
       { "name": "Monte Cristo Summit", "lat": 41.46, "lon": -111.5, "elevFt": 8900 },
       { "name": "Curtis Creek", "lat": 41.5, "lon": -111.56, "elevFt": 8200 },
       { "name": "Ant Flat", "lat": 41.44, "lon": -111.6, "elevFt": 7800 } ],
       "trailheads": [
-        {"name": "Monte Cristo Trailhead", "q": "Monte Cristo Trailhead, UT-39, Utah", "note": "UT-39"},
-        {"name": "Hardware Ranch", "q": "Hardware Ranch, Hyrum, UT"} ],
+        {"name": "Monte Cristo", "lat": 41.46368, "lon": -111.49748, "elevFt": 9000, "note": "UT-39 summit; parking pass required"} ],
       "grooming": {"label": "Trail map", "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"} },
     { "id": "mirror-lake", "name": "Mirror Lake / Uintas", "state": "UT", "snotel": "Trial Lake", "spots": [
       { "name": "Bald Mtn Pass", "lat": 40.69, "lon": -110.89, "elevFt": 10500 },
@@ -144,10 +132,7 @@
       { "name": "Bear River", "lat": 40.85, "lon": -110.86, "elevFt": 8800 },
       { "name": "Mill Hollow", "lat": 40.49, "lon": -111.1, "elevFt": 8900 } ],
       "trailheads": [
-        {"name": "Soapstone gate", "q": "Soapstone Snowmobile Trailhead, Mirror Lake Highway, Kamas, UT", "note": "SR-150, MP 14.5"},
-        {"name": "Nobletts", "q": "Nobletts Trailhead, SR-35, Woodland, UT"},
-        {"name": "Hanna", "q": "Hanna Snowmobile Trailhead, SR-35, Hanna, UT"},
-        {"name": "Bear River", "q": "Bear River Ranger Station, Mirror Lake Highway, UT"} ],
+        {"name": "Soapstone winter trailhead", "lat": 40.58131, "lon": -111.04833, "note": "SR-150, MP 14.5"} ],
       "grooming": {"label": "Trail map", "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"} },
     { "id": "strawberry", "name": "Strawberry", "state": "UT", "snotel": "Strawberry Divide", "spots": [
       { "name": "Daniels Summit", "lat": 40.3, "lon": -111.25, "elevFt": 8300 },
@@ -155,8 +140,7 @@
       { "name": "Co-op Creek", "lat": 40.12, "lon": -111.2, "elevFt": 8200 },
       { "name": "Currant Creek", "lat": 40.33, "lon": -111.07, "elevFt": 8500 } ],
       "trailheads": [
-        {"name": "Daniels Summit Lodge", "q": "Daniels Summit Lodge, US-40, Heber City, UT", "elevFt": 8000, "note": "US-40"},
-        {"name": "Co-op Creek", "q": "Co-op Creek Snowmobile Parking, US-40, Utah"} ],
+        {"name": "Daniels Summit", "lat": 40.29722, "lon": -111.25222, "elevFt": 8020, "note": "US-40"} ],
       "grooming": {"label": "Trail map", "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"} },
     { "id": "skyline", "name": "Skyline / Fairview", "state": "UT", "snotel": "", "spots": [
       { "name": "Fairview Canyon top", "lat": 39.62, "lon": -111.3, "elevFt": 9700 },
@@ -192,17 +176,15 @@
       { "name": "Mesa Lakes", "lat": 39.05, "lon": -108.08, "elevFt": 9900 },
       { "name": "Skyway", "lat": 39.07, "lon": -108.04, "elevFt": 10600 },
       { "name": "County Line", "lat": 39.03, "lon": -107.99, "elevFt": 10500 } ],
-      "trailheads": [
-        {"name": "Mesa Lakes", "q": "Mesa Lakes Lodge, CO-65, Mesa, CO", "note": "CO-65"} ],
+      "trailheads": [],
       "grooming": {"label": "Grooming updates", "url": "https://www.snowmobilecolo.com"} },
     { "id": "wolf-creek", "name": "Wolf Creek Pass", "state": "CO", "snotel": "Wolf Creek Summit", "spots": [
       { "name": "Big Meadows", "lat": 37.53, "lon": -106.8, "elevFt": 10000 },
       { "name": "Tucker Ponds / Pass Creek", "lat": 37.495, "lon": -106.76, "elevFt": 10300 },
       { "name": "Fox Mountain / Park Creek", "lat": 37.56, "lon": -106.7, "elevFt": 10500 } ],
       "trailheads": [
-        {"name": "Big Meadows", "q": "Big Meadows Reservoir, US-160, South Fork, CO", "note": "US-160, just off the highway"},
-        {"name": "Tucker Ponds", "q": "Tucker Ponds Campground, US-160, South Fork, CO"},
-        {"name": "Park Creek", "q": "Park Creek Campground, US-160, South Fork, CO"} ],
+        {"name": "Big Meadows Trailhead", "lat": 37.55362, "lon": -106.77913, "elevFt": 8900, "note": "US-160, plowed lot"},
+        {"name": "Park Creek", "lat": 37.59228, "lon": -106.72887} ],
       "grooming": {"label": "Grooming updates", "url": "https://www.snowmobilecolo.com"} }
   ]
 }
