@@ -18,15 +18,21 @@ const UA = { "User-Agent": "sled-snow-report/1.0 (snowmobile conditions site)" }
 const CM_TO_IN = 0.393701;
 const M_PER_FT = 0.3048;
 
-async function getJSON(url, tries = 3) {
+async function getJSON(url, tries = 4) {
   for (let i = 1; ; i++) {
+    let wait = 2000 * i;
     try {
       const r = await fetch(url, { headers: UA });
-      if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
+      if (!r.ok) {
+        const body = (await r.text().catch(() => "")).slice(0, 200);
+        // Rate limited (busy shared servers): back off much longer before retrying.
+        if (r.status === 429 || r.status >= 500) wait = 15000 * i;
+        throw new Error(`HTTP ${r.status} from ${new URL(url).host}${body ? ": " + body : ""}`);
+      }
       return await r.json();
     } catch (e) {
       if (i >= tries) throw e;
-      await new Promise((res) => setTimeout(res, 1500 * i));
+      await new Promise((res) => setTimeout(res, wait));
     }
   }
 }
@@ -259,6 +265,7 @@ async function loadForecast(zone) {
     result.daily.push(r1(mean(vals)));
   }
   result.startsAt = times[start] ? times[start] + "Z" : null;
+  result.fetchedAt = new Date().toISOString();
   return result;
 }
 
@@ -287,6 +294,14 @@ async function loadTomer() {
 
 async function main() {
   const { zones } = JSON.parse(await readFile(join(ROOT, "zones.json"), "utf8"));
+  // Last published data, so a failed forecast pull can fall back to the previous forecast
+  // instead of blanking the site.
+  let prev = {};
+  try {
+    const old = JSON.parse(await readFile(join(ROOT, "data", "conditions.json"), "utf8"));
+    for (const z of old.zones || []) prev[z.id] = { forecast: z.forecast, at: z.forecast?.fetchedAt || old.updatedAt };
+  } catch {}
+  const FORECAST_MAX_AGE_H = 24;
   const stations = await loadStations();
   console.log(`Loaded ${stations.length} active SNOTEL stations`);
 
@@ -302,6 +317,10 @@ async function main() {
   for (const { zone, station } of picks) {
     let forecast = null;
     try { forecast = await loadForecast(zone); } catch (e) { console.error(`Forecast failed for ${zone.name}:`, e.message); }
+    if (!forecast && prev[zone.id]?.forecast && Date.now() - Date.parse(prev[zone.id].at) < FORECAST_MAX_AGE_H * 3600000) {
+      forecast = { ...prev[zone.id].forecast, fetchedAt: prev[zone.id].at, stale: true };
+      console.error(`  -> keeping the previous forecast for ${zone.name} from ${prev[zone.id].at}`);
+    }
     const snow = station ? summarizeDepth(depth[station.triplet], hourly[station.triplet]) : null;
     console.log(`${zone.state} ${zone.name.padEnd(28)} -> ${station ? `${station.name} (${station.triplet}, ${station.how}, ${station.km.toFixed(0)} km)` : "no station"} | depth ${snow?.depthIn ?? "–"} in | 7d ${forecast?.d7?.in ?? "–"} in`);
     out.push({
