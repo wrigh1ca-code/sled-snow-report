@@ -1,16 +1,12 @@
 {
- "updatedAt": "2026-11-14T20:51:27.807Z",
+ "updatedAt": "2026-11-14T21:07:47.798Z",
  "sample": false,
  "models": [
   "GFS (US)",
   "ECMWF (Euro)",
   "GEM (Canada)"
  ],
- "tomer": {
-  "title": "Mountain Weather Update 11/14, Meteorologist Chris Tomer",
-  "url": "https://www.youtube.com/watch?v=XbzQSK_ITuA",
-  "published": "2026-11-14T15:14:25+00:00"
- },
+ "tomer": null,
  "zones": [
   {
    "id": "west-yellowstone",
@@ -52,10 +48,16 @@
      "note": "Trails leave from town"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://www.mtavalanche.com/weather"
-   },
+   "webcams": [
+    {
+     "label": "Rendezvous trailhead",
+     "url": "https://destinationyellowstone.com/play/activities/skiing/ski-trail-cam/"
+    },
+    {
+     "label": "Area cams",
+     "url": "https://opensnow.com/location/west-yellowstone-mt-us/cams"
+    }
+   ],
    "grooming": {
     "label": "Grooming report",
     "url": "https://destinationyellowstone.com/play/trail-reports"
@@ -134,12 +136,12 @@
      0.5,
      2,
      0.6,
-     0.5,
+     0.6,
      0.5,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.057Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.608Z"
    }
   },
   {
@@ -182,10 +184,6 @@
      "note": "Park in town; trails leave from town"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://www.mtavalanche.com/weather"
-   },
    "grooming": {
     "label": "Trail info",
     "url": "https://visitmt.com/listing/daisy-passlulu-pass-snowmobile-trail-14092"
@@ -260,16 +258,16 @@
      0,
      0,
      0.2,
-     2.3,
-     0,
-     0.8,
+     2.2,
+     0.1,
      0.9,
+     0.8,
      0.2,
      0.8,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.110Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.640Z"
    }
   },
   {
@@ -334,37 +332,37 @@
    },
    "forecast": {
     "d1": {
-     "in": 0.1,
+     "in": 0,
      "low": 0,
-     "high": 0.2,
+     "high": 0,
      "models": 3
     },
     "d7": {
-     "in": 2.9,
+     "in": 2.8,
      "low": 2.1,
-     "high": 4.2,
+     "high": 4,
      "models": 3
     },
     "d10": {
-     "in": 3,
+     "in": 2.9,
      "low": 2.1,
-     "high": 4.2,
+     "high": 4,
      "models": 3
     },
     "spots": [
      {
       "name": "Morrell Mtn",
       "elevFt": 7200,
-      "d1": 0.1,
-      "d7": 3.1,
-      "d10": 3.1
+      "d1": 0,
+      "d7": 3,
+      "d10": 3
      },
      {
       "name": "Rice Ridge",
       "elevFt": 6800,
-      "d1": 0.1,
-      "d7": 3.1,
-      "d10": 3.2
+      "d1": 0,
+      "d7": 3,
+      "d10": 3.1
      },
      {
       "name": "Lake Elsina",
@@ -382,10 +380,10 @@
      }
     ],
     "daily": [
-     0.1,
+     0,
      0.3,
-     1.2,
-     0.9,
+     1.3,
+     0.8,
      0.2,
      0.1,
      0.2,
@@ -393,8 +391,8 @@
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.163Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.672Z"
    }
   },
   {
@@ -430,10 +428,12 @@
      "note": "MT-200 east 6 mi, then FR 330 north 2 mi"
     }
    ],
-   "webcams": {
-    "label": "Flesher Pass cam",
-    "url": "https://app.mdt.mt.gov/atms/public/rwis/301013"
-   },
+   "webcams": [
+    {
+     "label": "Flesher Pass",
+     "url": "https://app.mdt.mt.gov/atms/public/rwis/301013"
+    }
+   ],
    "grooming": {
     "label": "Trail info",
     "url": "https://visitmt.com/listing/copper-creek-snowmobile-trail-5989"
@@ -500,17 +500,17 @@
     "daily": [
      0,
      0,
-     1.5,
-     1.4,
-     0.2,
+     1.6,
+     1.3,
+     0.3,
      0.4,
      0.1,
      0,
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.214Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.705Z"
    }
   },
   {
@@ -552,10 +552,12 @@
      "lon": -114.531
     }
    ],
-   "webcams": {
-    "label": "Lolo Pass cam",
-    "url": "https://511.idaho.gov/map/Cctv/221.C1--2"
-   },
+   "webcams": [
+    {
+     "label": "Lolo Pass",
+     "url": "https://511.idaho.gov/map/Cctv/221.C1--2"
+    }
+   ],
    "grooming": {
     "label": "Trail info",
     "url": "https://visitmt.com/listing/lolo-pass-snowmobile-trail-system-14183"
@@ -622,8 +624,8 @@
     "daily": [
      0,
      0.7,
-     1.9,
-     0.7,
+     2,
+     0.6,
      0.2,
      0.2,
      0.1,
@@ -631,8 +633,8 @@
      0.2,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.266Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.735Z"
    }
   },
   {
@@ -675,10 +677,16 @@
      "note": "US-26/287 summit; Brooks Lake Rd is 5 mi east"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://bridgertetonavalanchecenter.org/webcams/"
-   },
+   "webcams": [
+    {
+     "label": "Lodge & backcountry",
+     "url": "https://bridgertetonavalanchecenter.org/webcams/"
+    },
+    {
+     "label": "Pass cams",
+     "url": "https://opensnow.com/location/togwoteepass/cams"
+    }
+   ],
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -755,14 +763,14 @@
      0,
      1.4,
      0.1,
-     0.7,
      0.8,
+     0.7,
      0.1,
      0.5,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.322Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.931Z"
    }
   },
   {
@@ -809,10 +817,12 @@
      "lon": -110.90852
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://bridgertetonavalanchecenter.org/webcams/"
-   },
+   "webcams": [
+    {
+     "label": "Backcountry cams",
+     "url": "https://bridgertetonavalanchecenter.org/webcams/"
+    }
+   ],
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -842,7 +852,7 @@
      "models": 3
     },
     "d7": {
-     "in": 5.5,
+     "in": 5.4,
      "low": 3.5,
      "high": 7.3,
      "models": 3
@@ -864,7 +874,7 @@
      {
       "name": "McDougal Gap",
       "elevFt": 8900,
-      "d1": 0.1,
+      "d1": 0,
       "d7": 4.3,
       "d10": 5.5
      },
@@ -888,15 +898,15 @@
      0,
      0,
      1.7,
-     0.2,
-     2,
-     1.4,
      0.3,
-     0.8,
+     2,
+     1.3,
+     0.4,
+     0.7,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.375Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.962Z"
    }
   },
   {
@@ -925,10 +935,12 @@
     }
    ],
    "trailheads": [],
-   "webcams": {
-    "label": "Webcam",
-    "url": "https://www.visitlaramie.org/plan-your-visit/webcams/centennial-mountain-view-hotel/"
-   },
+   "webcams": [
+    {
+     "label": "Snowy Range cams",
+     "url": "https://opensnow.com/location/snowyrange/cams"
+    }
+   ],
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -998,14 +1010,14 @@
      0,
      0.6,
      0.1,
-     0.4,
-     2.1,
-     0.1,
+     0.5,
+     2,
+     0,
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.426Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:46.992Z"
    }
   },
   {
@@ -1042,10 +1054,12 @@
      "note": "US-14"
     }
    ],
-   "webcams": {
-    "label": "Road cams",
-    "url": "https://map.wyoroad.info/wtimap/index.html"
-   },
+   "webcams": [
+    {
+     "label": "Granite Pass & US-14",
+     "url": "https://opensnow.com/location/burgess-junction-wy-us/cams"
+    }
+   ],
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -1115,14 +1129,14 @@
      0,
      0.8,
      0,
-     0.3,
-     0.7,
+     0.4,
+     0.6,
      0,
      0.1,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.477Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.025Z"
    }
   },
   {
@@ -1151,10 +1165,6 @@
     }
    ],
    "trailheads": [],
-   "webcams": {
-    "label": "Road cams",
-    "url": "https://map.wyoroad.info/wtimap/index.html"
-   },
    "grooming": {
     "label": "Trail maps",
     "url": "https://wyoparks.wyo.gov/index.php/snowmobile/snowmobile-maps-trails"
@@ -1224,14 +1234,14 @@
      0,
      1.1,
      0.1,
-     0.4,
      0.5,
+     0.4,
      0,
      0.1,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.529Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.055Z"
    }
   },
   {
@@ -1274,10 +1284,6 @@
      "note": "Mack's Inn, then 2 mi east on Big Springs Loop Rd"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://www.mtavalanche.com/weather"
-   },
    "grooming": {
     "label": "Grooming report",
     "url": "https://destinationyellowstone.com/play/trail-reports"
@@ -1301,7 +1307,7 @@
    },
    "forecast": {
     "d1": {
-     "in": 0.6,
+     "in": 0.5,
      "low": 0.2,
      "high": 0.9,
      "models": 3
@@ -1313,9 +1319,9 @@
      "models": 3
     },
     "d10": {
-     "in": 10.1,
+     "in": 10,
      "low": 4,
-     "high": 20.2,
+     "high": 20.1,
      "models": 3
     },
     "spots": [
@@ -1329,9 +1335,9 @@
      {
       "name": "Mt Jefferson",
       "elevFt": 8800,
-      "d1": 0.9,
-      "d7": 8.1,
-      "d10": 9.8
+      "d1": 0.8,
+      "d7": 8,
+      "d10": 9.7
      },
      {
       "name": "Sawtell Peak",
@@ -1349,19 +1355,19 @@
      }
     ],
     "daily": [
-     0.6,
+     0.5,
      0,
-     0.7,
+     0.8,
      2.8,
-     0.7,
+     0.8,
      2.2,
      1,
-     0.8,
+     0.9,
      0.9,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.581Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.086Z"
    }
   },
   {
@@ -1396,10 +1402,12 @@
      "note": "Warren Wagon Rd, about 9 mi north of McCall"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://brundage.com/live-cams/"
-   },
+   "webcams": [
+    {
+     "label": "Brundage & Goose Creek",
+     "url": "https://opensnow.com/location/mccall-id-us/cams"
+    }
+   ],
    "grooming": {
     "label": "Grooming map",
     "url": "https://experience.arcgis.com/experience/a92a825e3af44c4a94da9cf6460455e0/"
@@ -1431,7 +1439,7 @@
     "d7": {
      "in": 9.8,
      "low": 6.4,
-     "high": 13.1,
+     "high": 13.2,
      "models": 3
     },
     "d10": {
@@ -1465,18 +1473,18 @@
     ],
     "daily": [
      0,
-     3.6,
-     2.6,
+     3.7,
+     2.5,
+     0.3,
+     1.1,
+     1.7,
      0.4,
      1,
-     1.7,
-     0.5,
-     1,
      0.9,
-     0
+     0.1
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.632Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.115Z"
    }
   },
   {
@@ -1513,10 +1521,16 @@
      "note": "ID-21"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://www.sawtoothavalanche.com/weather-station-map/#/"
-   },
+   "webcams": [
+    {
+     "label": "Cams & stations",
+     "url": "https://www.sawtoothavalanche.com/weather-station-map/#/"
+    },
+    {
+     "label": "Stanley cams",
+     "url": "https://opensnow.com/location/stanley-id-us/cams"
+    }
+   ],
    "grooming": {
     "label": "Grooming report",
     "url": "https://idaho.evtrails.com"
@@ -1582,18 +1596,18 @@
     ],
     "daily": [
      0,
-     1.5,
-     4.3,
-     0.4,
+     1.6,
+     4.2,
+     0.3,
      1.1,
      0.9,
-     0.3,
+     0.2,
      0.8,
      0.5,
-     0
+     0.1
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.683Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.402Z"
    }
   },
   {
@@ -1630,10 +1644,12 @@
      "note": "I-90 exit 0"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://opensnow.com/location/lookoutpass/cams"
-   },
+   "webcams": [
+    {
+     "label": "Lookout Pass cams",
+     "url": "https://opensnow.com/location/lookoutpass/cams"
+    }
+   ],
    "grooming": {
     "label": "Grooming report",
     "url": "https://idaho.evtrails.com"
@@ -1701,16 +1717,16 @@
      0,
      1.3,
      0.6,
-     0.5,
+     0.4,
      0.1,
      0.5,
      0.7,
-     0.4,
+     0.5,
      0.5,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.736Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.432Z"
    }
   },
   {
@@ -1746,10 +1762,12 @@
      "note": "Fish Haven Canyon Rd"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://utahavalanchecenter.org/mountain-weather/logan"
-   },
+   "webcams": [
+    {
+     "label": "Bear River Range",
+     "url": "https://utahavalanchecenter.org/mountain-weather/logan"
+    }
+   ],
    "grooming": {
     "label": "Grooming report",
     "url": "https://idaho.evtrails.com"
@@ -1775,7 +1793,7 @@
     "d1": {
      "in": 0.1,
      "low": 0,
-     "high": 0.2,
+     "high": 0.1,
      "models": 3
     },
     "d7": {
@@ -1787,7 +1805,7 @@
     "d10": {
      "in": 6.4,
      "low": 4.7,
-     "high": 9.3,
+     "high": 9.2,
      "models": 3
     },
     "spots": [
@@ -1796,7 +1814,7 @@
       "elevFt": 7400,
       "d1": 0.1,
       "d7": 6,
-      "d10": 6.6
+      "d10": 6.5
      },
      {
       "name": "Sherman Peak",
@@ -1816,17 +1834,17 @@
     "daily": [
      0.1,
      0,
-     0.2,
-     1.2,
+     0.3,
+     1,
      0.3,
      3.4,
-     0.8,
+     0.7,
      0.4,
      0.1,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.788Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.461Z"
    }
   },
   {
@@ -1868,10 +1886,16 @@
      "note": "US-89, upper Logan Canyon; fee area"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://utahavalanchecenter.org/mountain-weather/logan"
-   },
+   "webcams": [
+    {
+     "label": "Logan Summit & Beaver",
+     "url": "https://opensnow.com/location/beavermountain/cams"
+    },
+    {
+     "label": "Mountain cams",
+     "url": "https://utahavalanchecenter.org/mountain-weather/logan"
+    }
+   ],
    "grooming": {
     "label": "Trail map",
     "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"
@@ -1938,17 +1962,17 @@
     "daily": [
      0,
      0,
-     0.4,
-     1.8,
-     0.4,
+     0.6,
+     1.7,
+     0.5,
      3,
      0.8,
      0.2,
      0.1,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:26.840Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.490Z"
    }
   },
   {
@@ -1985,10 +2009,12 @@
      "note": "UT-39 summit; parking pass required"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://utahavalanchecenter.org/mountain-weather/ogden"
-   },
+   "webcams": [
+    {
+     "label": "Mountain cams",
+     "url": "https://utahavalanchecenter.org/mountain-weather/ogden"
+    }
+   ],
    "grooming": {
     "label": "Trail map",
     "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"
@@ -2012,7 +2038,7 @@
    },
    "forecast": {
     "d1": {
-     "in": 0.1,
+     "in": 0,
      "low": 0,
      "high": 0.1,
      "models": 3
@@ -2020,7 +2046,7 @@
     "d7": {
      "in": 4.7,
      "low": 3.1,
-     "high": 7.3,
+     "high": 7.2,
      "models": 3
     },
     "d10": {
@@ -2053,19 +2079,19 @@
      }
     ],
     "daily": [
-     0.1,
+     0,
      0,
      0,
      1.7,
-     0.1,
+     0.2,
      2,
-     0.8,
+     0.7,
      0,
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.383Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.528Z"
    }
   },
   {
@@ -2113,10 +2139,12 @@
      "note": "SR-150, MP 14.5"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://utahavalanchecenter.org/mountain-weather/uintas"
-   },
+   "webcams": [
+    {
+     "label": "Mountain cams",
+     "url": "https://utahavalanchecenter.org/mountain-weather/uintas"
+    }
+   ],
    "grooming": {
     "label": "Trail map",
     "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"
@@ -2148,28 +2176,28 @@
     "d7": {
      "in": 6.3,
      "low": 3.4,
-     "high": 7.9,
+     "high": 7.8,
      "models": 3
     },
     "d10": {
      "in": 6.7,
-     "low": 3.4,
-     "high": 8.9,
+     "low": 3.5,
+     "high": 8.8,
      "models": 3
     },
     "spots": [
      {
       "name": "Bald Mtn Pass",
       "elevFt": 10500,
-      "d1": 0.2,
-      "d7": 7,
+      "d1": 0.1,
+      "d7": 6.9,
       "d10": 7.4
      },
      {
       "name": "Trial Lake",
       "elevFt": 9900,
       "d1": 0.1,
-      "d7": 7.4,
+      "d7": 7.3,
       "d10": 7.9
      },
      {
@@ -2190,7 +2218,7 @@
       "name": "Mill Hollow",
       "elevFt": 8900,
       "d1": 0.5,
-      "d7": 6.8,
+      "d7": 6.7,
       "d10": 6.9
      }
     ],
@@ -2199,15 +2227,15 @@
      0,
      0.2,
      2.1,
-     0.1,
+     0.2,
      2.5,
-     1.2,
+     1.1,
      0,
      0.3,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.436Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.559Z"
    }
   },
   {
@@ -2250,10 +2278,12 @@
      "note": "US-40"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://utahavalanchecenter.org/mountain-weather/uintas"
-   },
+   "webcams": [
+    {
+     "label": "Mountain cams",
+     "url": "https://utahavalanchecenter.org/mountain-weather/uintas"
+    }
+   ],
    "grooming": {
     "label": "Trail map",
     "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"
@@ -2279,7 +2309,7 @@
     "d1": {
      "in": 0.1,
      "low": 0,
-     "high": 0.3,
+     "high": 0.2,
      "models": 3
     },
     "d7": {
@@ -2290,8 +2320,8 @@
     },
     "d10": {
      "in": 6,
-     "low": 4.7,
-     "high": 6.8,
+     "low": 4.8,
+     "high": 6.7,
      "models": 3
     },
     "spots": [
@@ -2299,7 +2329,7 @@
       "name": "Daniels Summit",
       "elevFt": 8300,
       "d1": 0.2,
-      "d7": 7,
+      "d7": 6.9,
       "d10": 7.1
      },
      {
@@ -2313,7 +2343,7 @@
       "name": "Co-op Creek",
       "elevFt": 8200,
       "d1": 0.1,
-      "d7": 4.3,
+      "d7": 4.2,
       "d10": 4.5
      },
      {
@@ -2327,17 +2357,17 @@
     "daily": [
      0.1,
      0,
-     0.1,
+     0.2,
      2.1,
-     0.1,
-     2.6,
-     0.7,
+     0.2,
+     2.7,
+     0.6,
      0,
      0.2,
-     0
+     0.1
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.488Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.589Z"
    }
   },
   {
@@ -2373,10 +2403,12 @@
      "note": "SR-31, top of Fairview Canyon"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://utahavalanchecenter.org/mountain-weather/skyline"
-   },
+   "webcams": [
+    {
+     "label": "Skyline cams",
+     "url": "https://utahavalanchecenter.org/mountain-weather/skyline"
+    }
+   ],
    "grooming": {
     "label": "Trail map",
     "url": "https://utahdnr.maps.arcgis.com/apps/instant/basic/index.html?appid=0c803e9f99154123a654d427ddacbb5b"
@@ -2400,60 +2432,60 @@
    },
    "forecast": {
     "d1": {
-     "in": 0.5,
-     "low": 0.5,
-     "high": 0.6,
+     "in": 0.4,
+     "low": 0.3,
+     "high": 0.5,
      "models": 3
     },
     "d7": {
-     "in": 7.5,
-     "low": 5.8,
-     "high": 9.1,
+     "in": 7.3,
+     "low": 5.6,
+     "high": 9,
      "models": 3
     },
     "d10": {
-     "in": 7.8,
+     "in": 7.7,
      "low": 5.9,
-     "high": 9.9,
+     "high": 9.8,
      "models": 3
     },
     "spots": [
      {
       "name": "Fairview Canyon top",
       "elevFt": 9700,
-      "d1": 0.6,
-      "d7": 7.9,
-      "d10": 8.1
+      "d1": 0.4,
+      "d7": 7.7,
+      "d10": 8
      },
      {
       "name": "Huntington Reservoir",
       "elevFt": 9000,
-      "d1": 0.3,
+      "d1": 0.2,
       "d7": 6.4,
       "d10": 6.7
      },
      {
       "name": "Skyline south",
       "elevFt": 10300,
-      "d1": 0.7,
-      "d7": 8.1,
-      "d10": 8.5
+      "d1": 0.5,
+      "d7": 7.8,
+      "d10": 8.3
      }
     ],
     "daily": [
-     0.5,
+     0.4,
      0,
      0.1,
-     3.5,
+     3.4,
      0.1,
-     2.8,
-     0.6,
+     2.9,
+     0.5,
      0,
      0.2,
      0.1
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.553Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.652Z"
    }
   },
   {
@@ -2494,10 +2526,12 @@
      "lon": -106.78465
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://co-steamboatsprings.civicplus.com/1138/Cameras"
-   },
+   "webcams": [
+    {
+     "label": "Rabbit Ears Pass",
+     "url": "https://co-steamboatsprings.civicplus.com/1138/Cameras"
+    }
+   ],
    "grooming": {
     "label": "Grooming updates",
     "url": "https://www.snowmobilecolo.com"
@@ -2565,16 +2599,16 @@
      0.4,
      0,
      0,
-     1.5,
+     1.6,
      0.1,
-     0.6,
-     2.3,
+     0.8,
+     2.1,
      0.1,
      0.1,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.604Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.681Z"
    }
   },
   {
@@ -2670,7 +2704,7 @@
       "name": "Supply Basin",
       "elevFt": 9400,
       "d1": 0.1,
-      "d7": 1.8,
+      "d7": 1.9,
       "d10": 2.1
      }
     ],
@@ -2686,8 +2720,8 @@
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.655Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.710Z"
    }
   },
   {
@@ -2730,10 +2764,12 @@
      "note": "I-70 exit 190; winter fee area"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://www.vail.gov/visiting/live-webcams/cdot-i-70-cameras"
-   },
+   "webcams": [
+    {
+     "label": "Vail Pass cams",
+     "url": "https://opensnow.com/location/vailpass/cams"
+    }
+   ],
    "grooming": {
     "label": "Grooming updates",
     "url": "https://www.snowmobilecolo.com"
@@ -2758,7 +2794,7 @@
    "forecast": {
     "d1": {
      "in": 0.6,
-     "low": 0.4,
+     "low": 0.3,
      "high": 0.9,
      "models": 3
     },
@@ -2769,7 +2805,7 @@
      "models": 3
     },
     "d10": {
-     "in": 2.5,
+     "in": 2.4,
      "low": 1.8,
      "high": 3.7,
      "models": 3
@@ -2792,15 +2828,15 @@
      {
       "name": "Ptarmigan Hill",
       "elevFt": 11800,
-      "d1": 0.7,
-      "d7": 2.4,
+      "d1": 0.6,
+      "d7": 2.3,
       "d10": 2.5
      },
      {
       "name": "Camp Hale",
       "elevFt": 9300,
       "d1": 0.1,
-      "d7": 1.4,
+      "d7": 1.5,
       "d10": 1.6
      }
     ],
@@ -2816,8 +2852,8 @@
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.706Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.740Z"
    }
   },
   {
@@ -2852,10 +2888,12 @@
      "note": "CO-65 north of Cedaredge, then CR U50/25 about 6 mi"
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://gmnc.org/trails-3/weather-road-conditions/"
-   },
+   "webcams": [
+    {
+     "label": "Grand Mesa cams",
+     "url": "https://gmnc.org/trails-3/weather-road-conditions/"
+    }
+   ],
    "grooming": {
     "label": "Grooming updates",
     "url": "https://www.snowmobilecolo.com"
@@ -2879,15 +2917,15 @@
    },
    "forecast": {
     "d1": {
-     "in": 1,
+     "in": 0.9,
      "low": 0,
-     "high": 1.9,
+     "high": 1.8,
      "models": 3
     },
     "d7": {
      "in": 9,
      "low": 5,
-     "high": 12.6,
+     "high": 12.5,
      "models": 3
     },
     "d10": {
@@ -2908,8 +2946,8 @@
       "name": "Skyway",
       "elevFt": 10600,
       "d1": 1,
-      "d7": 9.7,
-      "d10": 10
+      "d7": 9.6,
+      "d10": 9.9
      },
      {
       "name": "County Line",
@@ -2920,19 +2958,19 @@
      }
     ],
     "daily": [
-     1,
+     0.9,
      0,
      0,
      3,
      0.1,
-     3.3,
-     1.6,
+     3.5,
+     1.4,
      0.1,
      0.2,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.757Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.769Z"
    }
   },
   {
@@ -2974,10 +3012,12 @@
      "lon": -106.72887
     }
    ],
-   "webcams": {
-    "label": "Webcams",
-    "url": "https://wolfcreekski.com/webcams/"
-   },
+   "webcams": [
+    {
+     "label": "Wolf Creek cams",
+     "url": "https://opensnow.com/location/wolf-creek-pass/cams"
+    }
+   ],
    "grooming": {
     "label": "Grooming updates",
     "url": "https://www.snowmobilecolo.com"
@@ -3001,21 +3041,21 @@
    },
    "forecast": {
     "d1": {
-     "in": 0.2,
+     "in": 0.1,
      "low": 0,
-     "high": 0.4,
+     "high": 0.2,
      "models": 3
     },
     "d7": {
      "in": 9.9,
      "low": 4.9,
-     "high": 13.5,
+     "high": 13.4,
      "models": 3
     },
     "d10": {
-     "in": 10.1,
+     "in": 10,
      "low": 4.9,
-     "high": 13.9,
+     "high": 13.8,
      "models": 3
     },
     "spots": [
@@ -3023,38 +3063,38 @@
       "name": "Big Meadows",
       "elevFt": 10000,
       "d1": 0.2,
-      "d7": 10.3,
-      "d10": 10.4
+      "d7": 10.2,
+      "d10": 10.3
      },
      {
       "name": "Tucker Ponds / Pass Creek",
       "elevFt": 10300,
       "d1": 0.2,
-      "d7": 11,
-      "d10": 11.1
+      "d7": 10.9,
+      "d10": 11
      },
      {
       "name": "Fox Mountain / Park Creek",
       "elevFt": 10500,
-      "d1": 0.2,
-      "d7": 8.6,
+      "d1": 0.1,
+      "d7": 8.5,
       "d10": 8.7
      }
     ],
     "daily": [
-     0.2,
+     0.1,
      0,
      0,
      5.1,
      0,
-     3.2,
-     1.4,
+     3.4,
+     1.2,
      0.1,
      0,
      0
     ],
-    "startsAt": "2026-11-14T20:00Z",
-    "fetchedAt": "2026-11-14T20:51:27.807Z"
+    "startsAt": "2026-11-14T21:00Z",
+    "fetchedAt": "2026-11-14T21:07:47.798Z"
    }
   }
  ]
