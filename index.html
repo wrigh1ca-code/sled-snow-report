@@ -535,7 +535,8 @@ footer p { margin: 0 0 10px; }
     var change = s && s.change7dIn != null ? (s.change7dIn > 0 ? "+" + s.change7dIn : String(s.change7dIn)) + " in this week" : "";
     var meta = [];
     if (st) meta.push('Depth: SNOTEL <a href="' + esc(st.url) + '" target="_blank" rel="noopener">' + esc(st.name) + "</a> · " + ft(st.elevFt) + " ft");
-    if (s && s.asOf) meta.push("as of " + new Date(s.asOf + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }));
+    if (s && s.asOfTime) meta.push("as of " + new Date(s.asOfTime).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }));
+    else if (s && s.asOf) meta.push("as of " + new Date(s.asOf + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }));
     var c = zoneCenter(z);
     return '<div class="zrow"><article class="zone" id="z-' + esc(z.id) + '">' +
       '<div class="zhead"><div class="ztext"><h2 class="zname">' + esc(z.name) + '<span class="st" title="' + STATE_NAMES[z.state] + '">' + z.state + "</span></h2>" +
