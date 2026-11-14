@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T18:11:47.558Z",
+ "updatedAt": "2026-11-14T18:17:03.712Z",
  "sample": false,
  "models": [
   "GFS (US)",
@@ -73,7 +73,69 @@
     "change7dIn": 0,
     "sweIn": 0.2
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.3,
+     "low": 0.1,
+     "high": 0.6,
+     "models": 3
+    },
+    "d7": {
+     "in": 6.1,
+     "low": 3.9,
+     "high": 10.4,
+     "models": 3
+    },
+    "d10": {
+     "in": 7.3,
+     "low": 4,
+     "high": 14,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Two Top",
+      "elevFt": 8500,
+      "d1": 0.5,
+      "d7": 7.2,
+      "d10": 8.9
+     },
+     {
+      "name": "Lionhead",
+      "elevFt": 9000,
+      "d1": 0.2,
+      "d7": 5.5,
+      "d10": 7
+     },
+     {
+      "name": "Tepee Basin",
+      "elevFt": 8400,
+      "d1": 0,
+      "d7": 5.9,
+      "d10": 6.4
+     },
+     {
+      "name": "South Plateau",
+      "elevFt": 7900,
+      "d1": 0.3,
+      "d7": 6,
+      "d10": 7.1
+     }
+    ],
+    "daily": [
+     0.3,
+     0,
+     0.5,
+     1.9,
+     0.5,
+     2,
+     0.9,
+     0.5,
+     0.5,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "cooke-city",
@@ -136,7 +198,69 @@
     "change7dIn": 0,
     "sweIn": 1.3
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 4.4,
+     "low": 1.8,
+     "high": 7,
+     "models": 3
+    },
+    "d10": {
+     "in": 5.6,
+     "low": 1.8,
+     "high": 10.6,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Daisy Pass",
+      "elevFt": 9700,
+      "d1": 0,
+      "d7": 4.5,
+      "d10": 5.7
+     },
+     {
+      "name": "Lulu Pass",
+      "elevFt": 9600,
+      "d1": 0,
+      "d7": 4.5,
+      "d10": 5.7
+     },
+     {
+      "name": "Henderson Mtn",
+      "elevFt": 9900,
+      "d1": 0,
+      "d7": 4.5,
+      "d10": 5.7
+     },
+     {
+      "name": "Round Lake",
+      "elevFt": 8800,
+      "d1": 0,
+      "d7": 4.1,
+      "d10": 5.3
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     0.1,
+     2.2,
+     0.1,
+     0.8,
+     1.1,
+     0.2,
+     0.8,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "seeley-lake",
@@ -198,7 +322,69 @@
     "change7dIn": -2,
     "sweIn": 0.8
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.7,
+     "low": 2,
+     "high": 3.7,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.8,
+     "low": 2,
+     "high": 3.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Morrell Mtn",
+      "elevFt": 7200,
+      "d1": 0,
+      "d7": 2.9,
+      "d10": 3
+     },
+     {
+      "name": "Rice Ridge",
+      "elevFt": 6800,
+      "d1": 0,
+      "d7": 3,
+      "d10": 3.1
+     },
+     {
+      "name": "Lake Elsina",
+      "elevFt": 6500,
+      "d1": 0,
+      "d7": 3.3,
+      "d10": 3.4
+     },
+     {
+      "name": "Double Arrow Lookout",
+      "elevFt": 6300,
+      "d1": 0,
+      "d7": 1.7,
+      "d10": 1.7
+     }
+    ],
+    "daily": [
+     0,
+     0.2,
+     1,
+     1.1,
+     0.1,
+     0.2,
+     0.2,
+     0.1,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "lincoln",
@@ -248,13 +434,68 @@
    "snow": {
     "depthIn": 0,
     "asOf": "2026-11-14",
-    "asOfTime": "2026-11-14T17:00:00.000Z",
+    "asOfTime": "2026-11-14T18:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": -2,
     "sweIn": 0
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 4.1,
+     "low": 3.2,
+     "high": 5,
+     "models": 3
+    },
+    "d10": {
+     "in": 4.1,
+     "low": 3.2,
+     "high": 5.1,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Stemple Pass",
+      "elevFt": 6800,
+      "d1": 0,
+      "d7": 4,
+      "d10": 4.1
+     },
+     {
+      "name": "Flesher Pass",
+      "elevFt": 6500,
+      "d1": 0,
+      "d7": 3.9,
+      "d10": 3.9
+     },
+     {
+      "name": "Copper Creek",
+      "elevFt": 6600,
+      "d1": 0,
+      "d7": 4.3,
+      "d10": 4.4
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     1.5,
+     1.9,
+     0.2,
+     0.4,
+     0.1,
+     0,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "lolo-pass",
@@ -316,7 +557,62 @@
     "change7dIn": 0,
     "sweIn": 0.1
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0.1,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.5,
+     "low": 3.1,
+     "high": 4.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 3.9,
+     "low": 3.1,
+     "high": 4.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Elk Meadows",
+      "elevFt": 6000,
+      "d1": 0.1,
+      "d7": 3.5,
+      "d10": 3.9
+     },
+     {
+      "name": "Moose Ridge",
+      "elevFt": 6200,
+      "d1": 0,
+      "d7": 3,
+      "d10": 3.3
+     },
+     {
+      "name": "Lost Park",
+      "elevFt": 6000,
+      "d1": 0,
+      "d7": 3.9,
+      "d10": 4.4
+     }
+    ],
+    "daily": [
+     0,
+     0.3,
+     1.7,
+     0.9,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "togwotee",
@@ -379,7 +675,69 @@
     "change7dIn": -1,
     "sweIn": 1.5
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.1,
+     "low": 0,
+     "high": 0.1,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.3,
+     "low": 1.9,
+     "high": 5.1,
+     "models": 3
+    },
+    "d10": {
+     "in": 4,
+     "low": 1.9,
+     "high": 7.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Togwotee Summit",
+      "elevFt": 9600,
+      "d1": 0.1,
+      "d7": 3.2,
+      "d10": 4
+     },
+     {
+      "name": "Brooks Lake",
+      "elevFt": 9300,
+      "d1": 0.1,
+      "d7": 3,
+      "d10": 3.7
+     },
+     {
+      "name": "Squaw Basin",
+      "elevFt": 9000,
+      "d1": 0.1,
+      "d7": 3.7,
+      "d10": 4.5
+     },
+     {
+      "name": "Fourmile Meadows",
+      "elevFt": 8400,
+      "d1": 0,
+      "d7": 3.2,
+      "d10": 3.8
+     }
+    ],
+    "daily": [
+     0.1,
+     0,
+     0,
+     1.4,
+     0.1,
+     0.5,
+     1.1,
+     0.1,
+     0.5,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "greys-river",
@@ -446,7 +804,69 @@
     "change7dIn": 1,
     "sweIn": 0.1
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.1,
+     "low": 0,
+     "high": 0.2,
+     "models": 3
+    },
+    "d7": {
+     "in": 6.2,
+     "low": 5.5,
+     "high": 7.3,
+     "models": 3
+    },
+    "d10": {
+     "in": 7.4,
+     "low": 5.6,
+     "high": 10.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Blind Bull Summit",
+      "elevFt": 8700,
+      "d1": 0,
+      "d7": 6.7,
+      "d10": 8.1
+     },
+     {
+      "name": "McDougal Gap",
+      "elevFt": 8900,
+      "d1": 0,
+      "d7": 5.5,
+      "d10": 6.8
+     },
+     {
+      "name": "Box Y / Greys River",
+      "elevFt": 7500,
+      "d1": 0.1,
+      "d7": 5.8,
+      "d10": 7.2
+     },
+     {
+      "name": "Salt River Pass",
+      "elevFt": 7900,
+      "d1": 0.3,
+      "d7": 6.6,
+      "d10": 7.4
+     }
+    ],
+    "daily": [
+     0.1,
+     0,
+     0,
+     1.8,
+     0.1,
+     2.1,
+     2,
+     0.4,
+     0.8,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "snowy-range",
@@ -495,7 +915,62 @@
     "change7dIn": 0,
     "sweIn": 0.2
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.1,
+     "low": 0,
+     "high": 0.3,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.4,
+     "low": 2.3,
+     "high": 5.3,
+     "models": 3
+    },
+    "d10": {
+     "in": 3.7,
+     "low": 2.4,
+     "high": 5.9,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Libby Flats",
+      "elevFt": 10600,
+      "d1": 0.2,
+      "d7": 4.9,
+      "d10": 5.2
+     },
+     {
+      "name": "Brooklyn Lake",
+      "elevFt": 10200,
+      "d1": 0.1,
+      "d7": 3.1,
+      "d10": 3.4
+     },
+     {
+      "name": "Rob Roy",
+      "elevFt": 9500,
+      "d1": 0,
+      "d7": 2.2,
+      "d10": 2.4
+     }
+    ],
+    "daily": [
+     0.1,
+     0,
+     0,
+     0.4,
+     0.2,
+     0.2,
+     2.5,
+     0.2,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "bighorns",
@@ -552,7 +1027,62 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.1,
+     "low": 0.4,
+     "high": 3.6,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.1,
+     "low": 0.4,
+     "high": 3.8,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Burgess Junction",
+      "elevFt": 8200,
+      "d1": 0,
+      "d7": 1.9,
+      "d10": 1.9
+     },
+     {
+      "name": "Granite Pass",
+      "elevFt": 9000,
+      "d1": 0,
+      "d7": 2.1,
+      "d10": 2.3
+     },
+     {
+      "name": "Powder River Pass",
+      "elevFt": 9600,
+      "d1": 0,
+      "d7": 2.2,
+      "d10": 2.2
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     0,
+     0.8,
+     0.1,
+     0.2,
+     1,
+     0,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "union-pass",
@@ -601,7 +1131,62 @@
     "change7dIn": 0,
     "sweIn": 1.1
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0.1,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.7,
+     "low": 1.7,
+     "high": 3.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.9,
+     "low": 1.7,
+     "high": 3.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Union Pass",
+      "elevFt": 9200,
+      "d1": 0,
+      "d7": 2,
+      "d10": 2
+     },
+     {
+      "name": "Sheridan Pass",
+      "elevFt": 9300,
+      "d1": 0,
+      "d7": 2.5,
+      "d10": 2.7
+     },
+     {
+      "name": "Fish Lake Mtn",
+      "elevFt": 9600,
+      "d1": 0.1,
+      "d7": 3.6,
+      "d10": 4
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     0,
+     1.1,
+     0,
+     0.5,
+     1,
+     0,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "island-park",
@@ -664,7 +1249,69 @@
     "change7dIn": 1,
     "sweIn": 0.3
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.7,
+     "low": 0.1,
+     "high": 1,
+     "models": 3
+    },
+    "d7": {
+     "in": 8.5,
+     "low": 5.1,
+     "high": 14,
+     "models": 3
+    },
+    "d10": {
+     "in": 10.6,
+     "low": 5.1,
+     "high": 20.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Two Top",
+      "elevFt": 8500,
+      "d1": 0.5,
+      "d7": 7.2,
+      "d10": 8.9
+     },
+     {
+      "name": "Mt Jefferson",
+      "elevFt": 8800,
+      "d1": 1.2,
+      "d7": 8.6,
+      "d10": 10.4
+     },
+     {
+      "name": "Sawtell Peak",
+      "elevFt": 8600,
+      "d1": 0.9,
+      "d7": 8.5,
+      "d10": 10.3
+     },
+     {
+      "name": "Mesa Falls",
+      "elevFt": 6300,
+      "d1": 0,
+      "d7": 9.5,
+      "d10": 12.6
+     }
+    ],
+    "daily": [
+     0.7,
+     0,
+     0.7,
+     2.9,
+     0.7,
+     2.3,
+     1.2,
+     0.8,
+     0.9,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "mccall",
@@ -707,13 +1354,68 @@
    "snow": {
     "depthIn": 4,
     "asOf": "2026-11-14",
-    "asOfTime": "2026-11-14T17:00:00.000Z",
+    "asOfTime": "2026-11-14T18:00:00.000Z",
     "source": "hourly",
     "change24hIn": 3,
     "change7dIn": 4,
     "sweIn": 0.2
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.1,
+     "low": 0,
+     "high": 0.2,
+     "models": 3
+    },
+    "d7": {
+     "in": 8.9,
+     "low": 4.9,
+     "high": 13.3,
+     "models": 3
+    },
+    "d10": {
+     "in": 10.9,
+     "low": 4.9,
+     "high": 18.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Granite Mtn",
+      "elevFt": 7800,
+      "d1": 0.1,
+      "d7": 10.4,
+      "d10": 12.2
+     },
+     {
+      "name": "Burgdorf / Secesh",
+      "elevFt": 6800,
+      "d1": 0,
+      "d7": 6.2,
+      "d10": 7.1
+     },
+     {
+      "name": "Lick Creek Summit",
+      "elevFt": 6900,
+      "d1": 0.1,
+      "d7": 10.2,
+      "d10": 13.4
+     }
+    ],
+    "daily": [
+     0.1,
+     2.7,
+     2.6,
+     0.5,
+     0.8,
+     1.8,
+     0.5,
+     0.9,
+     1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "stanley",
@@ -770,7 +1472,62 @@
     "change7dIn": 1,
     "sweIn": 0.2
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0,
+     "models": 3
+    },
+    "d7": {
+     "in": 7.9,
+     "low": 6.1,
+     "high": 10,
+     "models": 3
+    },
+    "d10": {
+     "in": 9.1,
+     "low": 6.1,
+     "high": 13.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Banner Summit",
+      "elevFt": 7200,
+      "d1": 0,
+      "d7": 7.4,
+      "d10": 8.7
+     },
+     {
+      "name": "Cape Horn",
+      "elevFt": 7400,
+      "d1": 0,
+      "d7": 8,
+      "d10": 9.2
+     },
+     {
+      "name": "Galena Summit",
+      "elevFt": 8600,
+      "d1": 0,
+      "d7": 8.2,
+      "d10": 9.5
+     }
+    ],
+    "daily": [
+     0,
+     0.7,
+     4.5,
+     0.6,
+     0.9,
+     0.9,
+     0.3,
+     0.7,
+     0.5,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "silver-valley",
@@ -827,7 +1584,62 @@
     "change7dIn": 0,
     "sweIn": 0.1
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0.1,
+     "models": 3
+    },
+    "d7": {
+     "in": 3.4,
+     "low": 1,
+     "high": 6.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 4.5,
+     "low": 1,
+     "high": 6.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Lookout Pass",
+      "elevFt": 5500,
+      "d1": 0,
+      "d7": 3.2,
+      "d10": 4.2
+     },
+     {
+      "name": "Thompson Pass",
+      "elevFt": 5500,
+      "d1": 0.1,
+      "d7": 3,
+      "d10": 3.9
+     },
+     {
+      "name": "Stevens Peak ridges",
+      "elevFt": 6000,
+      "d1": 0,
+      "d7": 4.1,
+      "d10": 5.3
+     }
+    ],
+    "daily": [
+     0,
+     1,
+     0.5,
+     0.5,
+     0.1,
+     0.4,
+     0.8,
+     0.4,
+     0.5,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "bear-lake-id",
@@ -883,7 +1695,62 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.2,
+     "low": 0.1,
+     "high": 0.4,
+     "models": 3
+    },
+    "d7": {
+     "in": 6.4,
+     "low": 4.8,
+     "high": 7.9,
+     "models": 3
+    },
+    "d10": {
+     "in": 7,
+     "low": 4.8,
+     "high": 9.5,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Emigrant Summit",
+      "elevFt": 7400,
+      "d1": 0.2,
+      "d7": 6.5,
+      "d10": 7.1
+     },
+     {
+      "name": "Sherman Peak",
+      "elevFt": 8500,
+      "d1": 0.3,
+      "d7": 7.2,
+      "d10": 7.9
+     },
+     {
+      "name": "Paris Canyon",
+      "elevFt": 7600,
+      "d1": 0.1,
+      "d7": 5.6,
+      "d10": 6
+     }
+    ],
+    "daily": [
+     0.2,
+     0,
+     0.1,
+     1.3,
+     0.3,
+     3.3,
+     1.3,
+     0.4,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "logan-canyon",
@@ -939,7 +1806,62 @@
     "change7dIn": 2,
     "sweIn": 0
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0,
+     "low": 0,
+     "high": 0.1,
+     "models": 3
+    },
+    "d7": {
+     "in": 7,
+     "low": 5.3,
+     "high": 8.8,
+     "models": 3
+    },
+    "d10": {
+     "in": 7.4,
+     "low": 5.6,
+     "high": 9.9,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Tony Grove",
+      "elevFt": 8400,
+      "d1": 0,
+      "d7": 5.4,
+      "d10": 5.7
+     },
+     {
+      "name": "Franklin Basin",
+      "elevFt": 8000,
+      "d1": 0,
+      "d7": 7.6,
+      "d10": 8.1
+     },
+     {
+      "name": "Beaver Creek",
+      "elevFt": 7900,
+      "d1": 0,
+      "d7": 8,
+      "d10": 8.5
+     }
+    ],
+    "daily": [
+     0,
+     0,
+     0.4,
+     2.1,
+     0.2,
+     2.9,
+     1.4,
+     0.3,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "monte-cristo",
@@ -996,7 +1918,62 @@
     "change7dIn": 2,
     "sweIn": 1.1
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.4,
+     "low": 0.1,
+     "high": 1,
+     "models": 3
+    },
+    "d7": {
+     "in": 5.3,
+     "low": 4.1,
+     "high": 7.3,
+     "models": 3
+    },
+    "d10": {
+     "in": 5.4,
+     "low": 4.1,
+     "high": 7.4,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Monte Cristo Summit",
+      "elevFt": 8900,
+      "d1": 0.5,
+      "d7": 4.9,
+      "d10": 4.9
+     },
+     {
+      "name": "Curtis Creek",
+      "elevFt": 8200,
+      "d1": 0.2,
+      "d7": 4.5,
+      "d10": 4.5
+     },
+     {
+      "name": "Ant Flat",
+      "elevFt": 7800,
+      "d1": 0.4,
+      "d7": 6.6,
+      "d10": 6.7
+     }
+    ],
+    "daily": [
+     0.4,
+     0,
+     0,
+     1.5,
+     0.2,
+     2.2,
+     1.1,
+     0,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "mirror-lake",
@@ -1064,7 +2041,76 @@
     "change7dIn": -2,
     "sweIn": 0.3
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.5,
+     "low": 0.3,
+     "high": 0.7,
+     "models": 3
+    },
+    "d7": {
+     "in": 6.1,
+     "low": 3.8,
+     "high": 7.9,
+     "models": 3
+    },
+    "d10": {
+     "in": 6.5,
+     "low": 3.8,
+     "high": 9,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Bald Mtn Pass",
+      "elevFt": 10500,
+      "d1": 0.5,
+      "d7": 6.6,
+      "d10": 7.1
+     },
+     {
+      "name": "Trial Lake",
+      "elevFt": 9900,
+      "d1": 0.5,
+      "d7": 7.2,
+      "d10": 7.7
+     },
+     {
+      "name": "Soapstone",
+      "elevFt": 8800,
+      "d1": 0.7,
+      "d7": 7.4,
+      "d10": 7.9
+     },
+     {
+      "name": "Bear River",
+      "elevFt": 8800,
+      "d1": 0.1,
+      "d7": 2.9,
+      "d10": 3.2
+     },
+     {
+      "name": "Mill Hollow",
+      "elevFt": 8900,
+      "d1": 0.5,
+      "d7": 6.5,
+      "d10": 6.6
+     }
+    ],
+    "daily": [
+     0.5,
+     0,
+     0,
+     2,
+     0.1,
+     2.4,
+     1.1,
+     0,
+     0.3,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "strawberry",
@@ -1127,7 +2173,69 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.3,
+     "low": 0.1,
+     "high": 0.6,
+     "models": 3
+    },
+    "d7": {
+     "in": 5.7,
+     "low": 4.7,
+     "high": 6.5,
+     "models": 3
+    },
+    "d10": {
+     "in": 5.9,
+     "low": 4.7,
+     "high": 7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Daniels Summit",
+      "elevFt": 8300,
+      "d1": 0.4,
+      "d7": 7.3,
+      "d10": 7.4
+     },
+     {
+      "name": "Strawberry Peak",
+      "elevFt": 9300,
+      "d1": 0.4,
+      "d7": 5.6,
+      "d10": 5.8
+     },
+     {
+      "name": "Co-op Creek",
+      "elevFt": 8200,
+      "d1": 0.4,
+      "d7": 4.5,
+      "d10": 4.7
+     },
+     {
+      "name": "Currant Creek",
+      "elevFt": 8500,
+      "d1": 0,
+      "d7": 5.5,
+      "d10": 5.6
+     }
+    ],
+    "daily": [
+     0.3,
+     0,
+     0,
+     1.9,
+     0,
+     2.6,
+     0.9,
+     0,
+     0.2,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "skyline",
@@ -1183,7 +2291,62 @@
     "change7dIn": 3,
     "sweIn": 0.2
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 1,
+     "low": 0.6,
+     "high": 1.4,
+     "models": 3
+    },
+    "d7": {
+     "in": 8.4,
+     "low": 6.7,
+     "high": 9.5,
+     "models": 3
+    },
+    "d10": {
+     "in": 8.6,
+     "low": 6.7,
+     "high": 10.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Fairview Canyon top",
+      "elevFt": 9700,
+      "d1": 0.9,
+      "d7": 8.6,
+      "d10": 8.9
+     },
+     {
+      "name": "Huntington Reservoir",
+      "elevFt": 9000,
+      "d1": 0.6,
+      "d7": 7.1,
+      "d10": 7.4
+     },
+     {
+      "name": "Skyline south",
+      "elevFt": 10300,
+      "d1": 1.4,
+      "d7": 9.3,
+      "d10": 9.7
+     }
+    ],
+    "daily": [
+     1,
+     0,
+     0,
+     3.3,
+     0,
+     3.1,
+     0.9,
+     0,
+     0.2,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "rabbit-ears",
@@ -1244,7 +2407,62 @@
     "change7dIn": -2,
     "sweIn": 0.6
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.3,
+     "low": 0.1,
+     "high": 0.5,
+     "models": 3
+    },
+    "d7": {
+     "in": 5.7,
+     "low": 4,
+     "high": 7,
+     "models": 3
+    },
+    "d10": {
+     "in": 6,
+     "low": 4,
+     "high": 7.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Rabbit Ears Pass",
+      "elevFt": 9600,
+      "d1": 0.1,
+      "d7": 4.4,
+      "d10": 4.6
+     },
+     {
+      "name": "Buffalo Pass",
+      "elevFt": 10300,
+      "d1": 0.3,
+      "d7": 7,
+      "d10": 7.5
+     },
+     {
+      "name": "Dumont Lake",
+      "elevFt": 9500,
+      "d1": 0.4,
+      "d7": 5.7,
+      "d10": 6.1
+     }
+    ],
+    "daily": [
+     0.3,
+     0,
+     0,
+     1.6,
+     0.3,
+     0.5,
+     3.1,
+     0.2,
+     0.1,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "grand-lake",
@@ -1301,7 +2519,62 @@
     "change7dIn": 0,
     "sweIn": 0
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.2,
+     "low": 0.1,
+     "high": 0.3,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.4,
+     "low": 0.8,
+     "high": 4.6,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.7,
+     "low": 0.8,
+     "high": 5.2,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Stillwater Pass",
+      "elevFt": 10200,
+      "d1": 0.1,
+      "d7": 2.3,
+      "d10": 2.5
+     },
+     {
+      "name": "Gravel Mtn",
+      "elevFt": 10500,
+      "d1": 0.2,
+      "d7": 2.4,
+      "d10": 2.7
+     },
+     {
+      "name": "Supply Basin",
+      "elevFt": 9400,
+      "d1": 0.1,
+      "d7": 2.4,
+      "d10": 2.8
+     }
+    ],
+    "daily": [
+     0.2,
+     0,
+     0,
+     0.1,
+     0.1,
+     0.2,
+     1.8,
+     0.2,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "vail-pass",
@@ -1364,7 +2637,69 @@
     "change7dIn": -1,
     "sweIn": 0.4
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.4,
+     "low": 0,
+     "high": 0.9,
+     "models": 3
+    },
+    "d7": {
+     "in": 2.4,
+     "low": 1.4,
+     "high": 3.6,
+     "models": 3
+    },
+    "d10": {
+     "in": 2.5,
+     "low": 1.4,
+     "high": 3.8,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Vail Pass summit",
+      "elevFt": 10700,
+      "d1": 0.6,
+      "d7": 2.7,
+      "d10": 2.8
+     },
+     {
+      "name": "Shrine Pass",
+      "elevFt": 11100,
+      "d1": 0.5,
+      "d7": 2.7,
+      "d10": 2.9
+     },
+     {
+      "name": "Ptarmigan Hill",
+      "elevFt": 11800,
+      "d1": 0.6,
+      "d7": 2.6,
+      "d10": 2.7
+     },
+     {
+      "name": "Camp Hale",
+      "elevFt": 9300,
+      "d1": 0.1,
+      "d7": 1.5,
+      "d10": 1.7
+     }
+    ],
+    "daily": [
+     0.4,
+     0,
+     0,
+     0.3,
+     0.1,
+     0.6,
+     1,
+     0.1,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "grand-mesa",
@@ -1413,7 +2748,62 @@
     "change7dIn": 0,
     "sweIn": 1.8
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 1.6,
+     "low": 0.8,
+     "high": 2,
+     "models": 3
+    },
+    "d7": {
+     "in": 11.4,
+     "low": 5.8,
+     "high": 15.6,
+     "models": 3
+    },
+    "d10": {
+     "in": 11.6,
+     "low": 5.8,
+     "high": 15.7,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Mesa Lakes",
+      "elevFt": 9900,
+      "d1": 1.9,
+      "d7": 10.4,
+      "d10": 10.7
+     },
+     {
+      "name": "Skyway",
+      "elevFt": 10600,
+      "d1": 1.5,
+      "d7": 11.9,
+      "d10": 12.1
+     },
+     {
+      "name": "County Line",
+      "elevFt": 10500,
+      "d1": 1.5,
+      "d7": 11.8,
+      "d10": 12
+     }
+    ],
+    "daily": [
+     1.6,
+     0,
+     0,
+     3.6,
+     0.4,
+     3.6,
+     2,
+     0,
+     0.2,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   },
   {
    "id": "wolf-creek",
@@ -1475,7 +2865,62 @@
     "change7dIn": 5,
     "sweIn": 7.1
    },
-   "forecast": null
+   "forecast": {
+    "d1": {
+     "in": 0.2,
+     "low": 0,
+     "high": 0.4,
+     "models": 3
+    },
+    "d7": {
+     "in": 10.2,
+     "low": 5,
+     "high": 14.2,
+     "models": 3
+    },
+    "d10": {
+     "in": 10.3,
+     "low": 5,
+     "high": 14.4,
+     "models": 3
+    },
+    "spots": [
+     {
+      "name": "Big Meadows",
+      "elevFt": 10000,
+      "d1": 0.3,
+      "d7": 10.8,
+      "d10": 10.8
+     },
+     {
+      "name": "Tucker Ponds / Pass Creek",
+      "elevFt": 10300,
+      "d1": 0.3,
+      "d7": 11.1,
+      "d10": 11.2
+     },
+     {
+      "name": "Fox Mountain / Park Creek",
+      "elevFt": 10500,
+      "d1": 0.2,
+      "d7": 8.7,
+      "d10": 8.8
+     }
+    ],
+    "daily": [
+     0.2,
+     0,
+     0,
+     4.9,
+     0.1,
+     3,
+     2,
+     0.1,
+     0,
+     0
+    ],
+    "startsAt": "2026-11-14T18:00Z"
+   }
   }
  ]
 }
