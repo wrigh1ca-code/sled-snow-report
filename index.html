@@ -499,9 +499,15 @@ footer p { margin: 0 0 10px; }
   var ICON_GO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 12l10 10 10-10Z" fill="currentColor" opacity=".18"/><path d="M8.5 15v-3.5a1.5 1.5 0 0 1 1.5-1.5h5m-2.5-2.5L15 10l-2.5 2.5M12 2 2 12l10 10 10-10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var ICON_GROOM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 14h14M7 10h10M4 18l3-8m13 8-3-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   // Directions always use exact coordinates, never a name lookup.
-  function dirUrl(t) { return "https://www.google.com/maps/dir/?api=1&destination=" + t.lat + "," + t.lon + "&travelmode=driving"; }
+  // Exact coordinates whenever we have them. A few lots without published coordinates use a
+  // place search ("q") that was checked by hand in Google Maps; never add an unchecked one.
+  function hasDest(t) { return (t.lat != null && t.lon != null) || !!t.q; }
+  function dirUrl(t) {
+    var dest = (t.lat != null && t.lon != null) ? t.lat + "," + t.lon : encodeURIComponent(t.q);
+    return "https://www.google.com/maps/dir/?api=1&destination=" + dest + "&travelmode=driving";
+  }
   function accessRow(z) {
-    var th = (z.trailheads || []).filter(function (t) { return t.lat != null && t.lon != null; }), g = z.grooming;
+    var th = (z.trailheads || []).filter(hasDest), g = z.grooming;
     if (!th.length && !(g && g.url)) return "";
     var h = '<div class="access"><span class="access-lbl">' + (th.length ? "Trailhead" : "Trails") + "</span>";
     if (th.length) {

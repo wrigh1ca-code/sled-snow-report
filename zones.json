@@ -88,7 +88,8 @@
       { "name": "Granite Mtn", "lat": 45.1, "lon": -116.11, "elevFt": 7800 },
       { "name": "Burgdorf / Secesh", "lat": 45.3, "lon": -115.91, "elevFt": 6800 },
       { "name": "Lick Creek Summit", "lat": 45.04, "lon": -115.9, "elevFt": 6900 } ],
-      "trailheads": [],
+      "trailheads": [
+        {"name": "Francis Wallace Trailhead", "q": "Francis Wallace Trailhead, McCall, Idaho", "note": "Warren Wagon Rd, about 9 mi north of McCall"} ],
       "grooming": {"label": "Grooming map", "url": "https://experience.arcgis.com/experience/a92a825e3af44c4a94da9cf6460455e0/"} },
     { "id": "stanley", "name": "Stanley / Sawtooths", "state": "ID", "snotel": "Banner Summit", "spots": [
       { "name": "Banner Summit", "lat": 44.36, "lon": -115.21, "elevFt": 7200 },
@@ -176,7 +177,8 @@
       { "name": "Mesa Lakes", "lat": 39.05, "lon": -108.08, "elevFt": 9900 },
       { "name": "Skyway", "lat": 39.07, "lon": -108.04, "elevFt": 10600 },
       { "name": "County Line", "lat": 39.03, "lon": -107.99, "elevFt": 10500 } ],
-      "trailheads": [],
+      "trailheads": [
+        {"name": "Surface Creek Winter Trailhead", "q": "Surface Creek Winter Trailhead, Cedaredge, CO", "note": "CO-65 north of Cedaredge, then CR U50/25 about 6 mi"} ],
       "grooming": {"label": "Grooming updates", "url": "https://www.snowmobilecolo.com"} },
     { "id": "wolf-creek", "name": "Wolf Creek Pass", "state": "CO", "snotel": "Wolf Creek Summit", "spots": [
       { "name": "Big Meadows", "lat": 37.53, "lon": -106.8, "elevFt": 10000 },
