@@ -294,59 +294,97 @@ async function loadTomer() {
 
 async function main() {
   const { zones } = JSON.parse(await readFile(join(ROOT, "zones.json"), "utf8"));
-  // Last published data, so a failed forecast pull can fall back to the previous forecast
-  // instead of blanking the site.
-  let prev = {};
+  // Last published data, so a failed pull (SNOTEL or forecast) can fall back to the
+  // previous numbers instead of blanking the site or skipping the whole update.
+  const prev = {};
   try {
     const old = JSON.parse(await readFile(join(ROOT, "data", "conditions.json"), "utf8"));
-    for (const z of old.zones || []) prev[z.id] = { forecast: z.forecast, at: z.forecast?.fetchedAt || old.updatedAt };
+    for (const z of old.zones || []) {
+      prev[z.id] = {
+        station: z.station,
+        snow: z.snow ? { ...z.snow, fetchedAt: z.snow.fetchedAt || old.updatedAt } : null,
+        forecast: z.forecast,
+        at: z.forecast?.fetchedAt || old.updatedAt,
+      };
+    }
   } catch {}
   const FORECAST_MAX_AGE_H = 24;
-  const stations = await loadStations();
-  console.log(`Loaded ${stations.length} active SNOTEL stations`);
+  const SNOW_MAX_AGE_H = 72; // keep showing last-known depth (marked stale) this long
 
   for (const z of zones) z.rideElevFt = Math.round(mean(z.spots.map((s) => s.elevFt)) / 100) * 100;
-  const picks = zones.map((z) => ({ zone: z, station: pickStation(z, stations) }));
+
+  // SNOTEL. If the USDA server is down, reuse last run's station picks and depths.
+  let snotelOk = true;
+  let picks;
+  try {
+    const stations = await loadStations();
+    console.log(`Loaded ${stations.length} active SNOTEL stations`);
+    picks = zones.map((z) => ({ zone: z, station: pickStation(z, stations) }));
+  } catch (e) {
+    snotelOk = false;
+    console.error("SNOTEL station list failed, reusing previous stations:", e.message);
+    picks = zones.map((z) => ({ zone: z, station: prev[z.id]?.station || null }));
+  }
   const triplets = [...new Set(picks.map((p) => p.station?.triplet).filter(Boolean))];
-  let depth = {};
-  try { depth = await loadSnowDepth(triplets); } catch (e) { console.error("SNOTEL data failed:", e.message); }
-  let hourly = {};
-  try { hourly = await loadHourlyDepth(triplets); } catch (e) { console.error("SNOTEL hourly data failed, using daily:", e.message); }
+  let depth = {}, hourly = {};
+  if (snotelOk) {
+    let dailyOk = true, hourlyOk = true;
+    try { depth = await loadSnowDepth(triplets); } catch (e) { dailyOk = false; console.error("SNOTEL data failed:", e.message); }
+    try { hourly = await loadHourlyDepth(triplets); } catch (e) { hourlyOk = false; console.error("SNOTEL hourly data failed, using daily:", e.message); }
+    if (!dailyOk && !hourlyOk) snotelOk = false;
+  }
 
   const out = [];
+  let freshForecasts = 0;
   for (const { zone, station } of picks) {
     let forecast = null;
-    try { forecast = await loadForecast(zone); } catch (e) { console.error(`Forecast failed for ${zone.name}:`, e.message); }
+    try { forecast = await loadForecast(zone); freshForecasts++; } catch (e) { console.error(`Forecast failed for ${zone.name}:`, e.message); }
     if (!forecast && prev[zone.id]?.forecast && Date.now() - Date.parse(prev[zone.id].at) < FORECAST_MAX_AGE_H * 3600000) {
       forecast = { ...prev[zone.id].forecast, fetchedAt: prev[zone.id].at, stale: true };
       console.error(`  -> keeping the previous forecast for ${zone.name} from ${prev[zone.id].at}`);
     }
-    const snow = station ? summarizeDepth(depth[station.triplet], hourly[station.triplet]) : null;
-    console.log(`${zone.state} ${zone.name.padEnd(28)} -> ${station ? `${station.name} (${station.triplet}, ${station.how}, ${station.km.toFixed(0)} km)` : "no station"} | depth ${snow?.depthIn ?? "–"} in | 7d ${forecast?.d7?.in ?? "–"} in`);
+
+    let snow = null;
+    if (snotelOk && station) {
+      snow = summarizeDepth(depth[station.triplet], hourly[station.triplet]);
+      if (snow) snow.fetchedAt = new Date().toISOString();
+    } else if (!snotelOk) {
+      const p = prev[zone.id]?.snow;
+      if (p && Date.now() - Date.parse(p.fetchedAt) < SNOW_MAX_AGE_H * 3600000) {
+        snow = { ...p, stale: true };
+        console.error(`  -> keeping the previous snow depth for ${zone.name} from ${p.fetchedAt}`);
+      }
+    }
+
+    console.log(`${zone.state} ${zone.name.padEnd(28)} -> ${station ? `${station.name} (${station.triplet}${station.how ? `, ${station.how}` : ""}, ${Number(station.km ?? station.kmFromSpots).toFixed(0)} km)` : "no station"} | depth ${snow?.depthIn ?? "–"} in${snow?.stale ? " (stale)" : ""} | 7d ${forecast?.d7?.in ?? "–"} in`);
     out.push({
       ...zone,
-      station: station ? {
+      station: station ? (station.url ? station : {
         name: station.name,
         triplet: station.triplet,
         elevFt: station.elevFt,
         kmFromSpots: Math.round(station.km),
         url: `https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=${station.triplet.split(":")[0]}`,
-      } : null,
+      }) : null,
       snow,
       forecast,
     });
   }
 
+  // Nothing new at all: fail so the site isn't stamped "updated just now" with old numbers.
+  if (!snotelOk && freshForecasts === 0) throw new Error("Both SNOTEL and the forecast failed; nothing new to publish.");
+
   const payload = {
     updatedAt: new Date().toISOString(),
     sample: false,
+    snotelDown: !snotelOk,
     models: MODELS.map((m) => MODEL_LABEL[m]),
     tomer: await loadTomer(),
     zones: out,
   };
   await mkdir(join(ROOT, "data"), { recursive: true });
   await writeFile(join(ROOT, "data", "conditions.json"), JSON.stringify(payload, null, 1));
-  console.log("Wrote data/conditions.json");
+  console.log(snotelOk ? "Wrote data/conditions.json" : "Wrote data/conditions.json (SNOTEL down: snow depths are from the last good pull)");
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
