@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T13:00:33.569Z",
+ "updatedAt": "2026-11-19T16:00:35.063Z",
  "sample": false,
  "snotelDown": false,
  "models": [
@@ -8,9 +8,9 @@
   "GEM (Canada)"
  ],
  "tomer": {
-  "title": "Mountain Weather Update 11/18, Meteorologist Chris Tomer",
-  "url": "https://www.youtube.com/watch?v=t08CqTY7_Ao",
-  "published": "2026-11-18T15:04:35+00:00"
+  "title": "Mountain Weather Update 11/19, Meteorologist Chris Tomer",
+  "url": "https://www.youtube.com/watch?v=ULXDnXz8sEo",
+  "published": "2026-11-19T15:12:36+00:00"
  },
  "zones": [
   {
@@ -78,30 +78,30 @@
    "snow": {
     "depthIn": 5,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 1,
+    "change24hIn": 0,
     "change7dIn": 5,
     "sweIn": 0.7,
-    "fetchedAt": "2026-11-19T13:00:32.701Z"
+    "fetchedAt": "2026-11-19T16:00:34.285Z"
    },
    "forecast": {
     "d1": {
-     "in": 2.9,
-     "low": 1.6,
-     "high": 4.5,
+     "in": 2.7,
+     "low": 1.4,
+     "high": 4.6,
      "models": 3
     },
     "d7": {
-     "in": 8.2,
+     "in": 7.3,
      "low": 4.9,
-     "high": 11.7,
+     "high": 9,
      "models": 3
     },
     "d10": {
-     "in": 10.6,
-     "low": 8.4,
-     "high": 11.7,
+     "in": 9.5,
+     "low": 8.2,
+     "high": 11.3,
      "models": 3
     },
     "spots": [
@@ -109,45 +109,45 @@
       "name": "Two Top",
       "elevFt": 8500,
       "d1": 3.3,
-      "d7": 9.8,
-      "d10": 12.3
+      "d7": 8.8,
+      "d10": 11.1
      },
      {
       "name": "Lionhead",
       "elevFt": 9000,
-      "d1": 4.9,
-      "d7": 9.3,
-      "d10": 11.4
+      "d1": 4.2,
+      "d7": 8.8,
+      "d10": 10.7
      },
      {
       "name": "Tepee Basin",
       "elevFt": 8400,
-      "d1": 1.8,
-      "d7": 6.1,
-      "d10": 8.5
+      "d1": 2.1,
+      "d7": 5.5,
+      "d10": 7.7
      },
      {
       "name": "South Plateau",
       "elevFt": 7900,
-      "d1": 1.8,
-      "d7": 7.7,
-      "d10": 10.2
+      "d1": 1.4,
+      "d7": 6.2,
+      "d10": 8.5
      }
     ],
     "daily": [
-     2.9,
-     2.4,
+     2.7,
+     1.5,
+     0.8,
+     1.2,
+     0.3,
+     0,
      0.7,
-     1.4,
-     0.2,
-     0.1,
-     0.5,
      0.7,
      0.9,
      0.8
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.701Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.284Z"
    }
   },
   {
@@ -205,29 +205,29 @@
    "snow": {
     "depthIn": 9,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 1,
+    "change24hIn": 0,
     "change7dIn": 4,
     "sweIn": 1.7,
-    "fetchedAt": "2026-11-19T13:00:32.737Z"
+    "fetchedAt": "2026-11-19T16:00:34.309Z"
    },
    "forecast": {
     "d1": {
-     "in": 0.6,
-     "low": 0.2,
-     "high": 1.2,
+     "in": 1,
+     "low": 0.4,
+     "high": 1.4,
      "models": 3
     },
     "d7": {
-     "in": 5.8,
+     "in": 6.6,
      "low": 4.1,
-     "high": 7,
+     "high": 8.3,
      "models": 3
     },
     "d10": {
-     "in": 9.4,
-     "low": 6.4,
+     "in": 10.1,
+     "low": 7.5,
      "high": 14.3,
      "models": 3
     },
@@ -235,46 +235,46 @@
      {
       "name": "Daisy Pass",
       "elevFt": 9700,
-      "d1": 0.6,
-      "d7": 5.9,
-      "d10": 9.5
+      "d1": 1,
+      "d7": 6.7,
+      "d10": 10.2
      },
      {
       "name": "Lulu Pass",
       "elevFt": 9600,
-      "d1": 0.6,
-      "d7": 6,
-      "d10": 9.6
+      "d1": 1,
+      "d7": 6.7,
+      "d10": 10.2
      },
      {
       "name": "Henderson Mtn",
       "elevFt": 9900,
-      "d1": 0.6,
-      "d7": 5.9,
-      "d10": 9.5
+      "d1": 1,
+      "d7": 6.7,
+      "d10": 10.2
      },
      {
       "name": "Round Lake",
       "elevFt": 8800,
-      "d1": 0.5,
-      "d7": 5.4,
-      "d10": 9
+      "d1": 0.9,
+      "d7": 6.1,
+      "d10": 9.6
      }
     ],
     "daily": [
-     0.6,
-     1.8,
-     1.3,
-     1.3,
-     0.3,
-     0,
+     1,
+     2.3,
+     1.2,
+     1.1,
      0.4,
-     1.3,
-     1.5,
+     0,
+     0.5,
+     1.2,
+     1.6,
      0.5
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.737Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.308Z"
    }
   },
   {
@@ -331,29 +331,29 @@
    "snow": {
     "depthIn": 9,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 7,
     "sweIn": 1.7,
-    "fetchedAt": "2026-11-19T13:00:32.774Z"
+    "fetchedAt": "2026-11-19T16:00:34.333Z"
    },
    "forecast": {
     "d1": {
      "in": 0,
      "low": 0,
-     "high": 0.1,
+     "high": 0,
      "models": 3
     },
     "d7": {
      "in": 1,
-     "low": 0.7,
+     "low": 0.6,
      "high": 1.2,
      "models": 3
     },
     "d10": {
-     "in": 3.1,
-     "low": 0.7,
+     "in": 3,
+     "low": 1.2,
      "high": 4.6,
      "models": 3
     },
@@ -361,21 +361,21 @@
      {
       "name": "Morrell Mtn",
       "elevFt": 7200,
-      "d1": 0.1,
-      "d7": 1.2,
-      "d10": 3.6
+      "d1": 0,
+      "d7": 1,
+      "d10": 3.4
      },
      {
       "name": "Rice Ridge",
       "elevFt": 6800,
       "d1": 0,
-      "d7": 1.1,
-      "d10": 3.5
+      "d7": 1.2,
+      "d10": 3.6
      },
      {
       "name": "Lake Elsina",
       "elevFt": 6500,
-      "d1": 0.1,
+      "d1": 0,
       "d7": 1.1,
       "d10": 3.9
      },
@@ -383,24 +383,24 @@
       "name": "Double Arrow Lookout",
       "elevFt": 6300,
       "d1": 0,
-      "d7": 0.6,
-      "d10": 1.6
+      "d7": 0.5,
+      "d10": 1.4
      }
     ],
     "daily": [
      0,
+     0.5,
      0.3,
-     0.2,
-     0.4,
+     0.1,
      0,
      0,
-     0,
+     0.1,
      0.6,
      1,
-     0.7
+     0.6
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.774Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.333Z"
    }
   },
   {
@@ -457,30 +457,30 @@
    "snow": {
     "depthIn": 4,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 4,
     "sweIn": 0.3,
-    "fetchedAt": "2026-11-19T13:00:32.811Z"
+    "fetchedAt": "2026-11-19T16:00:34.355Z"
    },
    "forecast": {
     "d1": {
-     "in": 0,
+     "in": 0.1,
      "low": 0,
      "high": 0.1,
      "models": 3
     },
     "d7": {
      "in": 1.1,
-     "low": 0.7,
-     "high": 1.6,
+     "low": 1,
+     "high": 1.3,
      "models": 3
     },
     "d10": {
      "in": 1.6,
-     "low": 0.7,
-     "high": 2.9,
+     "low": 1.1,
+     "high": 2.5,
      "models": 3
     },
     "spots": [
@@ -495,7 +495,7 @@
       "name": "Flesher Pass",
       "elevFt": 6500,
       "d1": 0,
-      "d7": 1.2,
+      "d7": 1.3,
       "d10": 1.6
      },
      {
@@ -503,23 +503,23 @@
       "elevFt": 6600,
       "d1": 0,
       "d7": 1,
-      "d10": 1.7
+      "d10": 1.6
      }
     ],
     "daily": [
-     0,
-     0.7,
-     0.2,
-     0.2,
-     0,
+     0.1,
+     0.9,
+     0.1,
      0,
      0,
+     0,
+     0.1,
      0.2,
      0.1,
      0.3
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.811Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.355Z"
    }
   },
   {
@@ -582,69 +582,69 @@
    "snow": {
     "depthIn": 5,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -1,
+    "change24hIn": 0,
     "change7dIn": 5,
     "sweIn": 0.6,
-    "fetchedAt": "2026-11-19T13:00:32.847Z"
+    "fetchedAt": "2026-11-19T16:00:34.377Z"
    },
    "forecast": {
     "d1": {
-     "in": 0.3,
-     "low": 0.1,
-     "high": 0.6,
+     "in": 0.1,
+     "low": 0,
+     "high": 0.1,
      "models": 3
     },
     "d7": {
-     "in": 2.1,
-     "low": 1.2,
-     "high": 2.8,
+     "in": 1.9,
+     "low": 0.9,
+     "high": 2.5,
      "models": 3
     },
     "d10": {
-     "in": 4.4,
-     "low": 1.2,
-     "high": 6.9,
+     "in": 4,
+     "low": 0.9,
+     "high": 6.1,
      "models": 3
     },
     "spots": [
      {
       "name": "Elk Meadows",
       "elevFt": 6000,
-      "d1": 0.5,
-      "d7": 2.2,
-      "d10": 4.6
+      "d1": 0.1,
+      "d7": 2.1,
+      "d10": 4.2
      },
      {
       "name": "Moose Ridge",
       "elevFt": 6200,
-      "d1": 0.3,
-      "d7": 1.8,
-      "d10": 3.3
+      "d1": 0,
+      "d7": 1.5,
+      "d10": 2.8
      },
      {
       "name": "Lost Park",
       "elevFt": 6000,
-      "d1": 0.2,
-      "d7": 2.2,
-      "d10": 5.1
+      "d1": 0,
+      "d7": 2.1,
+      "d10": 4.9
      }
     ],
     "daily": [
-     0.3,
-     0.8,
-     0.2,
-     0.4,
+     0.1,
+     1,
+     0.1,
+     0.1,
      0,
      0,
-     0.4,
+     0.6,
      0.9,
-     0.7,
-     1
+     0.6,
+     0.9
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.847Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.377Z"
    }
   },
   {
@@ -712,28 +712,28 @@
    "snow": {
     "depthIn": 9,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 4,
     "sweIn": 2.1,
-    "fetchedAt": "2026-11-19T13:00:32.883Z"
+    "fetchedAt": "2026-11-19T16:00:34.399Z"
    },
    "forecast": {
     "d1": {
      "in": 0.5,
      "low": 0.3,
-     "high": 0.7,
+     "high": 0.6,
      "models": 3
     },
     "d7": {
-     "in": 4.2,
-     "low": 4,
+     "in": 4.4,
+     "low": 4.4,
      "high": 4.4,
      "models": 3
     },
     "d10": {
-     "in": 7.9,
+     "in": 8.1,
      "low": 4.4,
      "high": 10.2,
      "models": 3
@@ -743,45 +743,45 @@
       "name": "Togwotee Summit",
       "elevFt": 9600,
       "d1": 0.5,
-      "d7": 4.2,
-      "d10": 8
+      "d7": 4.5,
+      "d10": 8.3
      },
      {
       "name": "Brooks Lake",
       "elevFt": 9300,
       "d1": 0.4,
-      "d7": 3.8,
-      "d10": 7.7
+      "d7": 4.2,
+      "d10": 8
      },
      {
       "name": "Squaw Basin",
       "elevFt": 9000,
-      "d1": 0.7,
-      "d7": 5,
-      "d10": 8.8
+      "d1": 0.5,
+      "d7": 5.1,
+      "d10": 8.9
      },
      {
       "name": "Fourmile Meadows",
       "elevFt": 8400,
-      "d1": 0.6,
+      "d1": 0.5,
       "d7": 3.8,
-      "d10": 7.1
+      "d10": 7
      }
     ],
     "daily": [
      0.5,
-     2,
-     0.5,
+     2.3,
+     0.4,
      0.7,
      0.3,
      0,
-     0.2,
+     0.3,
      1.2,
      1.9,
      0.5
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.883Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.399Z"
    }
   },
   {
@@ -849,29 +849,29 @@
    "snow": {
     "depthIn": 4,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -1,
+    "change24hIn": 0,
     "change7dIn": 4,
-    "sweIn": 0.3,
-    "fetchedAt": "2026-11-19T13:00:32.919Z"
+    "sweIn": 0.4,
+    "fetchedAt": "2026-11-19T16:00:34.420Z"
    },
    "forecast": {
     "d1": {
-     "in": 1.2,
-     "low": 0.6,
-     "high": 1.8,
+     "in": 1.7,
+     "low": 0.8,
+     "high": 2.7,
      "models": 3
     },
     "d7": {
-     "in": 5.5,
-     "low": 4.7,
-     "high": 6.7,
+     "in": 5.9,
+     "low": 4.8,
+     "high": 6.9,
      "models": 3
     },
     "d10": {
-     "in": 8.9,
-     "low": 4.7,
+     "in": 9.2,
+     "low": 4.8,
      "high": 12.4,
      "models": 3
     },
@@ -879,46 +879,46 @@
      {
       "name": "Blind Bull Summit",
       "elevFt": 8700,
-      "d1": 1.2,
-      "d7": 5.4,
-      "d10": 9.1
+      "d1": 1.5,
+      "d7": 5.3,
+      "d10": 9
      },
      {
       "name": "McDougal Gap",
       "elevFt": 8900,
-      "d1": 1.2,
-      "d7": 4.9,
-      "d10": 8.1
+      "d1": 1.5,
+      "d7": 4.8,
+      "d10": 8
      },
      {
       "name": "Box Y / Greys River",
       "elevFt": 7500,
-      "d1": 1.4,
-      "d7": 6.1,
-      "d10": 9.7
+      "d1": 1.3,
+      "d7": 6.4,
+      "d10": 9.8
      },
      {
       "name": "Salt River Pass",
       "elevFt": 7900,
-      "d1": 1.1,
-      "d7": 5.5,
-      "d10": 8.5
+      "d1": 2.5,
+      "d7": 7,
+      "d10": 9.9
      }
     ],
     "daily": [
-     1.2,
-     2.6,
-     0.4,
-     0.3,
+     1.7,
+     2.5,
+     0.2,
+     0.5,
      0.5,
      0,
      0.5,
      1.5,
-     1.4,
+     1.3,
      0.6
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.919Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.420Z"
    }
   },
   {
@@ -968,69 +968,69 @@
    "snow": {
     "depthIn": 2,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 1,
+    "change24hIn": 0,
     "change7dIn": 2,
     "sweIn": 0.4,
-    "fetchedAt": "2026-11-19T13:00:32.955Z"
+    "fetchedAt": "2026-11-19T16:00:34.441Z"
    },
    "forecast": {
     "d1": {
-     "in": 0.1,
+     "in": 0.3,
      "low": 0,
-     "high": 0.1,
+     "high": 0.6,
      "models": 3
     },
     "d7": {
      "in": 1.5,
-     "low": 0.1,
-     "high": 2.6,
+     "low": 0.2,
+     "high": 2.4,
      "models": 3
     },
     "d10": {
      "in": 3.6,
-     "low": 1.7,
-     "high": 4.9,
+     "low": 2.4,
+     "high": 4.3,
      "models": 3
     },
     "spots": [
      {
       "name": "Libby Flats",
       "elevFt": 10600,
-      "d1": 0.1,
-      "d7": 1.5,
-      "d10": 6.4
+      "d1": 0.3,
+      "d7": 1.7,
+      "d10": 6.6
      },
      {
       "name": "Brooklyn Lake",
       "elevFt": 10200,
-      "d1": 0.1,
+      "d1": 0.3,
       "d7": 1.7,
       "d10": 2.4
      },
      {
       "name": "Rob Roy",
       "elevFt": 9500,
-      "d1": 0,
-      "d7": 1.2,
-      "d10": 2
+      "d1": 0.2,
+      "d7": 1.1,
+      "d10": 1.9
      }
     ],
     "daily": [
+     0.3,
+     0.6,
      0.1,
-     0.6,
-     0.2,
      0,
-     0.4,
+     0.3,
      0,
      0.2,
-     0.6,
      0.7,
+     0.8,
      0.5
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.955Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.441Z"
    }
   },
   {
@@ -1088,30 +1088,30 @@
    "snow": {
     "depthIn": 2,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 2,
+    "change24hIn": 0,
     "change7dIn": 2,
     "sweIn": 0,
-    "fetchedAt": "2026-11-19T13:00:32.990Z"
+    "fetchedAt": "2026-11-19T16:00:34.471Z"
    },
    "forecast": {
     "d1": {
      "in": 0.2,
      "low": 0,
-     "high": 0.5,
+     "high": 0.4,
      "models": 3
     },
     "d7": {
-     "in": 4.5,
-     "low": 3.3,
-     "high": 6.3,
+     "in": 4.8,
+     "low": 3.4,
+     "high": 5.9,
      "models": 3
     },
     "d10": {
-     "in": 4.9,
+     "in": 5.2,
      "low": 3.7,
-     "high": 6.3,
+     "high": 5.9,
      "models": 3
     },
     "spots": [
@@ -1119,29 +1119,29 @@
       "name": "Burgess Junction",
       "elevFt": 8200,
       "d1": 0,
-      "d7": 3.5,
-      "d10": 3.8
+      "d7": 4.3,
+      "d10": 4.6
      },
      {
       "name": "Granite Pass",
       "elevFt": 9000,
       "d1": 0,
-      "d7": 5,
-      "d10": 5.7
+      "d7": 5.4,
+      "d10": 6
      },
      {
       "name": "Powder River Pass",
       "elevFt": 9600,
-      "d1": 0.5,
-      "d7": 4.9,
-      "d10": 5.2
+      "d1": 0.4,
+      "d7": 4.6,
+      "d10": 4.9
      }
     ],
     "daily": [
      0.2,
-     3,
+     3.3,
      0.7,
-     0,
+     0.1,
      0.4,
      0,
      0.1,
@@ -1149,8 +1149,8 @@
      0.1,
      0.2
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:32.990Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.471Z"
    }
   },
   {
@@ -1194,69 +1194,69 @@
    "snow": {
     "depthIn": 7,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 3,
     "sweIn": 1.3,
-    "fetchedAt": "2026-11-19T13:00:33.026Z"
+    "fetchedAt": "2026-11-19T16:00:34.501Z"
    },
    "forecast": {
     "d1": {
-     "in": 0.7,
-     "low": 0.4,
-     "high": 0.9,
+     "in": 1,
+     "low": 0.7,
+     "high": 1.7,
      "models": 3
     },
     "d7": {
-     "in": 3,
-     "low": 2.7,
-     "high": 3.4,
+     "in": 3.2,
+     "low": 2.5,
+     "high": 4.4,
      "models": 3
     },
     "d10": {
-     "in": 4.8,
-     "low": 2.9,
-     "high": 6.1,
+     "in": 5,
+     "low": 4.4,
+     "high": 5.4,
      "models": 3
     },
     "spots": [
      {
       "name": "Union Pass",
       "elevFt": 9200,
-      "d1": 0.6,
-      "d7": 2.3,
-      "d10": 3.5
+      "d1": 1,
+      "d7": 2.9,
+      "d10": 4.1
      },
      {
       "name": "Sheridan Pass",
       "elevFt": 9300,
-      "d1": 0.5,
-      "d7": 3,
-      "d10": 4.7
+      "d1": 1,
+      "d7": 3.3,
+      "d10": 5
      },
      {
       "name": "Fish Lake Mtn",
       "elevFt": 9600,
-      "d1": 0.9,
-      "d7": 3.7,
-      "d10": 6.2
+      "d1": 1.1,
+      "d7": 3.5,
+      "d10": 6
      }
     ],
     "daily": [
-     0.7,
-     1.7,
-     0.3,
+     1,
+     1.6,
      0.2,
      0.1,
+     0.2,
      0,
      0,
      0.7,
-     0.7,
+     0.8,
      0.4
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.026Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.501Z"
    }
   },
   {
@@ -1314,30 +1314,30 @@
    "snow": {
     "depthIn": 6,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 6,
     "sweIn": 1.3,
-    "fetchedAt": "2026-11-19T13:00:33.062Z"
+    "fetchedAt": "2026-11-19T16:00:34.524Z"
    },
    "forecast": {
     "d1": {
-     "in": 4.3,
-     "low": 2,
-     "high": 6.5,
+     "in": 4.2,
+     "low": 1.9,
+     "high": 6.2,
      "models": 3
     },
     "d7": {
-     "in": 10.6,
-     "low": 5.1,
-     "high": 15.8,
+     "in": 9.7,
+     "low": 5.9,
+     "high": 12.5,
      "models": 3
     },
     "d10": {
-     "in": 13.2,
-     "low": 8.9,
-     "high": 15.8,
+     "in": 12,
+     "low": 9.5,
+     "high": 14.1,
      "models": 3
     },
     "spots": [
@@ -1345,45 +1345,45 @@
       "name": "Two Top",
       "elevFt": 8500,
       "d1": 3.3,
-      "d7": 9.8,
-      "d10": 12.3
+      "d7": 8.8,
+      "d10": 11.1
      },
      {
       "name": "Mt Jefferson",
       "elevFt": 8800,
-      "d1": 5.5,
-      "d7": 10.2,
-      "d10": 12.3
+      "d1": 4.7,
+      "d7": 9.9,
+      "d10": 11.8
      },
      {
       "name": "Sawtell Peak",
       "elevFt": 8600,
-      "d1": 5.7,
-      "d7": 11.1,
-      "d10": 13.2
+      "d1": 5.5,
+      "d7": 10.8,
+      "d10": 12.7
      },
      {
       "name": "Mesa Falls",
       "elevFt": 6300,
-      "d1": 2.8,
-      "d7": 11.4,
-      "d10": 14.9
+      "d1": 3.3,
+      "d7": 9.3,
+      "d10": 12.5
      }
     ],
     "daily": [
-     4.3,
-     2.7,
+     4.2,
+     1.7,
      1,
-     1.6,
-     0.2,
+     1.4,
+     0.5,
      0.1,
-     0.7,
+     0.9,
      0.8,
      0.9,
      0.8
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.062Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.524Z"
    }
   },
   {
@@ -1437,71 +1437,71 @@
     "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=370"
    },
    "snow": {
-    "depthIn": 10,
+    "depthIn": 9,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 0,
-    "change7dIn": 10,
+    "change24hIn": -1,
+    "change7dIn": 9,
     "sweIn": 1.7,
-    "fetchedAt": "2026-11-19T13:00:33.110Z"
+    "fetchedAt": "2026-11-19T16:00:34.739Z"
    },
    "forecast": {
     "d1": {
-     "in": 2.1,
-     "low": 1.4,
-     "high": 2.7,
+     "in": 1.8,
+     "low": 1.5,
+     "high": 2,
      "models": 3
     },
     "d7": {
-     "in": 5.4,
-     "low": 5.2,
-     "high": 5.8,
+     "in": 5.6,
+     "low": 4.3,
+     "high": 7.7,
      "models": 3
     },
     "d10": {
-     "in": 10.8,
-     "low": 5.2,
-     "high": 13.8,
+     "in": 10.5,
+     "low": 4.3,
+     "high": 14.5,
      "models": 3
     },
     "spots": [
      {
       "name": "Granite Mtn",
       "elevFt": 7800,
-      "d1": 2.5,
+      "d1": 1.9,
       "d7": 6.3,
-      "d10": 11.5
+      "d10": 11.1
      },
      {
       "name": "Burgdorf / Secesh",
       "elevFt": 6800,
-      "d1": 1.6,
-      "d7": 3.6,
-      "d10": 7.4
+      "d1": 1.4,
+      "d7": 3.7,
+      "d10": 7.2
      },
      {
       "name": "Lick Creek Summit",
       "elevFt": 6900,
-      "d1": 2.3,
-      "d7": 6.4,
-      "d10": 13.5
+      "d1": 2,
+      "d7": 6.8,
+      "d10": 13.4
      }
     ],
     "daily": [
-     2.1,
-     0.2,
-     0.5,
-     0.9,
-     0,
-     0.3,
-     1.4,
+     1.8,
+     0.1,
+     0.7,
+     0.7,
+     0.1,
+     0.7,
+     1.6,
      1.9,
-     2.1,
-     1.5
+     1.8,
+     1.2
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.110Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.738Z"
    }
   },
   {
@@ -1561,71 +1561,71 @@
     "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=312"
    },
    "snow": {
-    "depthIn": 9,
+    "depthIn": 8,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 1,
-    "change7dIn": 9,
+    "change7dIn": 8,
     "sweIn": 1.2,
-    "fetchedAt": "2026-11-19T13:00:33.145Z"
+    "fetchedAt": "2026-11-19T16:00:34.762Z"
    },
    "forecast": {
     "d1": {
      "in": 1.2,
-     "low": 0.8,
-     "high": 2,
+     "low": 0.7,
+     "high": 1.6,
      "models": 3
     },
     "d7": {
-     "in": 3.9,
-     "low": 3.7,
-     "high": 4.1,
+     "in": 4.1,
+     "low": 2.6,
+     "high": 5.8,
      "models": 3
     },
     "d10": {
-     "in": 8.1,
-     "low": 3.7,
-     "high": 11.9,
+     "in": 7.9,
+     "low": 2.6,
+     "high": 12.7,
      "models": 3
     },
     "spots": [
      {
       "name": "Banner Summit",
       "elevFt": 7200,
-      "d1": 1.2,
-      "d7": 3.9,
-      "d10": 8.1
+      "d1": 0.8,
+      "d7": 3.7,
+      "d10": 7.6
      },
      {
       "name": "Cape Horn",
       "elevFt": 7400,
-      "d1": 0.9,
-      "d7": 3.1,
-      "d10": 6.9
+      "d1": 0.8,
+      "d7": 3.3,
+      "d10": 6.7
      },
      {
       "name": "Galena Summit",
       "elevFt": 8600,
-      "d1": 1.6,
-      "d7": 4.6,
-      "d10": 9.1
+      "d1": 2.1,
+      "d7": 5.3,
+      "d10": 9.5
      }
     ],
     "daily": [
      1.2,
-     0.3,
-     0.2,
-     0.5,
      0,
-     0.1,
-     1.6,
-     1.3,
+     0.2,
+     0.4,
+     0,
+     0.5,
+     1.7,
      1.4,
-     1.5
+     1.5,
+     0.9
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.145Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.762Z"
    }
   },
   {
@@ -1683,69 +1683,69 @@
    "snow": {
     "depthIn": 4,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 4,
     "sweIn": 0.6,
-    "fetchedAt": "2026-11-19T13:00:33.180Z"
+    "fetchedAt": "2026-11-19T16:00:34.787Z"
    },
    "forecast": {
     "d1": {
-     "in": 0.2,
-     "low": 0.1,
-     "high": 0.4,
+     "in": 0,
+     "low": 0,
+     "high": 0.1,
      "models": 3
     },
     "d7": {
-     "in": 3.3,
-     "low": 2.5,
-     "high": 4.2,
+     "in": 2.9,
+     "low": 1.9,
+     "high": 4.4,
      "models": 3
     },
     "d10": {
-     "in": 6.9,
-     "low": 2.5,
-     "high": 11,
+     "in": 6.2,
+     "low": 2.3,
+     "high": 9.1,
      "models": 3
     },
     "spots": [
      {
       "name": "Lookout Pass",
       "elevFt": 5500,
-      "d1": 0.2,
-      "d7": 3.1,
-      "d10": 6.9
+      "d1": 0,
+      "d7": 2.7,
+      "d10": 6.2
      },
      {
       "name": "Thompson Pass",
       "elevFt": 5500,
-      "d1": 0.1,
-      "d7": 3.3,
-      "d10": 6.8
+      "d1": 0,
+      "d7": 2.9,
+      "d10": 6.2
      },
      {
       "name": "Stevens Peak ridges",
       "elevFt": 6000,
-      "d1": 0.2,
-      "d7": 3.4,
-      "d10": 7
+      "d1": 0,
+      "d7": 3,
+      "d10": 6.3
      }
     ],
     "daily": [
-     0.2,
-     0.9,
-     0.2,
-     1.4,
      0,
-     0.1,
-     0.5,
+     0.8,
+     0.3,
+     0.8,
+     0,
+     0.2,
+     0.8,
      1.9,
-     0.5,
+     0.2,
      1.8
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.180Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.787Z"
    }
   },
   {
@@ -1802,69 +1802,69 @@
    "snow": {
     "depthIn": 4,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 4,
     "sweIn": 0.4,
-    "fetchedAt": "2026-11-19T13:00:33.215Z"
+    "fetchedAt": "2026-11-19T16:00:34.832Z"
    },
    "forecast": {
     "d1": {
-     "in": 3.3,
-     "low": 1.3,
-     "high": 4.6,
+     "in": 2.8,
+     "low": 2,
+     "high": 3.3,
      "models": 3
     },
     "d7": {
-     "in": 9.9,
-     "low": 9.6,
-     "high": 10.1,
+     "in": 10.4,
+     "low": 9.2,
+     "high": 11.6,
      "models": 3
     },
     "d10": {
-     "in": 11.8,
-     "low": 9.9,
-     "high": 13.6,
+     "in": 12.2,
+     "low": 11.6,
+     "high": 13.2,
      "models": 3
     },
     "spots": [
      {
       "name": "Emigrant Summit",
       "elevFt": 7400,
-      "d1": 3.3,
-      "d7": 9.6,
-      "d10": 11.7
+      "d1": 2.8,
+      "d7": 11,
+      "d10": 13.1
      },
      {
       "name": "Sherman Peak",
       "elevFt": 8500,
-      "d1": 3.7,
-      "d7": 11.2,
-      "d10": 13.3
+      "d1": 3,
+      "d7": 11.4,
+      "d10": 13.4
      },
      {
       "name": "Paris Canyon",
       "elevFt": 7600,
-      "d1": 3,
-      "d7": 8.9,
-      "d10": 10.3
+      "d1": 2.6,
+      "d7": 8.7,
+      "d10": 10.1
      }
     ],
     "daily": [
-     3.3,
-     5.3,
-     0.2,
-     0.2,
+     2.8,
+     6.3,
+     0.1,
+     0.4,
      0.4,
      0,
-     0.4,
+     0.5,
      1.1,
-     0.3,
+     0.2,
      0.7
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.215Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.832Z"
    }
   },
   {
@@ -1929,71 +1929,71 @@
     "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=823"
    },
    "snow": {
-    "depthIn": 6,
+    "depthIn": 8,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -2,
-    "change7dIn": 6,
-    "sweIn": 0.6,
-    "fetchedAt": "2026-11-19T13:00:33.251Z"
+    "change24hIn": 0,
+    "change7dIn": 8,
+    "sweIn": 0.5,
+    "fetchedAt": "2026-11-19T16:00:34.861Z"
    },
    "forecast": {
     "d1": {
      "in": 3.1,
-     "low": 0.6,
-     "high": 6.2,
+     "low": 1.6,
+     "high": 5.7,
      "models": 3
     },
     "d7": {
-     "in": 8.7,
-     "low": 4.5,
-     "high": 11.9,
+     "in": 8.2,
+     "low": 4.7,
+     "high": 12.6,
      "models": 3
     },
     "d10": {
-     "in": 11,
+     "in": 10.4,
      "low": 7,
-     "high": 14,
+     "high": 12.6,
      "models": 3
     },
     "spots": [
      {
       "name": "Tony Grove",
       "elevFt": 8400,
-      "d1": 3.4,
-      "d7": 10.8,
-      "d10": 12.5
+      "d1": 2.7,
+      "d7": 9.4,
+      "d10": 11.1
      },
      {
       "name": "Franklin Basin",
       "elevFt": 8000,
-      "d1": 3.6,
-      "d7": 8.8,
-      "d10": 11.2
+      "d1": 3.4,
+      "d7": 8.4,
+      "d10": 10.7
      },
      {
       "name": "Beaver Creek",
       "elevFt": 7900,
-      "d1": 2.4,
-      "d7": 6.6,
-      "d10": 9.3
+      "d1": 3.2,
+      "d7": 6.8,
+      "d10": 9.5
      }
     ],
     "daily": [
      3.1,
-     4.3,
+     3.7,
      0.2,
      0.3,
-     0.4,
+     0.5,
      0,
      0.4,
      1.1,
-     0.5,
+     0.4,
      1.1
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.251Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.860Z"
    }
   },
   {
@@ -2051,69 +2051,69 @@
    "snow": {
     "depthIn": 12,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 0,
+    "change24hIn": -2,
     "change7dIn": 9,
     "sweIn": 2.2,
-    "fetchedAt": "2026-11-19T13:00:33.285Z"
+    "fetchedAt": "2026-11-19T16:00:34.882Z"
    },
    "forecast": {
     "d1": {
-     "in": 3.5,
-     "low": 1.4,
-     "high": 6.5,
+     "in": 3.9,
+     "low": 1.7,
+     "high": 6.9,
      "models": 3
     },
     "d7": {
-     "in": 6.8,
+     "in": 6.3,
      "low": 3.8,
-     "high": 9.9,
+     "high": 9.4,
      "models": 3
     },
     "d10": {
-     "in": 8.8,
-     "low": 4.6,
-     "high": 12,
+     "in": 8.2,
+     "low": 4.4,
+     "high": 10.9,
      "models": 3
     },
     "spots": [
      {
       "name": "Monte Cristo Summit",
       "elevFt": 8900,
-      "d1": 3.9,
-      "d7": 7.1,
-      "d10": 8.9
-     },
-     {
-      "name": "Curtis Creek",
-      "elevFt": 8200,
-      "d1": 3.2,
+      "d1": 4.4,
       "d7": 6.7,
       "d10": 8.6
      },
      {
+      "name": "Curtis Creek",
+      "elevFt": 8200,
+      "d1": 3.5,
+      "d7": 5.8,
+      "d10": 7.7
+     },
+     {
       "name": "Ant Flat",
       "elevFt": 7800,
-      "d1": 3.3,
-      "d7": 6.7,
-      "d10": 9
+      "d1": 3.8,
+      "d7": 6.2,
+      "d10": 8.5
      }
     ],
     "daily": [
-     3.5,
-     2.4,
-     0.2,
+     3.9,
+     1.8,
      0.1,
-     0.4,
+     0.1,
+     0.2,
      0,
      0.2,
      1,
      0.2,
      1.2
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.285Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.882Z"
    }
   },
   {
@@ -2180,30 +2180,30 @@
     "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=828"
    },
    "snow": {
-    "depthIn": 10,
+    "depthIn": 8,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": 0,
-    "change7dIn": 10,
-    "sweIn": 1.1,
-    "fetchedAt": "2026-11-19T13:00:33.322Z"
+    "change24hIn": -3,
+    "change7dIn": 8,
+    "sweIn": 1,
+    "fetchedAt": "2026-11-19T16:00:34.913Z"
    },
    "forecast": {
     "d1": {
-     "in": 4.4,
-     "low": 2.7,
-     "high": 6.1,
+     "in": 5.4,
+     "low": 3.1,
+     "high": 8,
      "models": 3
     },
     "d7": {
-     "in": 6.9,
-     "low": 5.2,
-     "high": 8.6,
+     "in": 7.3,
+     "low": 5.6,
+     "high": 9.1,
      "models": 3
     },
     "d10": {
-     "in": 9,
+     "in": 9.2,
      "low": 7.1,
      "high": 11.4,
      "models": 3
@@ -2212,53 +2212,53 @@
      {
       "name": "Bald Mtn Pass",
       "elevFt": 10500,
-      "d1": 5.1,
-      "d7": 8.1,
-      "d10": 10.5
+      "d1": 6.7,
+      "d7": 8.6,
+      "d10": 10.9
      },
      {
       "name": "Trial Lake",
       "elevFt": 9900,
-      "d1": 5.2,
-      "d7": 8.9,
-      "d10": 11.8
+      "d1": 6.3,
+      "d7": 8.8,
+      "d10": 11.4
      },
      {
       "name": "Soapstone",
       "elevFt": 8800,
-      "d1": 4,
-      "d7": 6.3,
-      "d10": 8.8
+      "d1": 5,
+      "d7": 7,
+      "d10": 9.2
      },
      {
       "name": "Bear River",
       "elevFt": 8800,
-      "d1": 3.5,
-      "d7": 4.9,
+      "d1": 3.9,
+      "d7": 5.1,
       "d10": 6.2
      },
      {
       "name": "Mill Hollow",
       "elevFt": 8900,
-      "d1": 4.4,
-      "d7": 6.3,
-      "d10": 8
+      "d1": 5.1,
+      "d7": 6.7,
+      "d10": 8.4
      }
     ],
     "daily": [
-     4.4,
-     1.5,
+     5.4,
+     0.8,
      0,
-     0.1,
-     0.4,
-     0,
-     0.4,
-     1,
+     0.2,
      0.3,
-     1.2
+     0,
+     0.6,
+     0.8,
+     0.4,
+     1.1
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.322Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.913Z"
    }
   },
   {
@@ -2320,31 +2320,31 @@
     "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=795"
    },
    "snow": {
-    "depthIn": 2,
+    "depthIn": 3,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -2,
-    "change7dIn": 2,
+    "change24hIn": -1,
+    "change7dIn": 3,
     "sweIn": 0.4,
-    "fetchedAt": "2026-11-19T13:00:33.358Z"
+    "fetchedAt": "2026-11-19T16:00:34.936Z"
    },
    "forecast": {
     "d1": {
-     "in": 4.7,
-     "low": 2.9,
+     "in": 5.2,
+     "low": 3.7,
      "high": 6.6,
      "models": 3
     },
     "d7": {
-     "in": 6.7,
-     "low": 4.6,
-     "high": 7.9,
+     "in": 6.9,
+     "low": 5.5,
+     "high": 7.6,
      "models": 3
     },
     "d10": {
-     "in": 7.5,
-     "low": 6.5,
+     "in": 7.7,
+     "low": 7.5,
      "high": 8,
      "models": 3
     },
@@ -2352,46 +2352,46 @@
      {
       "name": "Daniels Summit",
       "elevFt": 8300,
-      "d1": 5.6,
-      "d7": 8.5,
-      "d10": 9.9
+      "d1": 6.8,
+      "d7": 8.8,
+      "d10": 10.2
      },
      {
       "name": "Strawberry Peak",
       "elevFt": 9300,
-      "d1": 4,
-      "d7": 5.7,
-      "d10": 6.7
+      "d1": 4.1,
+      "d7": 5.9,
+      "d10": 6.9
      },
      {
       "name": "Co-op Creek",
       "elevFt": 8200,
-      "d1": 3.8,
-      "d7": 5.7,
-      "d10": 6.2
+      "d1": 4.2,
+      "d7": 6,
+      "d10": 6.4
      },
      {
       "name": "Currant Creek",
       "elevFt": 8500,
-      "d1": 5.6,
+      "d1": 5.9,
       "d7": 6.8,
-      "d10": 7.1
+      "d10": 7.2
      }
     ],
     "daily": [
-     4.7,
-     1.5,
-     0.1,
+     5.2,
+     1.2,
+     0,
      0.1,
      0.1,
      0,
-     0.1,
+     0.2,
      0.4,
      0,
      0.6
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.358Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.936Z"
    }
   },
   {
@@ -2448,69 +2448,69 @@
    "snow": {
     "depthIn": 10,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 10,
     "sweIn": 2.6,
-    "fetchedAt": "2026-11-19T13:00:33.393Z"
+    "fetchedAt": "2026-11-19T16:00:34.957Z"
    },
    "forecast": {
     "d1": {
-     "in": 4.1,
-     "low": 2,
-     "high": 5.4,
+     "in": 4.6,
+     "low": 2.6,
+     "high": 5.8,
      "models": 3
     },
     "d7": {
-     "in": 5.2,
-     "low": 2.9,
-     "high": 7.3,
+     "in": 6.1,
+     "low": 4,
+     "high": 7.6,
      "models": 3
     },
     "d10": {
-     "in": 5.9,
-     "low": 4.7,
-     "high": 7.8,
+     "in": 6.7,
+     "low": 5.9,
+     "high": 7.7,
      "models": 3
     },
     "spots": [
      {
       "name": "Fairview Canyon top",
       "elevFt": 9700,
-      "d1": 4,
-      "d7": 5.2,
-      "d10": 6.3
+      "d1": 5.2,
+      "d7": 6.8,
+      "d10": 7.7
      },
      {
       "name": "Huntington Reservoir",
       "elevFt": 9000,
-      "d1": 3.2,
-      "d7": 4.1,
-      "d10": 4.6
+      "d1": 4,
+      "d7": 5.2,
+      "d10": 5.6
      },
      {
       "name": "Skyline south",
       "elevFt": 10300,
-      "d1": 5,
+      "d1": 4.7,
       "d7": 6.2,
       "d10": 6.9
      }
     ],
     "daily": [
-     4.1,
-     0.6,
-     0.1,
-     0,
-     0.1,
+     4.6,
+     0.8,
      0,
      0.2,
-     0.2,
+     0.1,
+     0,
+     0.4,
+     0.1,
      0,
      0.8
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.393Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.957Z"
    }
   },
   {
@@ -2572,44 +2572,44 @@
    "snow": {
     "depthIn": 0,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": -1,
     "sweIn": 0.6,
-    "fetchedAt": "2026-11-19T13:00:33.427Z"
+    "fetchedAt": "2026-11-19T16:00:34.979Z"
    },
    "forecast": {
     "d1": {
      "in": 0.1,
-     "low": 0,
-     "high": 0.1,
+     "low": 0.1,
+     "high": 0.2,
      "models": 3
     },
     "d7": {
-     "in": 2.6,
-     "low": 1.7,
-     "high": 3.3,
+     "in": 2.7,
+     "low": 0.9,
+     "high": 4.3,
      "models": 3
     },
     "d10": {
-     "in": 5.1,
-     "low": 1.7,
-     "high": 8.8,
+     "in": 5.2,
+     "low": 0.9,
+     "high": 9.8,
      "models": 3
     },
     "spots": [
      {
       "name": "Rabbit Ears Pass",
       "elevFt": 9600,
-      "d1": 0,
+      "d1": 0.1,
       "d7": 2.1,
       "d10": 4
      },
      {
       "name": "Buffalo Pass",
       "elevFt": 10300,
-      "d1": 0.1,
+      "d1": 0.2,
       "d7": 2.9,
       "d10": 6.1
      },
@@ -2617,24 +2617,24 @@
       "name": "Dumont Lake",
       "elevFt": 9500,
       "d1": 0.1,
-      "d7": 2.7,
-      "d10": 5.3
+      "d7": 3,
+      "d10": 5.5
      }
     ],
     "daily": [
      0.1,
-     1.6,
+     1.3,
      0,
-     0,
-     0.5,
+     0.1,
+     0.8,
      0,
      0.4,
-     0.9,
-     0.8,
+     1.1,
+     0.6,
      1.1
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.427Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.979Z"
    }
   },
   {
@@ -2686,12 +2686,12 @@
    "snow": {
     "depthIn": 0,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 0,
     "sweIn": 0,
-    "fetchedAt": "2026-11-19T13:00:33.463Z"
+    "fetchedAt": "2026-11-19T16:00:34.999Z"
    },
    "forecast": {
     "d1": {
@@ -2703,13 +2703,13 @@
     "d7": {
      "in": 0.5,
      "low": 0,
-     "high": 1.1,
+     "high": 1,
      "models": 3
     },
     "d10": {
      "in": 1.7,
      "low": 0,
-     "high": 2.9,
+     "high": 2.8,
      "models": 3
     },
     "spots": [
@@ -2724,8 +2724,8 @@
       "name": "Gravel Mtn",
       "elevFt": 10500,
       "d1": 0,
-      "d7": 0.5,
-      "d10": 1.7
+      "d7": 0.4,
+      "d10": 1.6
      },
      {
       "name": "Supply Basin",
@@ -2743,12 +2743,12 @@
      0.2,
      0,
      0.1,
-     0.4,
+     0.5,
      0.4,
      0.3
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.463Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:34.999Z"
    }
   },
   {
@@ -2812,12 +2812,12 @@
    "snow": {
     "depthIn": 0,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -1,
+    "change24hIn": 0,
     "change7dIn": 0,
     "sweIn": 0.6,
-    "fetchedAt": "2026-11-19T13:00:33.498Z"
+    "fetchedAt": "2026-11-19T16:00:35.021Z"
    },
    "forecast": {
     "d1": {
@@ -2827,15 +2827,15 @@
      "models": 3
     },
     "d7": {
-     "in": 1.4,
-     "low": 0.1,
-     "high": 2.6,
+     "in": 1.1,
+     "low": 0.2,
+     "high": 1.6,
      "models": 3
     },
     "d10": {
-     "in": 2.4,
-     "low": 0.1,
-     "high": 4.7,
+     "in": 2.1,
+     "low": 0.2,
+     "high": 3.7,
      "models": 3
     },
     "spots": [
@@ -2843,45 +2843,45 @@
       "name": "Vail Pass summit",
       "elevFt": 10700,
       "d1": 0,
-      "d7": 1.4,
-      "d10": 2.4
+      "d7": 1.1,
+      "d10": 2.1
      },
      {
       "name": "Shrine Pass",
       "elevFt": 11100,
       "d1": 0,
-      "d7": 1.4,
-      "d10": 2.4
+      "d7": 1.1,
+      "d10": 2
      },
      {
       "name": "Ptarmigan Hill",
       "elevFt": 11800,
       "d1": 0,
-      "d7": 1.4,
-      "d10": 2.5
+      "d7": 1.1,
+      "d10": 2.1
      },
      {
       "name": "Camp Hale",
       "elevFt": 9300,
       "d1": 0,
-      "d7": 1.3,
-      "d10": 2.2
+      "d7": 1.1,
+      "d10": 2
      }
     ],
     "daily": [
      0,
      0.4,
-     0.2,
+     0.1,
      0,
-     0.6,
+     0.5,
      0,
      0.1,
-     0.6,
-     0.2,
+     0.7,
+     0.1,
      0.3
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.498Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:35.021Z"
    }
   },
   {
@@ -2937,29 +2937,29 @@
    "snow": {
     "depthIn": 8,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 4,
     "sweIn": 2.4,
-    "fetchedAt": "2026-11-19T13:00:33.533Z"
+    "fetchedAt": "2026-11-19T16:00:35.041Z"
    },
    "forecast": {
     "d1": {
-     "in": 1.1,
-     "low": 0.2,
-     "high": 2.2,
+     "in": 1.8,
+     "low": 0.6,
+     "high": 3.3,
      "models": 3
     },
     "d7": {
-     "in": 4.7,
-     "low": 2.1,
-     "high": 7,
+     "in": 4.3,
+     "low": 0.6,
+     "high": 7.4,
      "models": 3
     },
     "d10": {
-     "in": 5.3,
-     "low": 2.1,
+     "in": 4.8,
+     "low": 0.6,
      "high": 7.6,
      "models": 3
     },
@@ -2967,39 +2967,39 @@
      {
       "name": "Mesa Lakes",
       "elevFt": 9900,
-      "d1": 1.1,
-      "d7": 5.1,
-      "d10": 5.6
+      "d1": 1.7,
+      "d7": 4.4,
+      "d10": 4.8
      },
      {
       "name": "Skyway",
       "elevFt": 10600,
-      "d1": 1.2,
-      "d7": 4.9,
-      "d10": 5.5
+      "d1": 1.8,
+      "d7": 4.2,
+      "d10": 4.7
      },
      {
       "name": "County Line",
       "elevFt": 10500,
-      "d1": 1.1,
+      "d1": 1.9,
       "d7": 4.3,
       "d10": 4.9
      }
     ],
     "daily": [
-     1.1,
-     2.5,
+     1.8,
+     1.6,
      0,
+     0.1,
+     0.5,
      0,
-     0.9,
-     0,
-     0.2,
-     0.2,
+     0.3,
+     0.1,
      0,
      0.6
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.533Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:35.041Z"
    }
   },
   {
@@ -3062,60 +3062,60 @@
    "snow": {
     "depthIn": 32,
     "asOf": "2026-11-19",
-    "asOfTime": "2026-11-19T12:00:00.000Z",
+    "asOfTime": "2026-11-19T15:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 12,
     "sweIn": 9.7,
-    "fetchedAt": "2026-11-19T13:00:33.569Z"
+    "fetchedAt": "2026-11-19T16:00:35.062Z"
    },
    "forecast": {
     "d1": {
-     "in": 0.8,
+     "in": 1,
      "low": 0,
-     "high": 1.2,
+     "high": 1.5,
      "models": 3
     },
     "d7": {
-     "in": 3.4,
-     "low": 2.1,
-     "high": 4.6,
+     "in": 3.9,
+     "low": 3,
+     "high": 5.3,
      "models": 3
     },
     "d10": {
-     "in": 4.4,
+     "in": 4.9,
      "low": 3.4,
-     "high": 4.9,
+     "high": 5.7,
      "models": 3
     },
     "spots": [
      {
       "name": "Big Meadows",
       "elevFt": 10000,
-      "d1": 0.9,
-      "d7": 3.4,
-      "d10": 4.3
+      "d1": 1.1,
+      "d7": 4,
+      "d10": 5
      },
      {
       "name": "Tucker Ponds / Pass Creek",
       "elevFt": 10300,
-      "d1": 0.9,
-      "d7": 3.7,
-      "d10": 4.7
+      "d1": 1.1,
+      "d7": 4.2,
+      "d10": 5.2
      },
      {
       "name": "Fox Mountain / Park Creek",
       "elevFt": 10500,
-      "d1": 0.6,
-      "d7": 3,
-      "d10": 4
+      "d1": 0.8,
+      "d7": 3.4,
+      "d10": 4.5
      }
     ],
     "daily": [
-     0.8,
-     1.8,
-     0.6,
-     0,
+     1,
+     2.1,
+     0.5,
+     0.2,
      0.2,
      0,
      0,
@@ -3123,8 +3123,8 @@
      0,
      0.1
     ],
-    "startsAt": "2026-11-19T13:00Z",
-    "fetchedAt": "2026-11-19T13:00:33.569Z"
+    "startsAt": "2026-11-19T16:00Z",
+    "fetchedAt": "2026-11-19T16:00:35.062Z"
    }
   }
  ]
