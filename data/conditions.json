@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T13:00:38.382Z",
+ "updatedAt": "2026-11-26T13:21:55.633Z",
  "sample": false,
  "snotelDown": false,
  "models": [
@@ -78,12 +78,12 @@
    "snow": {
     "depthIn": 8,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 1,
     "sweIn": 1.6,
-    "fetchedAt": "2026-11-26T13:00:38.032Z"
+    "fetchedAt": "2026-11-26T13:21:55.092Z"
    },
    "forecast": {
     "d1": {
@@ -147,7 +147,7 @@
      0.5
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.031Z"
+    "fetchedAt": "2026-11-26T13:21:55.091Z"
    }
   },
   {
@@ -205,12 +205,12 @@
    "snow": {
     "depthIn": 12,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 2,
     "sweIn": 2.5,
-    "fetchedAt": "2026-11-26T13:00:38.050Z"
+    "fetchedAt": "2026-11-26T13:21:55.113Z"
    },
    "forecast": {
     "d1": {
@@ -274,7 +274,7 @@
      0.1
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.050Z"
+    "fetchedAt": "2026-11-26T13:21:55.113Z"
    }
   },
   {
@@ -336,7 +336,7 @@
     "change24hIn": -1,
     "change7dIn": 1,
     "sweIn": 2.3,
-    "fetchedAt": "2026-11-26T13:00:38.068Z"
+    "fetchedAt": "2026-11-26T13:21:55.135Z"
    },
    "forecast": {
     "d1": {
@@ -400,7 +400,7 @@
      0.4
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.068Z"
+    "fetchedAt": "2026-11-26T13:21:55.135Z"
    }
   },
   {
@@ -457,12 +457,12 @@
    "snow": {
     "depthIn": 5,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 1,
     "sweIn": 1,
-    "fetchedAt": "2026-11-26T13:00:38.082Z"
+    "fetchedAt": "2026-11-26T13:21:55.155Z"
    },
    "forecast": {
     "d1": {
@@ -519,7 +519,7 @@
      0.8
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.082Z"
+    "fetchedAt": "2026-11-26T13:21:55.155Z"
    }
   },
   {
@@ -587,7 +587,7 @@
     "change24hIn": 0,
     "change7dIn": 0,
     "sweIn": 1.1,
-    "fetchedAt": "2026-11-26T13:00:38.095Z"
+    "fetchedAt": "2026-11-26T13:21:55.200Z"
    },
    "forecast": {
     "d1": {
@@ -644,7 +644,7 @@
      0.7
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.095Z"
+    "fetchedAt": "2026-11-26T13:21:55.200Z"
    }
   },
   {
@@ -717,7 +717,7 @@
     "change24hIn": -1,
     "change7dIn": 3,
     "sweIn": 2.8,
-    "fetchedAt": "2026-11-26T13:00:38.111Z"
+    "fetchedAt": "2026-11-26T13:21:55.222Z"
    },
    "forecast": {
     "d1": {
@@ -781,7 +781,7 @@
      0.4
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.111Z"
+    "fetchedAt": "2026-11-26T13:21:55.222Z"
    }
   },
   {
@@ -854,7 +854,7 @@
     "change24hIn": 0,
     "change7dIn": 4,
     "sweIn": 1.2,
-    "fetchedAt": "2026-11-26T13:00:38.128Z"
+    "fetchedAt": "2026-11-26T13:21:55.242Z"
    },
    "forecast": {
     "d1": {
@@ -918,7 +918,7 @@
      0.6
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.128Z"
+    "fetchedAt": "2026-11-26T13:21:55.242Z"
    }
   },
   {
@@ -973,7 +973,7 @@
     "change24hIn": -1,
     "change7dIn": 1,
     "sweIn": 0.8,
-    "fetchedAt": "2026-11-26T13:00:38.142Z"
+    "fetchedAt": "2026-11-26T13:21:55.261Z"
    },
    "forecast": {
     "d1": {
@@ -1030,7 +1030,7 @@
      0
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.142Z"
+    "fetchedAt": "2026-11-26T13:21:55.261Z"
    }
   },
   {
@@ -1093,7 +1093,7 @@
     "change24hIn": 0,
     "change7dIn": 3,
     "sweIn": 0.7,
-    "fetchedAt": "2026-11-26T13:00:38.155Z"
+    "fetchedAt": "2026-11-26T13:21:55.280Z"
    },
    "forecast": {
     "d1": {
@@ -1150,7 +1150,7 @@
      0.1
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.155Z"
+    "fetchedAt": "2026-11-26T13:21:55.280Z"
    }
   },
   {
@@ -1199,7 +1199,7 @@
     "change24hIn": 0,
     "change7dIn": 1,
     "sweIn": 1.5,
-    "fetchedAt": "2026-11-26T13:00:38.170Z"
+    "fetchedAt": "2026-11-26T13:21:55.343Z"
    },
    "forecast": {
     "d1": {
@@ -1256,7 +1256,7 @@
      0.4
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.170Z"
+    "fetchedAt": "2026-11-26T13:21:55.343Z"
    }
   },
   {
@@ -1314,12 +1314,12 @@
    "snow": {
     "depthIn": 11,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 1,
     "sweIn": 1.9,
-    "fetchedAt": "2026-11-26T13:00:38.187Z"
+    "fetchedAt": "2026-11-26T13:21:55.364Z"
    },
    "forecast": {
     "d1": {
@@ -1383,7 +1383,7 @@
      0.8
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.187Z"
+    "fetchedAt": "2026-11-26T13:21:55.364Z"
    }
   },
   {
@@ -1439,12 +1439,12 @@
    "snow": {
     "depthIn": 11,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 0,
     "sweIn": 2.2,
-    "fetchedAt": "2026-11-26T13:00:38.199Z"
+    "fetchedAt": "2026-11-26T13:21:55.383Z"
    },
    "forecast": {
     "d1": {
@@ -1501,7 +1501,7 @@
      1.3
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.199Z"
+    "fetchedAt": "2026-11-26T13:21:55.383Z"
    }
   },
   {
@@ -1563,12 +1563,12 @@
    "snow": {
     "depthIn": 7,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 0,
     "sweIn": 1.5,
-    "fetchedAt": "2026-11-26T13:00:38.213Z"
+    "fetchedAt": "2026-11-26T13:21:55.403Z"
    },
    "forecast": {
     "d1": {
@@ -1625,7 +1625,7 @@
      0.6
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.213Z"
+    "fetchedAt": "2026-11-26T13:21:55.403Z"
    }
   },
   {
@@ -1683,12 +1683,12 @@
    "snow": {
     "depthIn": 5,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 2,
     "sweIn": 1.1,
-    "fetchedAt": "2026-11-26T13:00:38.228Z"
+    "fetchedAt": "2026-11-26T13:21:55.422Z"
    },
    "forecast": {
     "d1": {
@@ -1745,7 +1745,7 @@
      0.6
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.228Z"
+    "fetchedAt": "2026-11-26T13:21:55.422Z"
    }
   },
   {
@@ -1807,7 +1807,7 @@
     "change24hIn": -1,
     "change7dIn": 4,
     "sweIn": 1.6,
-    "fetchedAt": "2026-11-26T13:00:38.241Z"
+    "fetchedAt": "2026-11-26T13:21:55.441Z"
    },
    "forecast": {
     "d1": {
@@ -1864,7 +1864,7 @@
      1.1
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.241Z"
+    "fetchedAt": "2026-11-26T13:21:55.441Z"
    }
   },
   {
@@ -1936,7 +1936,7 @@
     "change24hIn": -1,
     "change7dIn": 4,
     "sweIn": 2.1,
-    "fetchedAt": "2026-11-26T13:00:38.256Z"
+    "fetchedAt": "2026-11-26T13:21:55.460Z"
    },
    "forecast": {
     "d1": {
@@ -1993,7 +1993,7 @@
      1.5
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.256Z"
+    "fetchedAt": "2026-11-26T13:21:55.460Z"
    }
   },
   {
@@ -2056,7 +2056,7 @@
     "change24hIn": -1,
     "change7dIn": 2,
     "sweIn": 3.4,
-    "fetchedAt": "2026-11-26T13:00:38.271Z"
+    "fetchedAt": "2026-11-26T13:21:55.480Z"
    },
    "forecast": {
     "d1": {
@@ -2113,7 +2113,7 @@
      0.8
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.271Z"
+    "fetchedAt": "2026-11-26T13:21:55.479Z"
    }
   },
   {
@@ -2182,12 +2182,12 @@
    "snow": {
     "depthIn": 9,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": -4,
     "sweIn": 1.8,
-    "fetchedAt": "2026-11-26T13:00:38.285Z"
+    "fetchedAt": "2026-11-26T13:21:55.500Z"
    },
    "forecast": {
     "d1": {
@@ -2258,7 +2258,7 @@
      1.6
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.285Z"
+    "fetchedAt": "2026-11-26T13:21:55.500Z"
    }
   },
   {
@@ -2322,12 +2322,12 @@
    "snow": {
     "depthIn": 6,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -1,
+    "change24hIn": 0,
     "change7dIn": 0,
     "sweIn": 1.2,
-    "fetchedAt": "2026-11-26T13:00:38.300Z"
+    "fetchedAt": "2026-11-26T13:21:55.519Z"
    },
    "forecast": {
     "d1": {
@@ -2391,7 +2391,7 @@
      0.6
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.300Z"
+    "fetchedAt": "2026-11-26T13:21:55.519Z"
    }
   },
   {
@@ -2448,12 +2448,12 @@
    "snow": {
     "depthIn": 15,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 1,
     "sweIn": 4.3,
-    "fetchedAt": "2026-11-26T13:00:38.314Z"
+    "fetchedAt": "2026-11-26T13:21:55.538Z"
    },
    "forecast": {
     "d1": {
@@ -2510,7 +2510,7 @@
      0.2
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.314Z"
+    "fetchedAt": "2026-11-26T13:21:55.538Z"
    }
   },
   {
@@ -2570,14 +2570,14 @@
     "url": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=709"
    },
    "snow": {
-    "depthIn": 0,
+    "depthIn": 1,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
-    "change24hIn": -1,
-    "change7dIn": -1,
+    "change24hIn": 0,
+    "change7dIn": 0,
     "sweIn": 0.7,
-    "fetchedAt": "2026-11-26T13:00:38.328Z"
+    "fetchedAt": "2026-11-26T13:21:55.558Z"
    },
    "forecast": {
     "d1": {
@@ -2634,7 +2634,7 @@
      0
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.328Z"
+    "fetchedAt": "2026-11-26T13:21:55.558Z"
    }
   },
   {
@@ -2686,12 +2686,12 @@
    "snow": {
     "depthIn": 0,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T11:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 0,
     "sweIn": 0,
-    "fetchedAt": "2026-11-26T13:00:38.343Z"
+    "fetchedAt": "2026-11-26T13:21:55.576Z"
    },
    "forecast": {
     "d1": {
@@ -2748,7 +2748,7 @@
      0
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.343Z"
+    "fetchedAt": "2026-11-26T13:21:55.576Z"
    }
   },
   {
@@ -2812,12 +2812,12 @@
    "snow": {
     "depthIn": 3,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 3,
     "sweIn": 1,
-    "fetchedAt": "2026-11-26T13:00:38.355Z"
+    "fetchedAt": "2026-11-26T13:21:55.596Z"
    },
    "forecast": {
     "d1": {
@@ -2881,7 +2881,7 @@
      0
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.355Z"
+    "fetchedAt": "2026-11-26T13:21:55.596Z"
    }
   },
   {
@@ -2937,12 +2937,12 @@
    "snow": {
     "depthIn": 9,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": 0,
     "change7dIn": 1,
     "sweIn": 2.4,
-    "fetchedAt": "2026-11-26T13:00:38.369Z"
+    "fetchedAt": "2026-11-26T13:21:55.615Z"
    },
    "forecast": {
     "d1": {
@@ -2999,7 +2999,7 @@
      0.6
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.369Z"
+    "fetchedAt": "2026-11-26T13:21:55.614Z"
    }
   },
   {
@@ -3062,12 +3062,12 @@
    "snow": {
     "depthIn": 37,
     "asOf": "2026-11-26",
-    "asOfTime": "2026-11-26T12:00:00.000Z",
+    "asOfTime": "2026-11-26T13:00:00.000Z",
     "source": "hourly",
     "change24hIn": -1,
     "change7dIn": 5,
     "sweIn": 10.7,
-    "fetchedAt": "2026-11-26T13:00:38.382Z"
+    "fetchedAt": "2026-11-26T13:21:55.633Z"
    },
    "forecast": {
     "d1": {
@@ -3124,7 +3124,7 @@
      0.7
     ],
     "startsAt": "2026-11-26T13:00Z",
-    "fetchedAt": "2026-11-26T13:00:38.382Z"
+    "fetchedAt": "2026-11-26T13:21:55.632Z"
    }
   }
  ]
